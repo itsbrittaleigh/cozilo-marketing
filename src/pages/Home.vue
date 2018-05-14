@@ -30,7 +30,7 @@
           <span>&darr;</span>
         </a>
       </section>
-      <section id="marketplace" class="marketplace padded-section">
+      <section id="marketplace" class="value-section padded-section bg-lightblue">
         <div class="container">
           <div class="text color-white">
             <div class="section-header-icon bg-darkblue">
@@ -93,6 +93,40 @@
         <div class="item">
           <img src="https://fillmurray.com/200/200" alt="">
           <span class="price">$50</span>
+        </div>
+      </section>
+      <section class="value-section padded-section bg-orange">
+        <div class="container">
+          <div class="mockup">
+            <img src="https://fillmurray.com/350/600" alt="">
+          </div>
+          <div class="text color-white">
+            <div class="section-header-icon bg-white">
+              <img src="https://fillmurray.com/50/50" alt="">
+            </div>
+            <h2>Trade using Cozilo tokens</h2>
+            <p>
+              Buy simpler and sell quicker with the option of using Cozilo tokens.
+              Tokens never disappear and receive 500 when you sign up.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="value-section padded-section bg-lightblue">
+        <div class="container">
+          <div class="text color-white">
+            <div class="section-header-icon bg-white">
+              <img src="https://fillmurray.com/50/50" alt="">
+            </div>
+            <h2>Secure and reliable</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam odio obcaecati perspiciatis numquam!
+            </p>
+          </div>
+          <div class="mockup">
+            <img src="https://fillmurray.com/350/600" alt="">
+          </div>
         </div>
       </section>
     </template>
@@ -232,8 +266,7 @@ $mockup_width: 250px;
     }
   }
 }
-.marketplace {
-  background: $lightblue;
+.value-section {
   .container {
     display: flex;
     flex-direction: column;
@@ -245,6 +278,8 @@ $mockup_width: 250px;
       justify-content: center;
       .text {
         flex: 1;
+      }
+      div:first-of-type {
         margin-right: 100px;
       }
     }
