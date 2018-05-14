@@ -73,6 +73,28 @@
           </div>
         </div>
       </section>
+      <section class="items">
+        <div class="item">
+          <img src="https://fillmurray.com/200/200" alt="">
+          <span class="price">$100</span>
+        </div>
+        <div class="item">
+          <img src="https://fillmurray.com/200/200" alt="">
+          <span class="price">$2400</span>
+        </div>
+        <div class="item">
+          <img src="https://fillmurray.com/200/200" alt="">
+          <span class="price">$1500</span>
+        </div>
+        <div class="item">
+          <img src="https://fillmurray.com/200/200" alt="">
+          <span class="price">$900</span>
+        </div>
+        <div class="item">
+          <img src="https://fillmurray.com/200/200" alt="">
+          <span class="price">$50</span>
+        </div>
+      </section>
     </template>
   </base-page>
 </template>
@@ -297,6 +319,48 @@ $mockup_width: 250px;
       }
       &.text-right {
         padding: 100px 0 100px (($mockup_width / 2) + 30px);
+      }
+    }
+  }
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 30px 0;
+  .item {
+    margin-bottom: 30px;
+    width: calc((100vw - 90px) / 2);
+    position: relative;
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:last-of-type {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .price {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      background: $gray;
+      color: $white;
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      padding: 10px 25px 10px 20px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    padding: 30px;
+    .item {
+      margin: 0 30px 0 0;
+      width: calc((100vw - 180px) / 5);
+      &:last-of-type {
+        display: block;
+        margin-right: 0;
       }
     }
   }
