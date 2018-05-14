@@ -5,32 +5,24 @@
  * Table of Contents:
  *
  * [01] Colors
- *   [a] Definitions
- *   [b] Mixins
- *   [c] Functions
  * [02] Layout
- *   [a] Definitions
- *   [b] Mixins
  * [03] Typography
- *   [a] Definitions
- *   [b] Mixins
  */
 
 
 /*
  * [01] Colors
- *
- * color names come from Chirag Mehta's color naming tool
- * @link http://chir.ag/projects/name-that-color
- * 
- * all colors are defined by default as a hex code
- *
  */
 
 /*
  * [a] Definitions
  */
-
+$lightblue: #62a9c5;
+$darkblue: #2d3f50;
+$orange: #ec632e;
+$green: #77c373;
+$gray: #414142;
+$white: #f8f2e8;
 
 /*
 * [02] Layout
@@ -82,7 +74,12 @@ $xxxlarge: 1600px;
 /*
 * [a] Defintions
 */
-
+// @font-face {
+//   font-family: 'Avenir';
+//   src: url('~/static/fonts/Avenir/Avenir-Thin.ttf');
+//   font-weight: 100;
+//   font-style: normal;
+// }
 
 /*
 * [b] Mixins

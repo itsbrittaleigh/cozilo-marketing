@@ -7,10 +7,13 @@
 <script>
 export default {
   name: 'App',
+  data() {
+    return {};
+  },
 };
 </script>
 
 <style lang="scss">
-@import './assets/app.scss';
+@import './assets/styles/app.scss';
 </style>
 
