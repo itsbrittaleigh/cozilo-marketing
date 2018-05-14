@@ -11,12 +11,14 @@
       <span></span>
     </button>
     <ul :class="{'base-menu': true, 'open': menuIsOpen}">
-      <li>
-        <router-link :to="{ name: 'About' }">Features</router-link>
-      </li>
-      <li>
-        <router-link :to="{ name: 'Contact' }">Stay Connected</router-link>
-      </li>
+      <span>
+        <li>
+          <router-link :to="{ name: 'About' }">Features</router-link>
+        </li>
+        <li>
+          <router-link :to="{ name: 'Contact' }">Stay Connected</router-link>
+        </li>
+      </span>
       <span class="soon">
         <p>Coming soon to</p>
         <img src="https://fillmurray.com/30/30" alt="Apple App Store logo">
@@ -103,6 +105,7 @@ ul {
   padding: 120px 5% 0;
   text-align: right;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 100vw;
   margin: 0;
@@ -147,9 +150,14 @@ ul {
     position: static;
     height: auto;
     width: auto;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
     background: transparent;
+    flex: 1;
+    span {
+      display: flex;
+    }
     li {
       margin-left: 50px;
       a {
@@ -158,8 +166,10 @@ ul {
     }
   }
   .soon {
-    color: $green;
     margin-top: 0;
+    p {
+      color: $green;
+    }
   }
 }
 </style>

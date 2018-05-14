@@ -1,6 +1,37 @@
 <template>
   <base-page>
-    <template slot="content"></template>
+    <template slot="content">
+      <section class="hero with-bg-image">
+        <img src="https://fillmurray.com/800/400" alt="" class="background-image">
+        <div class="overlay"></div>
+        <div class="container">
+          <h1>The Cozilo way to</h1>
+          <div class="value-props">
+            <div class="prop">
+              <img src="https://fillmurray.com/100/100" alt="">
+              <p>Buy</p>
+            </div>
+            <div class="prop">
+              <img src="https://fillmurray.com/100/100" alt="">
+              <p>Sell</p>
+            </div>
+            <div class="prop">
+              <img src="https://fillmurray.com/100/100" alt="">
+              <p>Trade</p>
+            </div>
+            <div class="prop">
+              <img src="https://fillmurray.com/100/100" alt="">
+              <p>Hire</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="more" v-scroll-to="'#marketplace'">
+          Learn more
+          <span>&darr;</span>
+        </a>
+      </section>
+      <section id="marketplace"></section>
+    </template>
   </base-page>
 </template>
 
@@ -17,3 +48,123 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import '../assets/styles/variables';
+.hero {
+  padding: 40px 0 120px;
+  h1 {
+    color: $white;
+    text-align: center;
+    margin-top: 0;
+  }
+  .value-props {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+    .prop {
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &:last-of-type {
+        margin: 0;
+      }
+      &:nth-child(1) {
+        background: $lightblue;
+        margin: 0 20px 20px 0;
+      }
+      &:nth-child(2) {
+        background: $green;
+        margin: 0 0 20px 0;
+      }
+      &:nth-child(3) {
+        background: $orange;
+        margin: 0 20px 0 0;
+      }
+      &:nth-child(4) {
+        background: $lightblue;
+        margin: 0;
+      }
+      img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+      }
+      p {
+        margin: 15px 0 0;
+        @include title-font;
+        color: $white;
+      }
+    }
+  }
+  .overlay {
+    background: rgba($darkblue, 0.95);
+  }
+  .more {
+    $width: 170px;
+    position: absolute;
+    width: $width;
+    bottom: 0;
+    left: 50%;
+    margin-left: -($width / 2);
+    background: $white;
+    color: $gray;
+    display: block;
+    text-align: center;
+    z-index: 3;
+    text-decoration: none;
+    padding: 20px 0;
+    @include title-font;
+    font-size: 15px;
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .value-props {
+      width: 100%;
+      .prop {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin: 0 20px 0 0;
+        }
+        &:nth-child(4) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    padding: 80px 0 200px;
+    > .container {
+      max-width: 90%;
+    }
+    .value-props {
+      .prop {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          margin: 0 30px 0 0;
+        }
+        img {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+</style>
+

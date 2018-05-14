@@ -1,9 +1,13 @@
 import Vue from 'vue';
+import VueScrollTo from 'vue-scrollto';
+
 import App from './App';
 import router from './router';
 import store from './store';
 
 Vue.config.productionTip = false;
+
+Vue.use(VueScrollTo);
 
 router.beforeEach((to, from, next) => {
   // store.commit('closeMenu');
