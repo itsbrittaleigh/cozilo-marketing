@@ -47,6 +47,32 @@
           </div>
         </div>
       </section>
+      <section class="from-to">
+        <div class="text text-left bg-white">
+          <div class="wrapper">
+            <div class="section-header-icon bg-orange">
+              <img src="https://fillmurray.com/100/100" alt="">
+            </div>
+            <h2 class="color-orange">From<br>the<br>office<br>cubicle</h2>
+            <p class="color-gray">
+              Buy office furniture your business needs to grow. Sell supplies to save space.
+            </p>
+          </div>
+        </div>
+        <img src="https://fillmurray.com/350/600" alt="" class="mockup">
+        <div class="text text-right bg-orange">
+          <div class="wrapper">
+            <div class="section-header-icon bg-white">
+              <img src="https://fillmurray.com/100/100" alt="">
+            </div>
+            <h2 class="color-white">To<br>the<br>factory<br>floor<br></h2>
+            <p class="color-white">
+              Trade machinery or equipment for nearly any industry.
+              Hire extra help to meet a deadline.
+            </p>
+          </div>
+        </div>
+      </section>
     </template>
   </base-page>
 </template>
@@ -67,6 +93,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/variables';
+$mockup_height: 500px;
+$mockup_width: 250px;
 .hero {
   padding: 40px 0 120px;
   h1 {
@@ -196,6 +224,79 @@ export default {
       .text {
         flex: 1;
         margin-right: 100px;
+      }
+    }
+  }
+}
+.from-to {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .text {
+    .wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &.text-left {
+      padding: 30px 0 ($mockup_height / 2);
+    }
+    &.text-right {
+      padding: ($mockup_height / 2) 0 30px;
+    }
+  }
+  .mockup {
+    width: $mockup_width;
+    height: $mockup_height;
+    position: absolute;
+    top: 50%;
+    margin-top: -($mockup_height / 2);
+    left: 50%;
+    margin-left: -($mockup_width / 2);
+    object-fit: contain;
+  }
+  @media only screen and (min-width: 1000px) {
+    flex-direction: row;
+    .text {
+      width: 50%;
+      p {
+        max-width: 280px;
+      }
+      &.text-left {
+        padding: 100px ($mockup_width / 2) 100px 0;
+        > .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        h2,
+        p {
+          text-align: right;
+        }
+      }
+      &.text-right {
+        padding: 100px 0 100px ($mockup_width / 2);
+      }
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    $mockup_width: 300px;
+    $mockup_height: 600px;
+    .mockup {
+      width: $mockup_width;
+      height: $mockup_height;
+      position: absolute;
+      top: 50%;
+      margin-top: -($mockup_height / 2);
+      left: 50%;
+      margin-left: -($mockup_width / 2);
+      object-fit: contain;
+    }
+    .text {
+      &.text-left {
+        padding: 100px (($mockup_width / 2) + 30px) 100px 0;
+      }
+      &.text-right {
+        padding: 100px 0 100px (($mockup_width / 2) + 30px);
       }
     }
   }
