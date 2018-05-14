@@ -11,9 +11,17 @@
       <span></span>
     </button>
     <ul :class="{'base-menu': true, 'open': menuIsOpen}">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <li>
+        <router-link :to="{ name: 'About' }">Features</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'Contact' }">Stay Connected</router-link>
+      </li>
+      <span class="soon">
+        <p>Coming soon to</p>
+        <img src="https://fillmurray.com/30/30" alt="Apple App Store logo">
+        <img src="https://fillmurray.com/30/30" alt="Google Play Store logo">
+      </span>
     </ul>
   </nav>
 </template>
@@ -47,6 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/variables';
 // hamburger button
 button {
   width: 24px;
@@ -70,7 +79,7 @@ button {
     position: absolute;
     height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: $green;
     border-radius: 2px;
     opacity: 1;
     left: 0;
@@ -98,36 +107,40 @@ ul {
   left: 100vw;
   margin: 0;
   list-style-type: none;
-  background: rgba(black, 0.95);
+  background: rgba($darkblue, 0.95);
   transition: left 0.4s;
   li {
     a {
       padding: 10px 0;
       display: block;
-      text-transform: uppercase;
-      color: black;
+      color: $white;
       text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.9px;
-      font-weight: bold;
-      &.button {
-        padding: 0 25px;
-        margin-top: 10px;
-        display: inline-flex;
-        align-items: center;
-        &:hover {
-          color: black;
-        }
-      }
+      @include title-font;
     }
   }
   &.open {
     left: 0;
   }
 }
+.soon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 100px;
+  p {
+    @include title-font;
+    color: $white;
+  }
+  img {
+    margin-left: 15px;
+  }
+}
 @media only screen and (min-width: 1000px) {
   nav {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   ul {
     display: flex;
@@ -138,11 +151,15 @@ ul {
     padding: 0;
     background: transparent;
     li {
-      margin-left: 30px;
-      a.button {
-        margin-top: 0;
+      margin-left: 50px;
+      a {
+        color: $lightblue;
       }
     }
+  }
+  .soon {
+    color: $green;
+    margin-top: 0;
   }
 }
 </style>

@@ -1,0 +1,25 @@
+*,
+*:before,
+*:after {
+  font-family: $font;
+}
+
+p,
+li,
+a {
+  font-size: 25px;
+  &.small {
+    font-size: 18px;
+  }
+  &.large {
+    font-size: 31px;
+  }
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 75px;
+}
