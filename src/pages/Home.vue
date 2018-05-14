@@ -30,7 +30,23 @@
           <span>&darr;</span>
         </a>
       </section>
-      <section id="marketplace"></section>
+      <section id="marketplace" class="marketplace padded-section">
+        <div class="container">
+          <div class="text color-white">
+            <div class="section-header-icon bg-darkblue">
+              <img src="https://fillmurray.com/50/50" alt="">
+            </div>
+            <h2>The business only, mobile marketplace</h2>
+            <p>
+              Interact specifically with business owners without the clutter of consumer goods.
+              Only approved business become part of the Cozilo ecoystem.
+            </p>
+          </div>
+          <div class="mockup">
+            <img src="https://fillmurray.com/350/600" alt="">
+          </div>
+        </div>
+      </section>
     </template>
   </base-page>
 </template>
@@ -166,5 +182,22 @@ export default {
     }
   }
 }
+.marketplace {
+  background: $lightblue;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media only screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: center;
+      .text {
+        flex: 1;
+        margin-right: 100px;
+      }
+    }
+  }
+}
 </style>
-

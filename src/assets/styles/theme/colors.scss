@@ -1,0 +1,65 @@
+.color-white {
+  color: $white;
+  * {
+    color: $white;
+  }
+}
+
+.bg-white {
+  background: $white;
+}
+
+.color-darkblue {
+  color: $darkblue;
+  * {
+    color: $darkblue;
+  }
+}
+
+.bg-darkblue {
+  background: $darkblue;
+}
+
+.color-lightblue {
+  color: $lightblue;
+  * {
+    color: $lightblue;
+  }
+}
+
+.bg-lightblue {
+  background: $lightblue;
+}
+
+.color-green {
+  color: $green;
+  * {
+    color: $green;
+  }
+}
+
+.bg-green {
+  background: $green;
+}
+
+.color-orange {
+  color: $orange;
+  * {
+    color: $orange;
+  }
+}
+
+.bg-orange {
+  background: $orange;
+}
+
+.color-gray {
+  color: $gray;
+  * {
+    color: $gray;
+  }
+}
+
+.bg-gray {
+  background: $gray;
+}
