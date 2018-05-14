@@ -63,3 +63,14 @@
 .bg-gray {
   background: $gray;
 }
+
+.color-lightgray {
+  color: $lightgray;
+  * {
+    color: $lightgray;
+  }
+}
+
+.bg-lightgray {
+  background: $lightgray;
+}

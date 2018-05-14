@@ -129,6 +129,50 @@
           </div>
         </div>
       </section>
+      <section class="app-markup padded-section">
+        <div class="container">
+          <h2 class="color-lightgray">The Cozilo way to buy, sell, hire, and trade.</h2>
+          <div class="value-props">
+            <div class="col-lt">
+              <div class="prop">
+                <p class="large color-darkblue">A business-only platform</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="prop color-lightblue">
+                <p class="large">Find used and new</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="prop color-orange">
+                <p class="large">Simple interface and payment structure</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="prop color-green">
+                <p class="large">Advertise while you're here</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <img src="https://fillmurray.com/400/600" alt="" class="mockup">
+            <dic class="col-rt">
+              <div class="prop">
+                <p class="large color-lightblue">Chat with sellers</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="prop color-orange">
+                <p class="large">Take the hassle out of shipping</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="prop color-green">
+                <p class="large">Safe transcations with user ratings and an escrow</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="prop">
+                <p class="large color-darkblue">Choose your method of payment</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </dic>
+          </div>
+        </div>
+      </section>
     </template>
   </base-page>
 </template>
@@ -397,6 +441,64 @@ $mockup_width: 250px;
         display: block;
         margin-right: 0;
       }
+    }
+  }
+}
+.app-markup {
+  > .container {
+    max-width: 1200px;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin: 0;
+    &:not(.large) {
+      color: $lightgray;
+    }
+    &.large {
+      font-weight: bold;
+    }
+  }
+  .value-props {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .col-lt {
+      margin-right: 20px;
+    }
+    .prop {
+      margin-bottom: 20px;
+    }
+  }
+  .mockup {
+    display: none;
+  }
+  @media only screen and (min-width: 1000px) {
+    .value-props {
+      margin-top: 80px;
+      .col-lt,
+      .col-rt {
+        width: 300px;
+      }
+      .prop {
+        margin-bottom: 60px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+    p:not(.large) {
+      font-size: 18px;
+    }
+    p.large  {
+      line-height: 1.2;
+    }
+    .mockup {
+      display: block;
+      width: 400px;
+      object-fit: contain;
+      align-self: center;
     }
   }
 }
