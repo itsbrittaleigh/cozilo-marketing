@@ -173,12 +173,19 @@
           </div>
         </div>
       </section>
+      <section class="newsletter bg-orange">
+        <div class="container">
+          <p class="large color-white">Sign up for our newsletter to stay up to date.</p>
+          <newsletter-form></newsletter-form>
+        </div>
+      </section>
     </template>
   </base-page>
 </template>
 
 <script>
 import Base from '../templates/Base';
+import NewsletterForm from '../components/NewsletterForm';
 
 export default {
   name: 'Home',
@@ -187,6 +194,7 @@ export default {
   },
   components: {
     'base-page': Base,
+    'newsletter-form': NewsletterForm,
   },
 };
 </script>
@@ -500,6 +508,12 @@ $mockup_width: 250px;
       object-fit: contain;
       align-self: center;
     }
+  }
+}
+.newsletter {
+  padding: 80px 0;
+  p {
+    text-align: center;
   }
 }
 </style>
