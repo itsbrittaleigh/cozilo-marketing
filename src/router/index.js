@@ -4,6 +4,8 @@ import Router from 'vue-router';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
+import Faq from '../pages/Faq';
+import Features from '../pages/Features';
 
 Vue.use(Router);
 
@@ -24,9 +26,19 @@ export default new Router({
       component: About,
     },
     {
-      path: '/',
+      path: '/contact',
       name: 'Contact',
       component: Contact,
+    },
+    {
+      path: '/faq',
+      name: 'FAQ',
+      component: Faq,
+    },
+    {
+      path: '/features',
+      name: 'Features',
+      component: Features,
     },
   ],
 });

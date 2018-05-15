@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 *,
@@ -53,8 +54,8 @@ body {
 }
 
 .padded-section {
-  padding: 25px 0;
+  padding: 50px 0;
   @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+    padding: 100px 0;
   }
 }

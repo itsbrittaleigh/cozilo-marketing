@@ -75,12 +75,24 @@ $xxxlarge: 1600px;
 /*
 * [a] Defintions
 */
-// @font-face {
-//   font-family: 'Avenir';
-//   src: url('~/static/fonts/Avenir/Avenir-Thin.ttf');
-//   font-weight: 100;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Avenir';
+  src: url('~/static/fonts/Avenir/AvenirLTStd-Light.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('~/static/fonts/Avenir/AvenirLTStd-Roman.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('~/static/fonts/Avenir/AvenirLTStd-Black.otf');
+  font-weight: bold;
+  font-style: normal;
+}
 $font: 'Avenir', 'Verdana', sans-serif;
 
 /*

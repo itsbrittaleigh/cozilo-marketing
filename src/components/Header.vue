@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="container">
-      <img src="https://fillmurray.com/300/100" alt="Cozilo logo" class="logo">
+      <router-link :to="{ name: 'Home' }">
+        <img src="https://fillmurray.com/300/100" alt="Cozilo logo" class="logo">
+      </router-link>
       <app-menu></app-menu>
     </div>
   </header>
@@ -38,6 +40,9 @@ header {
   }
   @media only screen and (min-width: 1000px) {
     padding: 40px 0;
+  }
+  a {
+    line-height: normal;
   }
 }
 </style>

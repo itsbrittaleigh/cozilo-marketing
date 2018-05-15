@@ -1,6 +1,12 @@
 <template>
   <base-page>
     <template slot="content">
+      <!-- <div class="pagination">
+        <i
+          v-for="(section, index) in sections"
+          :key="index"
+        ></i>
+      </div> -->
       <section class="hero with-bg-image">
         <img src="https://fillmurray.com/800/400" alt="" class="background-image">
         <div class="overlay"></div>
@@ -41,6 +47,12 @@
               Interact specifically with business owners without the clutter of consumer goods.
               Only approved business become part of the Cozilo ecoystem.
             </p>
+            <router-link
+              :to="{ name: 'Features' }"
+              class="button"
+            >
+              Learn more &rarr;
+            </router-link>
           </div>
           <div class="mockup">
             <img src="https://fillmurray.com/350/600" alt="">
@@ -109,6 +121,12 @@
               Buy simpler and sell quicker with the option of using Cozilo tokens.
               Tokens never disappear and receive 500 when you sign up.
             </p>
+            <router-link
+              :to="{ name: 'Features' }"
+              class="button"
+            >
+              Learn more &rarr;
+            </router-link>
           </div>
         </div>
       </section>
@@ -123,6 +141,12 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam odio obcaecati perspiciatis numquam!
             </p>
+            <router-link
+              :to="{ name: 'Features' }"
+              class="button"
+            >
+              Learn more &rarr;
+            </router-link>
           </div>
           <div class="mockup">
             <img src="https://fillmurray.com/350/600" alt="">
@@ -171,6 +195,14 @@
               </div>
             </dic>
           </div>
+          <div class="button-container">
+            <router-link
+              :to="{ name: 'Features' }"
+              class="button bg-lightblue"
+            >
+              Learn More About The App Features &rarr;
+            </router-link>
+          </div>
         </div>
       </section>
       <section class="newsletter bg-orange">
@@ -190,12 +222,17 @@ import NewsletterForm from '../components/NewsletterForm';
 export default {
   name: 'Home',
   data() {
-    return {};
+    return {
+      sections: [],
+    };
   },
   components: {
     'base-page': Base,
     'newsletter-form': NewsletterForm,
   },
+  // mounted() {
+  //   this.sections = document.querySelectorAll('section');
+  // },
 };
 </script>
 
@@ -241,7 +278,7 @@ $mockup_width: 250px;
         margin: 0 20px 0 0;
       }
       &:nth-child(4) {
-        background: $lightblue;
+        background: #aeaeae;
         margin: 0;
       }
       img {
@@ -251,7 +288,6 @@ $mockup_width: 250px;
       }
       p {
         margin: 15px 0 0;
-        @include title-font;
         color: $white;
       }
     }
@@ -274,10 +310,12 @@ $mockup_width: 250px;
     text-decoration: none;
     padding: 20px 0;
     @include title-font;
+    font-weight: normal;
     font-size: 15px;
     span {
       display: block;
       text-align: center;
+      font-weight: bold;
     }
   }
   @media only screen and (min-width: 768px) {
@@ -295,7 +333,7 @@ $mockup_width: 250px;
       }
     }
   }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1215px) {
     padding: 80px 0 200px;
     > .container {
       max-width: 90%;
@@ -318,11 +356,32 @@ $mockup_width: 250px;
     }
   }
 }
+// .pagination {
+//   position: fixed;
+//   left: 10px;
+//   z-index: 20;
+//   i {
+//     display: block;
+//     margin-bottom: 10px;
+//     border: 1px solid $white;
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 10px;
+//     background: transparent;
+//     &.active {
+//       background: $white;
+//     }
+//   }
+// }
 .value-section {
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .button {
+    height: 44px;
+    margin-bottom: 30px;
   }
   @media only screen and (min-width: 768px) {
     .container {
@@ -346,14 +405,24 @@ $mockup_width: 250px;
       width: 90%;
       margin: 0 auto;
     }
-    &.text-left {
-      padding: 30px 0 ($mockup_height / 2);
-    }
+    &.text-left,
     &.text-right {
-      padding: ($mockup_height / 2) 0 30px;
+      padding: 30px 0;
+    }
+    &.text-left {
+      > .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      h2,
+      p {
+        text-align: right;
+      }
     }
   }
   .mockup {
+    display: none;
     width: $mockup_width;
     height: $mockup_height;
     position: absolute;
@@ -368,23 +437,17 @@ $mockup_width: 250px;
     .text {
       width: 50%;
       p {
-        max-width: 280px;
+        max-width: 310px;
       }
       &.text-left {
         padding: 100px ($mockup_width / 2) 100px 0;
-        > .wrapper {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-        }
-        h2,
-        p {
-          text-align: right;
-        }
       }
       &.text-right {
         padding: 100px 0 100px ($mockup_width / 2);
       }
+    }
+    .mockup {
+      display: block;
     }
   }
   @media only screen and (min-width: 1200px) {
@@ -482,6 +545,11 @@ $mockup_width: 250px;
   .mockup {
     display: none;
   }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
   @media only screen and (min-width: 1000px) {
     .value-props {
       margin-top: 80px;
@@ -514,6 +582,7 @@ $mockup_width: 250px;
   padding: 80px 0;
   p {
     text-align: center;
+    margin: 0 0 30px;
   }
 }
 </style>

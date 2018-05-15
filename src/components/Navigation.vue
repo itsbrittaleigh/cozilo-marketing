@@ -13,10 +13,16 @@
     <ul :class="{'base-menu': true, 'open': menuIsOpen}">
       <span>
         <li>
-          <router-link :to="{ name: 'About' }">Features</router-link>
+          <router-link :to="{ name: 'About' }">About</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'Contact' }">Stay Connected</router-link>
+          <router-link :to="{ name: 'Features' }">Features</router-link>
+        </li>
+        <li>
+          <router-link :to="{ name: 'FAQ' }">FAQ</router-link>
+        </li>
+        <li>
+          <router-link :to="{ name: 'Contact' }">Contact</router-link>
         </li>
       </span>
       <span class="soon">
@@ -60,17 +66,18 @@ export default {
 @import '../assets/styles/variables';
 // hamburger button
 button {
-  width: 24px;
-  height: 18px;
+  background: $orange;
+  border-radius: 3px;
+  width: 40px;
+  height: 30px;
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -9px;
+  margin-top: -15px;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   z-index: 101;
   border: none;
-  background: none;
   padding: 0;
   @media only screen and (min-width: 1000px) {
     display: none;
@@ -80,59 +87,63 @@ button {
     display: block;
     position: absolute;
     height: 2px;
-    width: 100%;
-    background-color: $green;
+    width: 20px;
+    background-color: $white;
     border-radius: 2px;
     opacity: 1;
-    left: 0;
+    left: 10px;
     transform: rotate(0deg);
     transition: 0.25s ease-in-out;
     &:nth-child(1) {
-      top: 0;
+      top: 8px;
     }
     &:nth-child(2),
     &:nth-child(3) {
-      top: 7px;
+      top: 14px;
     }
     &:nth-child(4) {
-      top: 14px;
+      top: 20px;
     }
   }
 }
 ul {
-  width: 100vw;
-  height: 100vh;
-  padding: 120px 5% 0;
-  text-align: right;
-  position: fixed;
+  height: 0;
+  text-align: center;
+  position: absolute;
   z-index: 100;
-  top: 0;
-  left: 100vw;
+  overflow: hidden;
+  top: 100%;
+  left: -6%;
+  right: -6%;
   margin: 0;
   list-style-type: none;
-  background: rgba($darkblue, 0.95);
-  transition: left 0.4s;
+  transition: height 0.4s;
+  background: white;
   li {
     a {
       padding: 10px 0;
       display: block;
-      color: $white;
+      color: $lightblue;
       text-decoration: none;
-      @include title-font;
+      text-transform: uppercase;
     }
   }
   &.open {
-    left: 0;
+    margin-top: 15px;
+    border-top: 1px solid #e2e2e2;
+    padding: 15px 0;
+    height: 283px; // dear god don't make me math this again
   }
 }
 .soon {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-top: 100px;
+  justify-content: center;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 15px;
   p {
-    @include title-font;
-    color: $white;
+    color: #a7a9ac;
+    text-transform: uppercase;
   }
   img {
     margin-left: 15px;
@@ -162,13 +173,15 @@ ul {
       margin-left: 50px;
       a {
         color: $lightblue;
+        font-size: 16px;
       }
     }
   }
   .soon {
-    margin-top: 0;
+    margin: 0;
+    border: none;
     p {
-      color: $green;
+      font-size: 13px;
     }
   }
 }

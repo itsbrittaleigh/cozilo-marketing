@@ -71,8 +71,8 @@ export default {
       }
     }
     button {
-      @include title-font;
-      font-size: 12px;
+      font-size: 16px;
+      justify-content: center;
     }
   }
   @media only screen and (min-width: 768px) {
