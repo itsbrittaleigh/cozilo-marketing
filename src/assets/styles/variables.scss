@@ -104,3 +104,68 @@ $font: 'Avenir', 'Verdana', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/**
+ * [04] Animations
+ */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scale-up {
+  0% { transform: scale(0.7); }
+  100% { transform: scale(1); }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up-from-left {
+  0% {
+    transform: translate(-50px, 50px) scale(0.7);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes up-from-right {
+  0% {
+    transform: translate(50px, 50px) scale(0.7);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@mixin fade-in-up($duration: 0.8s) {
+  animation: fade-in $duration,
+    up $duration;
+}
+
+@mixin fade-in-up-offset-1($delay: 1.2s, $duration: 0.8s) {
+  animation: fade-in $duration,
+    up $delay;
+}
+
+@mixin fade-in-up-offset-2($delay: 1.6s, $duration: 0.8s) {
+  animation: fade-in $duration,
+    up $delay;
+}
+
+@mixin fade-in-up-from-left($duration: 1s) {
+  animation: fade-in $duration,
+    up-from-left $duration;
+}
+
+@mixin fade-in-up-from-right($duration: 1s) {
+  animation: fade-in $duration,
+    up-from-right $duration;
+}

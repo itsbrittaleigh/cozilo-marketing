@@ -59,3 +59,10 @@ body {
     padding: 100px 0;
   }
 }
+
+.hidden {
+  opacity: 0;
+}
+.fade-in {
+  animation: fade-in 0.8s, scale-up 0.8s;
+}

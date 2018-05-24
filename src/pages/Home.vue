@@ -8,20 +8,20 @@
         ></i>
       </div> -->
       <section class="hero with-bg-image">
-        <img src="../assets/images/covers/home.jpg" alt="" class="background-image">
+        <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">
-          <h1>The Cozilo way to</h1>
+          <h1 class="hidden">The Cozilo way to</h1>
           <div class="value-props">
-            <div class="prop">
+            <div class="prop hidden">
               <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
               <p>Buy</p>
             </div>
-            <div class="prop">
+            <div class="prop hidden">
               <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
               <p>Sell</p>
             </div>
-            <div class="prop">
+            <div class="prop hidden">
               <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
               <p>Trade</p>
             </div>
@@ -35,23 +35,23 @@
       <section id="marketplace" class="value-section padded-section bg-lightblue">
         <div class="container">
           <div class="text color-white">
-            <div class="section-header-icon bg-darkblue">
+            <div class="section-header-icon bg-darkblue hidden">
               <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
             </div>
-            <h2>The business only, mobile marketplace</h2>
-            <p>
+            <h2 class="hidden">The business only, mobile marketplace</h2>
+            <p class="hidden">
               Interact specifically with <strong>business owners</strong> without the clutter of
               consumer goods. Only approved business become part of the Cozilo ecoystem.
             </p>
             <router-link
               :to="{ name: 'Features' }"
-              class="button"
+              class="button hidden"
             >
               Learn more
               <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
           </div>
-          <div class="mockup with-screen-scroll">
+          <div class="mockup with-screen-scroll hidden">
             <img src="../assets/images/iphone.png" alt="" class="phone-shell">
             <img src="../assets/images/mockups/cozilo_signin.jpg" alt="" class="screen">
           </div>
@@ -60,27 +60,27 @@
       <section class="from-to">
         <div class="text text-left bg-wood">
           <div class="wrapper">
-            <div class="section-header-icon bg-orange">
+            <div class="section-header-icon bg-orange hidden">
               <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
             </div>
-            <h2 class="color-orange">From<br>the<br>office<br>cubicle</h2>
-            <p class="color-gray">
+            <h2 class="color-orange hidden">From<br>the<br>office<br>cubicle</h2>
+            <p class="color-gray hidden">
               <strong>Buy</strong> office furniture your business needs to grow.
               <strong>Sell</strong> supplies to save space.
             </p>
           </div>
         </div>
-        <div class="mockup with-screen-scroll small">
+        <div class="mockup with-screen-scroll small hidden">
           <img src="../assets/images/iphone.png" alt="" class="phone-shell">
           <img src="../assets/images/mockups/cozilo_mainpage.jpg" alt="" class="screen long">
         </div>
         <div class="text text-right bg-cement">
           <div class="wrapper">
-            <div class="section-header-icon bg-offwhite">
+            <div class="section-header-icon bg-offwhite hidden">
               <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
             </div>
-            <h2 class="color-white">To<br>the<br>factory<br>floor<br></h2>
-            <p class="color-white">
+            <h2 class="color-white hidden">To<br>the<br>factory<br>floor<br></h2>
+            <p class="color-white hidden">
               <strong>Trade</strong> machinery or equipment for nearly any industry.
               <strong>Hire</strong> extra help to meet a deadline.
             </p>
@@ -88,23 +88,23 @@
         </div>
       </section>
       <section class="items">
-        <div class="item">
+        <div class="item hidden">
           <img src="https://fillmurray.com/200/200" alt="">
           <span class="price">$100</span>
         </div>
-        <div class="item">
+        <div class="item hidden">
           <img src="https://fillmurray.com/200/200" alt="">
           <span class="price">$2400</span>
         </div>
-        <div class="item">
+        <div class="item hidden">
           <img src="https://fillmurray.com/200/200" alt="">
           <span class="price">$1500</span>
         </div>
-        <div class="item">
+        <div class="item hidden">
           <img src="https://fillmurray.com/200/200" alt="">
           <span class="price">$900</span>
         </div>
-        <div class="item">
+        <div class="item hidden">
           <img src="https://fillmurray.com/200/200" alt="">
           <span class="price">$50</span>
         </div>
@@ -112,23 +112,23 @@
       <section class="value-section padded-section bg-orange reverse-desktop">
         <div class="container">
           <div class="text color-white">
-            <div class="section-header-icon bg-offwhite">
+            <div class="section-header-icon bg-offwhite hidden">
               <img src="https://fillmurray.com/50/50" alt="">
             </div>
-            <h2>Trade using Cozilo tokens</h2>
-            <p>
+            <h2 class="hidden">Trade using Cozilo tokens</h2>
+            <p class="hidden">
               Buy simpler and sell quicker with the option of using Cozilo tokens.
               Tokens never disappear and receive 500 when you sign up.
             </p>
             <router-link
               :to="{ name: 'Features' }"
-              class="button"
+              class="button hidden"
             >
               Learn more
               <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
           </div>
-          <div class="mockup with-screen-scroll">
+          <div class="mockup with-screen-scroll hidden">
             <img src="../assets/images/iphone.png" alt="" class="phone-shell">
             <img src="../assets/images/mockups/cozilo_marketscroll.jpg" alt="" class="screen">
           </div>
@@ -137,23 +137,23 @@
       <section class="value-section padded-section bg-lightblue">
         <div class="container">
           <div class="text color-white">
-            <div class="section-header-icon bg-offwhite">
+            <div class="section-header-icon bg-offwhite hidden">
               <img src="https://fillmurray.com/50/50" alt="">
             </div>
-            <h2>Secure and reliable</h2>
-            <p>
+            <h2 class="hidden">Secure and reliable</h2>
+            <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laboriosam odio obcaecati perspiciatis numquam!
             </p>
             <router-link
               :to="{ name: 'Features' }"
-              class="button"
+              class="button hidden"
             >
               Learn more
               <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
           </div>
-          <div class="mockup with-screen-scroll">
+          <div class="mockup with-screen-scroll hidden">
             <img src="../assets/images/iphone.png" alt="" class="phone-shell">
             <img src="../assets/images/mockups/cozilo_itemoverview1.jpg" alt="" class="screen long">
           </div>
@@ -161,24 +161,24 @@
       </section>
       <section class="app-markup padded-section bg-white">
         <div class="container">
-          <h2 class="color-lightgray">The Cozilo way to buy, sell, hire, and trade.</h2>
+          <h2 class="color-lightgray hidden">The Cozilo way to buy, sell, hire, and trade.</h2>
           <div class="value-props">
             <div class="col-lt">
               <div class="prop">
-                <p class="large color-darkblue">A business-only platform</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large color-darkblue hidden">A business-only platform</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="prop color-lightblue">
-                <p class="large">Find used and new</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large hidden">Find used and new</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="prop color-orange">
-                <p class="large">Simple interface and payment structure</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large hidden">Simple interface and payment structure</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="prop color-green">
-                <p class="large">Advertise while you're here</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large hidden">Advertise while you're here</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
             <div class="mockup with-screen-scroll">
@@ -186,28 +186,28 @@
               <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
             </div>
             <div class="col-rt">
-              <div class="prop">
-                <p class="large color-lightblue">Chat with sellers</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <div class="prop color-lightblue">
+                <p class="large hidden">Chat with sellers</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="prop color-orange">
-                <p class="large">Take the hassle out of shipping</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large hidden">Take the hassle out of shipping</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="prop color-green">
-                <p class="large">Safe transcations with user ratings and an escrow</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large hidden">Safe transcations with user ratings and an escrow</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="prop">
-                <p class="large color-darkblue">Choose your method of payment</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="large color-darkblue hidden">Choose your method of payment</p>
+                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
           <div class="button-container">
             <router-link
               :to="{ name: 'Features' }"
-              class="button bg-lightblue"
+              class="button bg-lightblue hidden"
             >
               Learn More About The App Features
               <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
@@ -229,6 +229,7 @@
 import Base from '../templates/Base';
 import NewsletterForm from '../components/NewsletterForm';
 import ScreenScroll from '../mixins/ScreenScroll';
+import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'Home',
@@ -243,6 +244,7 @@ export default {
   },
   mixins: [
     ScreenScroll,
+    TagAsVisible,
   ],
   // mounted() {
   //   this.sections = document.querySelectorAll('section');
@@ -276,20 +278,26 @@ $mockup_width: 250px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      &:last-of-type {
-        margin: 0;
-      }
       &:nth-child(1) {
         background: $lightblue;
         margin: 0 20px 20px 0;
+        &.fade-in {
+          @include fade-in-up;
+        }
       }
       &:nth-child(2) {
         background: $green;
         margin: 0 0 20px 0;
+        &.fade-in {
+          @include fade-in-up-offset-1;
+        }
       }
       &:nth-child(3) {
         background: $orange;
         margin: 0;
+        &.fade-in {
+          @include fade-in-up-offset-2;
+        }
       }
       img {
         width: 70px;
@@ -392,6 +400,12 @@ $mockup_width: 250px;
     height: 44px;
     margin-bottom: 30px;
   }
+  .fade-in {
+    @include fade-in-up-from-left;
+  }
+  .mockup.fade-in {
+    animation: fade-in 0.4s;
+  }
   @media only screen and (min-width: 768px) {
     .container {
       flex-direction: row;
@@ -406,10 +420,14 @@ $mockup_width: 250px;
   }
   &.reverse-desktop {
     .text {
-      order: 0;
+      order: 1;
+      margin: 0 0 0 100px;
+      .fade-in {
+        @include fade-in-up-from-right;
+      }
     }
     .mockup {
-      order: 1;
+      order: 0;
     }
   }
 }
@@ -435,6 +453,14 @@ $mockup_width: 250px;
       h2,
       p {
         text-align: right;
+      }
+      .fade-in {
+        @include fade-in-up-from-left;
+      }
+    }
+    &.text-right {
+      .fade-in {
+        @include fade-in-up-from-right;
       }
     }
   }
@@ -511,6 +537,9 @@ $mockup_width: 250px;
       border-bottom-right-radius: 200px;
       padding: 10px 25px 10px 20px;
     }
+    &.fade-in {
+      @include fade-in-up;
+    }
   }
   @media only screen and (min-width: 768px) {
     padding: 30px;
@@ -546,6 +575,14 @@ $mockup_width: 250px;
     justify-content: space-between;
     .col-lt {
       margin-right: 20px;
+      .fade-in {
+        @include fade-in-up-from-left;
+      }
+    }
+    .col-rt {
+      .fade-in {
+        @include fade-in-up-from-right;
+      }
     }
     .prop {
       margin-bottom: 20px;
