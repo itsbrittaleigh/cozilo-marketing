@@ -390,47 +390,6 @@ $mockup_width: 250px;
 //     }
 //   }
 // }
-.value-section {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .button {
-    height: 44px;
-    margin-bottom: 30px;
-  }
-  .fade-in {
-    @include fade-in-up-from-left;
-  }
-  .mockup.fade-in {
-    animation: fade-in 0.4s;
-  }
-  @media only screen and (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      justify-content: center;
-      .text {
-        flex: 1;
-      }
-      div:first-of-type {
-        margin-right: 100px;
-      }
-    }
-  }
-  &.reverse-desktop {
-    .text {
-      order: 1;
-      margin: 0 0 0 100px;
-      .fade-in {
-        @include fade-in-up-from-right;
-      }
-    }
-    .mockup {
-      order: 0;
-    }
-  }
-}
 .from-to {
   display: flex;
   flex-direction: column;
