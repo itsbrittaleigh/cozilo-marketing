@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueScrollTo from 'vue-scrollto';
+import VueCollapse from 'vue2-collapse';
 
 import App from './App';
 import router from './router';
@@ -8,6 +9,7 @@ import store from './store';
 Vue.config.productionTip = false;
 
 Vue.use(VueScrollTo);
+Vue.use(VueCollapse);
 
 router.beforeEach((to, from, next) => {
   // store.commit('closeMenu');

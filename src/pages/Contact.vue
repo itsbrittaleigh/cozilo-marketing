@@ -24,6 +24,7 @@
 import Base from '../templates/Base';
 import Hero from '../components/Hero';
 import ContactForm from '../components/ContactForm';
+import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'Contact',
@@ -35,5 +36,8 @@ export default {
     'hero-section': Hero,
     'contact-form': ContactForm,
   },
+  mixins: [
+    TagAsVisible,
+  ],
 };
 </script>
