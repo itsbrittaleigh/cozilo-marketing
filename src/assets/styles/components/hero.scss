@@ -17,6 +17,7 @@
     margin: 0 0 40px;
     text-transform: none;
     width: 50%;
+    @include fade-in-up-from-right;
   }
   &.about {
     background-image: url('~/static/covers/about.jpg');

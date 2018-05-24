@@ -16,6 +16,9 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   height: 100%;
+  &.content-container {
+    max-width: 860px;
+  }
 }
 
 .page {

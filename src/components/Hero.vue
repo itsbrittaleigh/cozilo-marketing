@@ -9,7 +9,14 @@
 <script>
 export default {
   name: 'Hero',
-  props: ['title', 'name'],
+  props: {
+    title: {
+      default: '',
+    },
+    name: {
+      default: 'about',
+    },
+  },
   data() {
     return {};
   },
