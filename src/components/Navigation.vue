@@ -126,6 +126,13 @@ ul {
       color: $lightblue;
       text-decoration: none;
       text-transform: uppercase;
+      transition: 0.4s;
+      &.router-link-active {
+        color: $green;
+      }
+      &:hover {
+        color: $orange;
+      }
     }
   }
   &.open {

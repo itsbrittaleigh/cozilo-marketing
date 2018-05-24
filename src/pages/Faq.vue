@@ -13,7 +13,7 @@
             labore exercitationem magnam nihil asperiores sint laborum ipsa quaerat
             necessitatibus ea.
           </p>
-          <div class="accordion">
+          <div class="accordion hidden">
             <v-collapse-wrapper>
               <div class="header" v-collapse-toggle>
                 <h2 class="color-lightblue">How can I sign up for Cozilo?</h2>

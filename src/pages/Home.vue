@@ -7,7 +7,7 @@
           :key="index"
         ></i>
       </div> -->
-      <section class="hero with-bg-image">
+      <section class="hero home with-bg-image">
         <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">

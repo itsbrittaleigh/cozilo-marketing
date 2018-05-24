@@ -28,6 +28,13 @@ a {
   }
 }
 
+a:not(.button) {
+  transition: 0.4s;
+  &:hover {
+    color: $orange;
+  }
+}
+
 h1 {
   font-size: 48px;
   text-transform: uppercase;
