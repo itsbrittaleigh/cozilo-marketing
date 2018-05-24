@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container">
-      <img src="https://fillmurray.com/300/100" alt="Cozilo logo" class="logo">
+      <img src="../assets/images/logos/cozilo-white.svg" alt="Cozilo logo" class="logo">
       <div class="flex">
         <div class="col-lt">
           <nav>
@@ -49,9 +49,8 @@ footer {
   padding: 50px 0;
   background: $darkblue;
   .logo {
-    height: 75px;
-    width: auto;
-    object-fit: contain;
+    width: 200px;
+    height: auto;
   }
   .flex {
     display: flex;

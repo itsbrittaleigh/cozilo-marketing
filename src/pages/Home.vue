@@ -8,79 +8,81 @@
         ></i>
       </div> -->
       <section class="hero with-bg-image">
-        <img src="https://fillmurray.com/800/400" alt="" class="background-image">
+        <img src="../assets/images/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">
           <h1>The Cozilo way to</h1>
           <div class="value-props">
             <div class="prop">
-              <img src="https://fillmurray.com/100/100" alt="">
+              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
               <p>Buy</p>
             </div>
             <div class="prop">
-              <img src="https://fillmurray.com/100/100" alt="">
+              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
               <p>Sell</p>
             </div>
             <div class="prop">
-              <img src="https://fillmurray.com/100/100" alt="">
+              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
               <p>Trade</p>
-            </div>
-            <div class="prop">
-              <img src="https://fillmurray.com/100/100" alt="">
-              <p>Hire</p>
             </div>
           </div>
         </div>
         <a href="#" class="more" v-scroll-to="'#marketplace'">
           Learn more
-          <span>&darr;</span>
+          <img src="../assets/images/icons/arrow-blue-down.svg" alt="">
         </a>
       </section>
       <section id="marketplace" class="value-section padded-section bg-lightblue">
         <div class="container">
           <div class="text color-white">
             <div class="section-header-icon bg-darkblue">
-              <img src="https://fillmurray.com/50/50" alt="">
+              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
             </div>
             <h2>The business only, mobile marketplace</h2>
             <p>
-              Interact specifically with business owners without the clutter of consumer goods.
-              Only approved business become part of the Cozilo ecoystem.
+              Interact specifically with <strong>business owners</strong> without the clutter of
+              consumer goods. Only approved business become part of the Cozilo ecoystem.
             </p>
             <router-link
               :to="{ name: 'Features' }"
               class="button"
             >
-              Learn more &rarr;
+              Learn more
+              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
           </div>
-          <div class="mockup">
-            <img src="https://fillmurray.com/350/600" alt="">
+          <div class="mockup with-screen-scroll">
+            <img src="../assets/images/iphone.png" alt="" class="phone-shell">
+            <img src="../assets/images/mockups/cozilo_signin.jpg" alt="" class="screen">
           </div>
         </div>
       </section>
       <section class="from-to">
-        <div class="text text-left bg-white">
+        <div class="text text-left bg-wood">
           <div class="wrapper">
             <div class="section-header-icon bg-orange">
-              <img src="https://fillmurray.com/100/100" alt="">
+              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
             </div>
             <h2 class="color-orange">From<br>the<br>office<br>cubicle</h2>
             <p class="color-gray">
-              Buy office furniture your business needs to grow. Sell supplies to save space.
+              <strong>Buy</strong> office furniture your business needs to grow.
+              <strong>Sell</strong> supplies to save space.
             </p>
           </div>
         </div>
-        <img src="https://fillmurray.com/350/600" alt="" class="mockup">
-        <div class="text text-right bg-orange">
+        <div class="mockup with-screen-scroll small">
+          <img src="../assets/images/iphone.png" alt="" class="phone-shell">
+          <img src="../assets/images/mockups/cozilo_mainpage.jpg" alt="" class="screen long">
+        </div>
+        <div class="text text-right bg-cement">
           <div class="wrapper">
-            <div class="section-header-icon bg-white">
-              <img src="https://fillmurray.com/100/100" alt="">
+            <div class="section-header-icon bg-offwhite">
+              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
             </div>
             <h2 class="color-white">To<br>the<br>factory<br>floor<br></h2>
             <p class="color-white">
-              Trade machinery or equipment for nearly any industry.
-              Hire extra help to meet a deadline.
+              <strong>Trade</strong> machinery or equipment for nearly any industry.
+              <strong>Hire</strong> extra help to meet a deadline.
             </p>
           </div>
         </div>
@@ -107,13 +109,10 @@
           <span class="price">$50</span>
         </div>
       </section>
-      <section class="value-section padded-section bg-orange">
+      <section class="value-section padded-section bg-orange reverse-desktop">
         <div class="container">
-          <div class="mockup">
-            <img src="https://fillmurray.com/350/600" alt="">
-          </div>
           <div class="text color-white">
-            <div class="section-header-icon bg-white">
+            <div class="section-header-icon bg-offwhite">
               <img src="https://fillmurray.com/50/50" alt="">
             </div>
             <h2>Trade using Cozilo tokens</h2>
@@ -125,15 +124,20 @@
               :to="{ name: 'Features' }"
               class="button"
             >
-              Learn more &rarr;
+              Learn more
+              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
+          </div>
+          <div class="mockup with-screen-scroll">
+            <img src="../assets/images/iphone.png" alt="" class="phone-shell">
+            <img src="../assets/images/mockups/cozilo_marketscroll.jpg" alt="" class="screen">
           </div>
         </div>
       </section>
       <section class="value-section padded-section bg-lightblue">
         <div class="container">
           <div class="text color-white">
-            <div class="section-header-icon bg-white">
+            <div class="section-header-icon bg-offwhite">
               <img src="https://fillmurray.com/50/50" alt="">
             </div>
             <h2>Secure and reliable</h2>
@@ -145,15 +149,17 @@
               :to="{ name: 'Features' }"
               class="button"
             >
-              Learn more &rarr;
+              Learn more
+              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
           </div>
-          <div class="mockup">
-            <img src="https://fillmurray.com/350/600" alt="">
+          <div class="mockup with-screen-scroll">
+            <img src="../assets/images/iphone.png" alt="" class="phone-shell">
+            <img src="../assets/images/mockups/cozilo_itemoverview1.jpg" alt="" class="screen long">
           </div>
         </div>
       </section>
-      <section class="app-markup padded-section">
+      <section class="app-markup padded-section bg-white">
         <div class="container">
           <h2 class="color-lightgray">The Cozilo way to buy, sell, hire, and trade.</h2>
           <div class="value-props">
@@ -175,8 +181,11 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
-            <img src="https://fillmurray.com/400/600" alt="" class="mockup">
-            <dic class="col-rt">
+            <div class="mockup with-screen-scroll">
+              <img src="../assets/images/iphone.png" alt="" class="phone-shell">
+              <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
+            </div>
+            <div class="col-rt">
               <div class="prop">
                 <p class="large color-lightblue">Chat with sellers</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -193,14 +202,15 @@
                 <p class="large color-darkblue">Choose your method of payment</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
               </div>
-            </dic>
+            </div>
           </div>
           <div class="button-container">
             <router-link
               :to="{ name: 'Features' }"
               class="button bg-lightblue"
             >
-              Learn More About The App Features &rarr;
+              Learn More About The App Features
+              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
             </router-link>
           </div>
         </div>
@@ -218,6 +228,7 @@
 <script>
 import Base from '../templates/Base';
 import NewsletterForm from '../components/NewsletterForm';
+import ScreenScroll from '../mixins/ScreenScroll';
 
 export default {
   name: 'Home',
@@ -230,6 +241,9 @@ export default {
     'base-page': Base,
     'newsletter-form': NewsletterForm,
   },
+  mixins: [
+    ScreenScroll,
+  ],
   // mounted() {
   //   this.sections = document.querySelectorAll('section');
   // },
@@ -275,10 +289,6 @@ $mockup_width: 250px;
       }
       &:nth-child(3) {
         background: $orange;
-        margin: 0 20px 0 0;
-      }
-      &:nth-child(4) {
-        background: #aeaeae;
         margin: 0;
       }
       img {
@@ -310,12 +320,11 @@ $mockup_width: 250px;
     text-decoration: none;
     padding: 20px 0;
     @include title-font;
-    font-weight: normal;
     font-size: 15px;
-    span {
+    img {
       display: block;
-      text-align: center;
-      font-weight: bold;
+      margin: 10px auto 0;
+      width: 10px;
     }
   }
   @media only screen and (min-width: 768px) {
@@ -395,6 +404,14 @@ $mockup_width: 250px;
       }
     }
   }
+  &.reverse-desktop {
+    .text {
+      order: 0;
+    }
+    .mockup {
+      order: 1;
+    }
+  }
 }
 .from-to {
   display: flex;
@@ -423,14 +440,10 @@ $mockup_width: 250px;
   }
   .mockup {
     display: none;
-    width: $mockup_width;
-    height: $mockup_height;
     position: absolute;
     top: 50%;
     margin-top: -($mockup_height / 2);
     left: 50%;
-    margin-left: -($mockup_width / 2);
-    object-fit: contain;
   }
   @media only screen and (min-width: 1000px) {
     flex-direction: row;
@@ -454,14 +467,10 @@ $mockup_width: 250px;
     $mockup_width: 300px;
     $mockup_height: 600px;
     .mockup {
-      width: $mockup_width;
-      height: $mockup_height;
-      position: absolute;
       top: 50%;
       margin-top: -($mockup_height / 2);
       left: 50%;
       margin-left: -($mockup_width / 2);
-      object-fit: contain;
     }
     .text {
       &.text-left {
@@ -572,8 +581,8 @@ $mockup_width: 250px;
     }
     .mockup {
       display: block;
-      width: 400px;
-      object-fit: contain;
+      // width: 400px;
+      // object-fit: contain;
       align-self: center;
     }
   }

@@ -5,8 +5,12 @@
   }
 }
 
-.bg-white {
+.bg-offwhite {
   background: $white;
+}
+
+.bg-white {
+  background: white;
 }
 
 .color-darkblue {
@@ -73,4 +77,14 @@
 
 .bg-lightgray {
   background: $lightgray;
+}
+
+.bg-wood {
+  background: url('~/static/covers/wood.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.bg-cement {
+  background: url('~/static/covers/cement.jpg') no-repeat center center;
+  background-size: cover;
 }

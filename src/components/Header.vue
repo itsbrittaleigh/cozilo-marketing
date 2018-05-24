@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <router-link :to="{ name: 'Home' }">
-        <img src="https://fillmurray.com/300/100" alt="Cozilo logo" class="logo">
+        <img src="../assets/images/logos/cozilo.svg" alt="Cozilo logo" class="logo">
       </router-link>
       <app-menu></app-menu>
     </div>
@@ -34,9 +34,8 @@ header {
     position: relative;
   }
   .logo {
-    height: 75px;
-    width: auto;
-    object-fit: contain;
+    width: 200px;
+    height: auto;
   }
   @media only screen and (min-width: 1000px) {
     padding: 40px 0;
