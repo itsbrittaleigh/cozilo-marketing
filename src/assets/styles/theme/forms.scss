@@ -24,11 +24,21 @@ button {
   padding: 0 30px;
   text-decoration: none;
   font-size: 16px;
+  transition: 0.4s;
   img.arrow {
     height: 10px;
     margin-left: 10px;
   }
   @media only screen and (min-width: 1000px) {
     font-size: 18px;
+  }
+  &:hover {
+    background: $green;
+  }
+  &.bg-lightblue:hover {
+    background: $green;
+  }
+  &.bg-darkblue:hover {
+    background: $green;
   }
 }
