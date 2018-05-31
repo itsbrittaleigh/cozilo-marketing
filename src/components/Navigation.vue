@@ -27,8 +27,8 @@
       </span>
       <span class="soon">
         <p>Coming soon to</p>
-        <img src="https://fillmurray.com/30/30" alt="Apple App Store logo">
-        <img src="https://fillmurray.com/30/30" alt="Google Play Store logo">
+        <img src="../assets/images/icons/apple.png" alt="Apple App Store logo">
+        <img src="../assets/images/icons/google-play.png" alt="Google Play Store logo">
       </span>
     </ul>
   </nav>
@@ -148,12 +148,15 @@ ul {
   justify-content: center;
   border-top: 1px solid #e2e2e2;
   margin-top: 15px;
+  padding-top: 15px;
   p {
     color: #a7a9ac;
     text-transform: uppercase;
+    margin: 0;
   }
   img {
     margin-left: 15px;
+    height: 20px;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -186,6 +189,7 @@ ul {
   }
   .soon {
     margin: 0;
+    padding: 0;
     border: none;
     p {
       font-size: 13px;

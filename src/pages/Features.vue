@@ -15,7 +15,7 @@
           </p>
           <div class="feature">
             <div class="section-header-icon bg-lightblue hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-shopping-cart fa-2x" style="color: white;"></i>
             </div>
             <div class="text">
               <h2 class="color-lightblue hidden">Buy headline</h2>
@@ -29,7 +29,7 @@
           </div>
           <div class="feature">
             <div class="section-header-icon bg-green hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-credit-card fa-2x" style="color: white;"></i>
             </div>
             <div class="text">
               <h2 class="color-green hidden">Sell headline</h2>
@@ -43,7 +43,7 @@
           </div>
           <div class="feature">
             <div class="section-header-icon bg-orange hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-exchange-alt fa-2x" style="color: white;"></i>
             </div>
             <div class="text">
               <h2 class="color-orange hidden">Trade headline</h2>
@@ -61,7 +61,7 @@
         <div class="container">
           <div class="text">
             <div class="section-header-icon bg-darkblue hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-building fa-2x" style="color: white;"></i>
             </div>
             <h2 class="color-darkblue">The business-only, mobile marketplace</h2>
             <p class="color-white">
@@ -85,7 +85,7 @@
         <div class="container">
           <div class="text">
             <div class="section-header-icon bg-darkblue hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-coins fa-2x" style="color: white;"></i>
             </div>
             <h2 class="color-white">Trade using Cozilo tokens</h2>
             <p class="color-white">
@@ -109,7 +109,7 @@
         <div class="container">
           <div class="text">
             <div class="section-header-icon bg-darkblue hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-lock fa-2x" style="color: white;"></i>
             </div>
             <h2 class="color-darkblue">Secure and reliable</h2>
             <p class="color-white">

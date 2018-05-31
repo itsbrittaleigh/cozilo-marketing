@@ -101,9 +101,12 @@ body {
   &.reverse-desktop {
     .text {
       order: 1;
-      margin: 0 0 0 100px;
+      margin: 50px 0 0 0;
       .fade-in {
         @include fade-in-up-from-right;
+      }
+      @media only screen and (min-width: $medium) {
+        margin: 0 0 0 100px;
       }
     }
     .mockup {

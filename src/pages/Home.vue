@@ -1,12 +1,6 @@
 <template>
   <base-page>
     <template slot="content">
-      <!-- <div class="pagination">
-        <i
-          v-for="(section, index) in sections"
-          :key="index"
-        ></i>
-      </div> -->
       <section class="hero home with-bg-image">
         <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
@@ -14,15 +8,15 @@
           <h1 class="hidden">The Cozilo way to</h1>
           <div class="value-props">
             <div class="prop hidden">
-              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
+              <i class="fas fa-shopping-cart fa-3x"></i>
               <p>Buy</p>
             </div>
             <div class="prop hidden">
-              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
+              <i class="fas fa-credit-card fa-3x"></i>
               <p>Sell</p>
             </div>
             <div class="prop hidden">
-              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
+              <i class="fas fa-exchange-alt fa-3x"></i>
               <p>Trade</p>
             </div>
           </div>
@@ -36,7 +30,7 @@
         <div class="container">
           <div class="text color-white">
             <div class="section-header-icon bg-darkblue hidden">
-              <!-- <img src="https://fillmurray.com/50/50" alt=""> -->
+              <i class="fas fa-building fa-2x"></i>
             </div>
             <h2 class="hidden">The business only, mobile marketplace</h2>
             <p class="hidden">
@@ -61,7 +55,7 @@
         <div class="text text-left bg-wood">
           <div class="wrapper">
             <div class="section-header-icon bg-orange hidden">
-              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
+              <i class="fas fa-briefcase fa-2x" style="color: white;"></i>
             </div>
             <h2 class="color-orange hidden">From<br>the<br>office<br>cubicle</h2>
             <p class="color-gray hidden">
@@ -77,7 +71,7 @@
         <div class="text text-right bg-cement">
           <div class="wrapper">
             <div class="section-header-icon bg-offwhite hidden">
-              <!-- <img src="https://fillmurray.com/100/100" alt=""> -->
+              <i class="fas fa-industry fa-2x" style="color: #ec632e"></i>
             </div>
             <h2 class="color-white hidden">To<br>the<br>factory<br>floor<br></h2>
             <p class="color-white hidden">
@@ -89,34 +83,34 @@
       </section>
       <section class="items">
         <div class="item hidden">
-          <img src="https://fillmurray.com/200/200" alt="">
+          <img src="../assets/images/item1.png" alt="">
           <span class="price">$100</span>
         </div>
         <div class="item hidden">
-          <img src="https://fillmurray.com/200/200" alt="">
+          <img src="../assets/images/item2.png" alt="">
           <span class="price">$2400</span>
         </div>
         <div class="item hidden">
-          <img src="https://fillmurray.com/200/200" alt="">
+          <img src="../assets/images/item3.png" alt="">
           <span class="price">$1500</span>
         </div>
         <div class="item hidden">
-          <img src="https://fillmurray.com/200/200" alt="">
+          <img src="../assets/images/item4.png" alt="">
           <span class="price">$900</span>
         </div>
         <div class="item hidden">
-          <img src="https://fillmurray.com/200/200" alt="">
+          <img src="../assets/images/item5.png" alt="">
           <span class="price">$50</span>
         </div>
       </section>
       <section class="value-section padded-section bg-orange reverse-desktop">
         <div class="container">
-          <div class="text color-white">
+          <div class="text">
             <div class="section-header-icon bg-offwhite hidden">
-              <img src="https://fillmurray.com/50/50" alt="">
+              <i class="fas fa-coins fa-2x" style="color: #ec632e"></i>
             </div>
-            <h2 class="hidden">Trade using Cozilo tokens</h2>
-            <p class="hidden">
+            <h2 class="hidden color-white">Trade using Cozilo tokens</h2>
+            <p class="hidden color-white">
               Buy simpler and sell quicker with the option of using Cozilo tokens.
               Tokens never disappear and receive 500 when you sign up.
             </p>
@@ -136,14 +130,15 @@
       </section>
       <section class="value-section padded-section bg-lightblue">
         <div class="container">
-          <div class="text color-white">
+          <div class="text">
             <div class="section-header-icon bg-offwhite hidden">
-              <img src="https://fillmurray.com/50/50" alt="">
+              <i class="fas fa-lock fa-2x" style="color: #62a9c5;"></i>
             </div>
-            <h2 class="hidden">Secure and reliable</h2>
-            <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam odio obcaecati perspiciatis numquam!
+            <h2 class="hidden color-white">Secure and reliable</h2>
+            <p class="hidden color-white">
+              In addition to our secure buying and selling platform, Cozilo is only available
+              to approved and verified businesses, so you never have to worry about the
+              safety of your transactions.
             </p>
             <router-link
               :to="{ name: 'Features' }"
@@ -161,24 +156,39 @@
       </section>
       <section class="app-markup padded-section bg-white">
         <div class="container">
-          <h2 class="color-lightgray hidden">The Cozilo way to buy, sell, hire, and trade.</h2>
+          <h2 class="color-lightgray hidden">
+            Cozilo: The truly mobile way to buy, sell, and trade
+          </h2>
           <div class="value-props">
             <div class="col-lt">
               <div class="prop">
                 <p class="large color-darkblue hidden">A business-only platform</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  Cozilo is a truly business-only marketplace&mdash;no consumer goods
+                  cluttering your feed, as well as wholesale &amp; volume pricing options.
+                </p>
               </div>
               <div class="prop color-lightblue">
                 <p class="large hidden">Find used and new</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  Depending on your company's budget and needs, you can find both new and
+                  used goods on Cozilo, unlike other selling apps and marketplaces.
+                </p>
               </div>
               <div class="prop color-orange">
                 <p class="large hidden">Simple interface and payment structure</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  With one simple push of a button, you can take high-quality photos of your
+                  goods and post them directly on the Cozilo B2B marketplace for thousands
+                  of other business owners to see.
+                </p>
               </div>
               <div class="prop color-green">
                 <p class="large hidden">Advertise while you're here</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  Connect directly and securely with other buyers, sellers, and traders on the
+                  Cozilo app to create your own personal B2B network and advertise your company.
+                </p>
               </div>
             </div>
             <div class="mockup with-screen-scroll">
@@ -188,19 +198,31 @@
             <div class="col-rt">
               <div class="prop color-lightblue">
                 <p class="large hidden">Chat with sellers</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  Connect and communicate with other business owners directly through the app before
+                  meeting in person to complete your transactions.
+                </p>
               </div>
               <div class="prop color-orange">
                 <p class="large hidden">Take the hassle out of shipping</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  Cozilo takes all the hassle out of shipping goods by offering fast and efficient
+                  freight shipping assistance.
+                </p>
               </div>
               <div class="prop color-green">
                 <p class="large hidden">Safe transcations with user ratings and an escrow</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  With our multi-step verification process for all Cozilo business users, you can
+                  be sure that every transaction is secure before ever even meeting.
+                </p>
               </div>
               <div class="prop">
                 <p class="large color-darkblue hidden">Choose your method of payment</p>
-                <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="hidden">
+                  The Cozilo app accepts all major credit cards, including VISA, Mastercard,
+                  American Express, and more.
+                </p>
               </div>
             </div>
           </div>
@@ -246,9 +268,6 @@ export default {
     ScreenScroll,
     TagAsVisible,
   ],
-  // mounted() {
-  //   this.sections = document.querySelectorAll('section');
-  // },
 };
 </script>
 
@@ -278,6 +297,10 @@ $mockup_width: 250px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      i,
+      svg {
+        color: white;
+      }
       &:nth-child(1) {
         background: $lightblue;
         margin: 0 20px 20px 0;
@@ -373,23 +396,6 @@ $mockup_width: 250px;
     }
   }
 }
-// .pagination {
-//   position: fixed;
-//   left: 10px;
-//   z-index: 20;
-//   i {
-//     display: block;
-//     margin-bottom: 10px;
-//     border: 1px solid $white;
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 10px;
-//     background: transparent;
-//     &.active {
-//       background: $white;
-//     }
-//   }
-// }
 .from-to {
   display: flex;
   flex-direction: column;
@@ -468,9 +474,9 @@ $mockup_width: 250px;
   }
 }
 .items {
+  padding: 30px 30px 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 30px 0;
   .item {
     margin-bottom: 30px;
     width: calc((100vw - 90px) / 2);
@@ -490,7 +496,7 @@ $mockup_width: 250px;
       position: absolute;
       bottom: 20px;
       left: 0;
-      background: $gray;
+      background: $darkblue;
       color: $white;
       border-top-right-radius: 200px;
       border-bottom-right-radius: 200px;

@@ -24,8 +24,8 @@
         <div class="col-rt">
           <p>Coming soon to</p>
           <div class="icons">
-            <img src="https://fillmurray.com/30/30" alt="Apple App Store logo">
-            <img src="https://fillmurray.com/30/30" alt="Google Play Store logo">
+            <img src="../assets/images/icons/apple-white.png" alt="Apple App Store logo">
+            <img src="../assets/images/icons/google-play-white.png" alt="Google Play Store logo">
           </div>
         </div>
       </div>
@@ -81,6 +81,7 @@ footer {
     }
     img {
       margin-right: 15px;
+      height: 20px;
     }
   }
   @media only screen and (min-width: 1000px) {

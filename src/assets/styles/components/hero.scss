@@ -12,11 +12,11 @@
   }
   h1 {
     color: $darkblue;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: normal;
     margin: 0 0 40px;
     text-transform: none;
-    width: 50%;
+    width: 60%;
     @include fade-in-up-from-right;
   }
   &.about {
@@ -36,6 +36,7 @@
     height: 400px;
     h1 {
       font-size: 90px;
+      width: 50%;
     }
   }
 }

@@ -14,7 +14,7 @@
             necessitatibus ea.
           </p>
           <div class="accordion hidden">
-            <v-collapse-wrapper>
+            <v-collapse-wrapper :active="true">
               <div class="header" v-collapse-toggle>
                 <h2 class="color-lightblue">How can I sign up for Cozilo?</h2>
               </div>
@@ -140,6 +140,7 @@ export default {
   }
   .header {
     padding: 10px 0;
+    cursor: pointer;
     h2 {
       font-weight: normal;
     }

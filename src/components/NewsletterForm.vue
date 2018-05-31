@@ -14,7 +14,7 @@
           placeholder="Email address"
         >
         <i>
-          <img src="https://fillmurray.com/40/20" alt="">
+          <img src="../assets/images/icons/email.svg" alt="">
         </i>
       </div>
       <button class="bg-darkblue color-white" type="submit">Submit</button>
@@ -51,7 +51,7 @@ export default {
     .input-container {
       position: relative;
       i {
-        $height: 30px;
+        $height: 20px;
         position: absolute;
         top: 50%;
         margin-top: -($height / 2);
@@ -66,7 +66,7 @@ export default {
       flex: 1;
       margin-bottom: 10px;
       .input {
-        padding-left: 100px;
+        padding-left: 80px;
         width: 100%;
       }
     }
