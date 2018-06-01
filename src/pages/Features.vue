@@ -8,10 +8,10 @@
       <section class="features">
         <div class="container content-container content padded-section">
           <p class="lead hidden">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            nostrum voluptate quidem deserunt maxime est assumenda, aliquam culpa
-            quis sunt corrupti adipisci quibusdam modi necessitatibus? Nisi dolores
-            cum fuga tenetur?
+            Cozilo is a truly business-only, mobile marketplace for business owners who want to
+            buy, sell, or trade new or used goods without having to sort through the clutter of
+            consumer goods like in other selling apps. As an added layer of security, only
+            approved businesses become part of the Cozilo ecosystem.
           </p>
           <div class="feature">
             <div class="section-header-icon bg-lightblue hidden">
@@ -20,10 +20,10 @@
             <div class="text">
               <h2 class="color-lightblue hidden">Buy headline</h2>
               <p class="hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos quis
-                provident quae minus obcaecati perspiciatis suscipit? Laborum, nam! Quibusdam
-                excepturi asperiores doloribus temporibus dicta sint doloremque eaque, enim
-                odio.
+                As your business grows, you’ll need goods and products to build your office,
+                help your employees do their jobs, and more. Cozilo provides a secured marketplace
+                for that to happen, with new &amp; gently-used goods, verified businesses and a user
+                rating system.
               </p>
             </div>
           </div>
@@ -34,10 +34,11 @@
             <div class="text">
               <h2 class="color-green hidden">Sell headline</h2>
               <p class="hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos quis
-                provident quae minus obcaecati perspiciatis suscipit? Laborum, nam! Quibusdam
-                excepturi asperiores doloribus temporibus dicta sint doloremque eaque, enim
-                odio.
+                Cozilo provides a secure marketplace to sell your business’ items, whether
+                moving offices, looking to sell excess goods, or need to liquidate assets.
+                Simply provide clear, high-quality photos with detailed descriptions of your
+                goods and you’re ready to sell. We also provide traceable shipping options to
+                ensure delivery of your merchandise.
               </p>
             </div>
           </div>
@@ -48,10 +49,9 @@
             <div class="text">
               <h2 class="color-orange hidden">Trade headline</h2>
               <p class="hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos quis
-                provident quae minus obcaecati perspiciatis suscipit? Laborum, nam! Quibusdam
-                excepturi asperiores doloribus temporibus dicta sint doloremque eaque, enim
-                odio.
+                Buy simpler and sell quicker with the option of using Cozilo tokens. These
+                tokens never disappear from your business’ account and receive 500 free tokens
+                when you initially sign up.
               </p>
             </div>
           </div>
@@ -132,11 +132,12 @@
       <section class="feature-overview content padded-section">
         <div class="container">
           <div class="col-lt">
-            <h2 class="color-lightblue hidden">Find used and new</h2>
+            <h2 class="color-lightblue hidden">Find new and used</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              Unlike other marketplaces that only feature brand new, expensive goods,
+              you can search through new or gently-used items in the Cozilo marketplace.
+              This is a much more cost-efficient way for your business to find the products
+              you need.
             </p>
             <h2 class="color-orange hidden">Simple interface and payment structure</h2>
             <p class="hidden">
@@ -152,25 +153,29 @@
             </p>
             <h2 class="color-darkblue hidden">Chat with sellers</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              Communicate easily with other local business owners directly within the Cozilo app.
+              Arrange in-person meetings, discuss your terms of sale or trade, or simply connect
+              to expand your business’ network. Every business on Cozilo is verified, so you’ll
+              know exactly who you’re speaking with, every time.
             </p>
           </div>
           <div class="col-rt">
             <h2 class="color-darkblue hidden">Take the hassle out of shipping</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              The Cozilo platform uses Shippo, a cloud-based shipping software, to provide
+              quick, reliable, and cost-effective shipping logistics for your transactions.
+              Simply submit an order, and we’ll print all necessary packing and shipping labels
+              for you.
             </p>
             <h2 class="color-lightblue hidden">
               Safe transactions with user ratings and escrow accounts
             </h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              By requiring account verification, we can ensure that only legitimate businesses
+              are a part of the Cozilo community. Additionally, a multi-faceted rating system
+              is in place for users to rate their interactions and transactions with others,
+              allowing them to know who they’re buying or selling with before even contacting
+              them.
             </p>
             <h2 class="color-orange hidden">Choose your method of payment</h2>
             <p class="hidden">

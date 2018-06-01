@@ -388,9 +388,9 @@ $mockup_width: 250px;
         &:nth-child(3) {
           margin: 0 30px 0 0;
         }
-        img {
-          height: 100px;
-          width: 100px;
+        i,
+        svg {
+          font-size: 5em;
         }
       }
     }

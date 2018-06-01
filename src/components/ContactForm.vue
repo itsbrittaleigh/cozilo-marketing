@@ -59,7 +59,7 @@ export default {
       const config = { headers: { 'Content-Type': 'application/json' } };
       axios
         .post(
-          // 'https://bh72s9uy88.execute-api.us-east-1.amazonaws.com/Production',
+          'https://cpkgq5ic4i.execute-api.us-east-1.amazonaws.com/prod',
           JSON.stringify(this.contact),
           config,
         )
