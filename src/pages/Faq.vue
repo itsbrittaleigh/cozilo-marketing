@@ -8,10 +8,10 @@
       <section class="faq">
         <div class="container content-container content padded-section">
           <p class="lead hidden">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Minus rerum non iure quae eum eius, eligendi ex beatae! Reiciendis,
-            labore exercitationem magnam nihil asperiores sint laborum ipsa quaerat
-            necessitatibus ea.
+            Below is a list of frequently asked questions that Cozilo users have about
+            signing up, payment options, and more. If you don't see an answer to your
+            question below, reach out to us using our
+            <router-link :to="{ name: 'Contact' }">contact form</router-link>.
           </p>
           <div class="accordion hidden">
             <v-collapse-wrapper :active="true">
@@ -20,10 +20,9 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  To sign up for Cozilo, simply download the app on iOS or Android
+                  and follow the prompts to create an account for your approved and
+                  verified business.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -33,10 +32,8 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  In addition to PayPal, all major credit cards are acceptable forms of
+                  payment on the Cozilo platform.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -72,10 +69,8 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  Yes, Cozilo handles all shipping through Shippo, a cost-efficient,
+                  cloud-based, e-commerce platform.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -98,10 +93,10 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  If you have any account questions, feel free to
+                  <router-link :to="{ name: 'Contact' }">
+                    contact our customer support team</router-link>.
+                  Fill out the form, give us a call, or email us today.
                 </p>
               </div>
             </v-collapse-wrapper>

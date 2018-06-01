@@ -8,10 +8,10 @@
       <section class="form-container padded-section bg-lightblue">
         <div class="container content-container content">
           <p class="lead color-white hidden">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur cupiditate animi quod quos velit, praesentium esse soluta,
-            recusandae fugiat quibusdam architecto neque veniam laudantium provident
-            consequuntur culpa aliquam nihil amet.
+            Our customer support team is available 24/7 to answer any inquiries you might
+            have about the Cozilo platform, a recent transaction, or any other questions you
+            might have. Fill out the form below or contact us through email, phone, or live
+            chat now.
           </p>
           <contact-form></contact-form>
         </div>

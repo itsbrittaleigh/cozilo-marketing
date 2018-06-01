@@ -8,43 +8,69 @@
       <section class="about padded-section">
         <div class="container content-container content">
           <p class="lead hidden">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit,
-            obcaecati incidunt pariatur eum minus. Minus ipsum itaque eligendi earum
-            enim dolor unde doloremque voluptatibus distinctio, repudiandae recusandae
-            ipsam nesciunt!
+            Cozilo is an app for business owners, created by one: a truly B2B, business-only
+            marketplace community that helps small-, medium-, and large-sized business
+            owners buy, sell, and trade goods at wholesale and volume pricing.
           </p>
           <div class="flex-desktop">
             <div class="col-lt">
               <h2 class="color-lightblue hidden">How we got started</h2>
               <p class="hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reiciendis,
-                blanditiis voluptatum quos nam quasi cum aspernatur ipsum autem corrupti quisquam
-                voluptatibus provident quis minus natus, praesentium inventore ex labore?
+                After majoring in electronic controls computer engineering and minoring in
+                finance in China, Lisa Yang, Cozilo's founder, immigrated to America to further
+                her studies in computer &amp; electrical engineering. Upon graduating, she
+                couldn't find a job that suited her skillset&mdash;so she started two of her
+                own businesses. The idea for Cozilo came to her after Lisa began looking for
+                business resources in her area and simply couldn't find what she needed: a
+                B2B marketplace that helped small business owners like herself build a network
+                and buy, sell, or trade goods.
               </p>
               <h2 class="color-orange hidden">What we're doing differently</h2>
               <p class="hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro provident
-                adipisci dolor fugit deserunt assumenda exercitationem quia alias non nesciunt qui
-                id, eaque sapiente ipsam hic similique odio ad?
+                Cozilo is different from other business marketplaces in several key ways:
+                <ul>
+                  <li>
+                    <strong>Business Only</strong><br>
+                    No consumer goods on Cozilo means a clean, organized sales feed that
+                    features only products that fit your needs.
+                  </li>
+                  <li>
+                    <strong>Account Management</strong><br>
+                    Once you set up your business' main account, you can quickly and
+                    easily grant decision-making access to others within your business.
+                  </li>
+                  <li>
+                    <strong>Pricing and Variety of Goods</strong><br>
+                    Unlike other selling apps, Cozilo has both new and used goods in a
+                    wide variety of categories to fit your budget and needs.
+                  </li>
+                  <li>
+                    <strong>Advertise &amp; Sell at the Same Time</strong><br>
+                    Cozilo is a cost-effective way for business owners to advertise their
+                    business at the same time as buying or selling goods.
+                  </li>
+                </ul>
               </p>
               <h2 class="color-green hidden">What's next?</h2>
               <p class="hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos cumque
-                necessitatibus minima culpa quasi cum quo vitae quidem doloribus. Praesentium
-                dicta veniam illum error dignissimos minima saepe fugit animi.
+                As the Cozilo community grows, our services will grow as well. In addition
+                to connecting with other business owners to buy, sell, and trade goods, we
+                plan on adding additional services and features like group insurance and
+                logistical services, group importing and exporting, and full Business Suites
+                to better serve your business.
               </p>
             </div>
             <div class="col-rt stats">
               <div class="stat hidden">
-                <p class="color-lightblue">666</p>
+                <p class="color-lightblue">50+</p>
                 <p>Lorem ipsum</p>
               </div>
               <div class="stat hidden">
-                <p class="color-orange">666</p>
+                <p class="color-orange">100</p>
                 <p>Lorem ipsum</p>
               </div>
               <div class="stat hidden">
-                <p class="color-green">666</p>
+                <p class="color-green">3</p>
                 <p>Lorem ipsum</p>
               </div>
             </div>

@@ -3,23 +3,28 @@
     <div class="fields">
       <div class="field input hidden">
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" v-model="contact.name">
+        <input type="text" id="name" name="name" v-model="contact.name" required>
       </div>
       <div class="field input hidden">
         <label for="company">Company Name</label>
-        <input type="text" id="company" name="company" v-model="contact.company">
+        <input type="text" id="company" name="company" v-model="contact.company" required>
       </div>
       <div class="field input hidden">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" v-model="contact.phone">
+        <input type="tel" id="phone" name="phone" v-model="contact.phone" required>
       </div>
       <div class="field input hidden">
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" v-model="contact.email">
+        <input type="email" id="email" name="email" v-model="contact.email" required>
       </div>
       <div class="field textarea hidden">
         <label for="message">Message</label>
-        <textarea name="message" id="message" rows="10" v-model="contact.message"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          v-model="contact.message"
+          required
+        ></textarea>
       </div>
       <p v-if="showSuccess">Your message was sent successfully</p>
       <div class="button-container hidden">
@@ -106,6 +111,7 @@ label {
     border: none;
     width: 100%;
     padding: 50px 10px 10px;
+    height: 200px;
   }
 }
 .button-container {
