@@ -5,17 +5,17 @@
         <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">
-          <h1 class="hidden">The Cozilo way to</h1>
+          <h1 class="fade-in">The Cozilo way to</h1>
           <div class="value-props">
-            <div class="prop hidden">
+            <div class="prop fade-in">
               <i class="fas fa-shopping-cart fa-3x"></i>
               <p>Buy</p>
             </div>
-            <div class="prop hidden">
+            <div class="prop fade-in">
               <i class="fas fa-credit-card fa-3x"></i>
               <p>Sell</p>
             </div>
-            <div class="prop hidden">
+            <div class="prop fade-in">
               <i class="fas fa-exchange-alt fa-3x"></i>
               <p>Trade</p>
             </div>
@@ -34,8 +34,9 @@
             </div>
             <h2 class="hidden">The business only, mobile marketplace</h2>
             <p class="hidden">
-              Interact specifically with <strong>business owners</strong> without the clutter of
-              consumer goods. Only approved business become part of the Cozilo ecoystem.
+              Whether you’re just starting a company or you’ve been in business for decades,
+              Cozilo is the business-focused app to help you easily and quickly buy, sell,
+              and trade goods, right from your phone.
             </p>
             <router-link
               :to="{ name: 'Features' }"
@@ -81,26 +82,29 @@
           </div>
         </div>
       </section>
+      <div class="container" style="height: auto; padding: 40px 0 0;">
+        <h2 class="color-darkblue" style="text-align: center">And everything in-between</h2>
+      </div>
       <section class="items">
         <div class="item hidden">
           <img src="../assets/images/item1.png" alt="">
-          <span class="price">$100</span>
+          <span class="price">Home Goods</span>
         </div>
         <div class="item hidden">
           <img src="../assets/images/item2.png" alt="">
-          <span class="price">$2400</span>
+          <span class="price">Machinery</span>
         </div>
         <div class="item hidden">
           <img src="../assets/images/item3.png" alt="">
-          <span class="price">$1500</span>
+          <span class="price">Consumer Electronics</span>
         </div>
         <div class="item hidden">
           <img src="../assets/images/item4.png" alt="">
-          <span class="price">$900</span>
+          <span class="price">Office Furniture</span>
         </div>
         <div class="item hidden">
           <img src="../assets/images/item5.png" alt="">
-          <span class="price">$50</span>
+          <span class="price">Construction</span>
         </div>
       </section>
       <section class="value-section padded-section bg-orange reverse-desktop">
@@ -162,10 +166,11 @@
           <div class="value-props">
             <div class="col-lt">
               <div class="prop">
-                <p class="large color-darkblue hidden">A business-only platform</p>
+                <p class="large color-darkblue hidden">A business-focused platform</p>
                 <p class="hidden">
-                  Cozilo is a truly business-only marketplace&mdash;no consumer goods
-                  cluttering your feed, as well as wholesale &amp; volume pricing options.
+                  Cozilo is a business-focused marketplace that allows you to transparently
+                  set your pricing levels: wholesale, volume, individual goods&mdash;whatever
+                  your business needs.
                 </p>
               </div>
               <div class="prop color-lightblue">
@@ -193,7 +198,7 @@
             </div>
             <div class="mockup with-screen-scroll">
               <img src="../assets/images/iphone.png" alt="" class="phone-shell">
-              <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
+              <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="static">
             </div>
             <div class="col-rt">
               <div class="prop color-lightblue">

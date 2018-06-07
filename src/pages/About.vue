@@ -7,20 +7,16 @@
       ></hero-section>
       <section class="about padded-section">
         <div class="container content-container content">
-          <p class="lead hidden">
-            Cozilo is an app for business owners, created by one: a truly B2B, business-only
-            marketplace community that helps small-, medium-, and large-sized business
-            owners buy, sell, and trade goods at wholesale and volume pricing.
+          <p class="lead fade-in">
+            Cozilo is an app for business owners, by business owners: a truly B2B, business-only
+            marketplace community that helps businesses of all sizes buy, sell, and trade
+            goods at wholesale and volume pricing.
           </p>
           <div class="flex-desktop">
             <div class="col-lt">
               <h2 class="color-lightblue hidden">How we got started</h2>
               <p class="hidden">
-                After majoring in electronic controls computer engineering and minoring in
-                finance in China, Lisa Yang, Cozilo's founder, immigrated to America to further
-                her studies in computer &amp; electrical engineering. Upon graduating, she
-                couldn't find a job that suited her skillset&mdash;so she started two of her
-                own businesses. The idea for Cozilo came to her after Lisa began looking for
+                The idea for Cozilo came to her after Lisa began looking for
                 business resources in her area and simply couldn't find what she needed: a
                 B2B marketplace that helped small business owners like herself build a network
                 and buy, sell, or trade goods.
@@ -30,9 +26,9 @@
                 Cozilo is different from other business marketplaces in several key ways:
                 <ul>
                   <li>
-                    <strong>Business Only</strong><br>
-                    No consumer goods on Cozilo means a clean, organized sales feed that
-                    features only products that fit your needs.
+                    <strong>Business-Focused</strong><br>
+                    Cozilo's focus is on building networks for businesses while helping them
+                    buy, sell, and trade goods.
                   </li>
                   <li>
                     <strong>Account Management</strong><br>
@@ -56,8 +52,8 @@
                 As the Cozilo community grows, our services will grow as well. In addition
                 to connecting with other business owners to buy, sell, and trade goods, we
                 plan on adding additional services and features like group insurance and
-                logistical services, group importing and exporting, and full Business Suites
-                to better serve your business.
+                logistical services, group importing and exporting, bartering, website listing
+                management &amp; purchasing, and more.
               </p>
             </div>
             <div class="col-rt stats">

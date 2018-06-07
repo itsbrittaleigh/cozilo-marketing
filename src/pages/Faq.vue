@@ -7,7 +7,7 @@
       ></hero-section>
       <section class="faq">
         <div class="container content-container content padded-section">
-          <p class="lead hidden">
+          <p class="lead fade-in">
             Below is a list of frequently asked questions that Cozilo users have about
             signing up, payment options, and more. If you don't see an answer to your
             question below, reach out to us using our
@@ -32,8 +32,9 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  In addition to PayPal, all major credit cards are acceptable forms of
-                  payment on the Cozilo platform.
+                  The Cozilo app accepts ACH, Cozilo tokens, smart wallets like Apple and Google
+                  Pay, as well as  all major credit cards, including VISA, MasterCard, and
+                  American Express.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -43,10 +44,10 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  As soon as both parties mark transaction as completed satisfactorily, funds
+                  are transferred directly from the buyer to the seller. If the exchange is agreed
+                  upon in part or in full with Cozilo Tokens, tokens are immediately available.
+                  Other means of payment have industry standard processing times for availability.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -56,10 +57,10 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  Instead of having to barter over cash value for products, Cozilo Tokens supply a
+                  means of gaining ‘future value’ for items you don’t want or need today. Accept
+                  Cozilo Tokens for your items today, typically at a discount to get it off your
+                  hands sooner, and you can bank tokens for future use of something you may want.
                 </p>
               </div>
             </v-collapse-wrapper>

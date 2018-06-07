@@ -15,7 +15,8 @@
     left: 0;
     z-index: 2;
   }
-  .screen {
+  .screen,
+  .static {
     $bezel_width: 22px;
     $bezel_height_top: 85px;
     $screen_height: 521px;

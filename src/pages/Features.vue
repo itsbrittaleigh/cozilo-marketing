@@ -7,7 +7,7 @@
       ></hero-section>
       <section class="features">
         <div class="container content-container content padded-section">
-          <p class="lead hidden">
+          <p class="lead fade-in">
             Cozilo is a truly business-only, mobile marketplace for business owners who want to
             buy, sell, or trade new or used goods without having to sort through the clutter of
             consumer goods like in other selling apps. As an added layer of security, only
@@ -65,14 +65,16 @@
             </div>
             <h2 class="color-darkblue">The business-only, mobile marketplace</h2>
             <p class="color-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum
-              commodi impedit. Mollitia debitis sit corporis nobis fugit. Aliquam voluptatem
-              explicabo maiores ut ratione ea deleniti. Asperiores, expedita ea. Eaque.
+              Cozilo was built to be a true B2B marketplace where approved businesses
+              could buy, sell, trade, and interact specifically with other business owners
+              in their area. Without the clutter of consumer goods in our app, finding the
+              products your company needs - office furniture, heavy-duty machinery, POS
+              computers - has never been easier.
             </p>
             <p class="color-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor odit porro ipsa
-              consectetur earum? Quae, ea labore beatae dignissimos suscipit eius reprehenderit
-              accusamus, ad unde vitae quidem necessitatibus dicta corporis?
+              From the clean, organized sales feed to the simple post creation process,
+              Cozilo’s user-friendly interface means you can be out of the office, yet still
+              totally in control of your business and it’s sales flow.
             </p>
           </div>
           <div class="mockup with-screen-scroll hidden">
@@ -89,14 +91,14 @@
             </div>
             <h2 class="color-white">Trade using Cozilo tokens</h2>
             <p class="color-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum
-              commodi impedit. Mollitia debitis sit corporis nobis fugit. Aliquam voluptatem
-              explicabo maiores ut ratione ea deleniti. Asperiores, expedita ea. Eaque.
+              Instead of having to barter over cash value for products, Cozilo Tokens supply
+              a means of gaining ‘future value’ for items you don’t want or need today. Accept
+              Cozilo Tokens for your items today, typically at a discount to get it off your
+              hands sooner, and you can bank tokens for future use of something you may want.
             </p>
             <p class="color-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor odit porro ipsa
-              consectetur earum? Quae, ea labore beatae dignissimos suscipit eius reprehenderit
-              accusamus, ad unde vitae quidem necessitatibus dicta corporis?
+              For signing up, users receive 500 Cozilo tokens to start using immediately.
+              You can also earn more by selling your items for split or wholly for tokens.
             </p>
           </div>
           <div class="mockup with-screen-scroll hidden">
@@ -113,14 +115,14 @@
             </div>
             <h2 class="color-darkblue">Secure and reliable</h2>
             <p class="color-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum
-              commodi impedit. Mollitia debitis sit corporis nobis fugit. Aliquam voluptatem
-              explicabo maiores ut ratione ea deleniti. Asperiores, expedita ea. Eaque.
+              Requiring verification in Cozilo helps us make sure that any and all transactions
+              happen between real, actual businesses and their owners - you’ll never have to
+              worry about transactions falling through or users not being who they say they are.
             </p>
             <p class="color-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor odit porro ipsa
-              consectetur earum? Quae, ea labore beatae dignissimos suscipit eius reprehenderit
-              accusamus, ad unde vitae quidem necessitatibus dicta corporis?
+              Cozilo uses multi-level, transport layer security with the latest security protocols,
+              along with hardware storage of keys and storage service encryption, to ensure that
+              your business and all important information is safe.
             </p>
           </div>
           <div class="mockup with-screen-scroll hidden">
@@ -141,15 +143,17 @@
             </p>
             <h2 class="color-orange hidden">Simple interface and payment structure</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              From account set-up to completing transactions, Cozilo’s simple, user-friendly
+              interface and payment structure help keep your business running smoothly. Our
+              transparent payment structure allows you to set up volume or wholesale pricing,
+              as well as price points that make sense for your business.
             </p>
             <h2 class="color-green hidden">Advertise while you're here</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              For businesses looking to be more cost-efficient with their budgets, Cozilo allows
+              you buy, sell, and trade while advertising your business and its offerings right
+              within the app. Connect directly with other local business owners, build your
+              network, and show what makes your company unique.
             </p>
             <h2 class="color-darkblue hidden">Chat with sellers</h2>
             <p class="hidden">
@@ -179,9 +183,10 @@
             </p>
             <h2 class="color-orange hidden">Choose your method of payment</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempora officiis
-              earum dolorum quaerat quae omnis, ex ab ipsam saepe explicabo. Doloribus quaerat,
-              reiciendis maxime iure ipsam quo sint eius.
+              Payment options include Cozilo tokens, all major credit cards (Visa, MasterCard,
+              Discover, and American Express), smart wallets like Apple Pay and Google Pay, as
+              well as ACH. Additionally, if your account has multiple payment methods, you can
+              combine the various forms of payment to complete your transaction.
             </p>
             <h2 class="color-green hidden">Feature headline</h2>
             <p class="hidden">
