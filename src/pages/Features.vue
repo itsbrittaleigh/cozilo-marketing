@@ -18,7 +18,7 @@
               <i class="fas fa-shopping-cart fa-2x" style="color: white;"></i>
             </div>
             <div class="text">
-              <h2 class="color-lightblue hidden">Buy headline</h2>
+              <h2 class="color-lightblue hidden">Buy</h2>
               <p class="hidden">
                 As your business grows, you’ll need goods and products to build your office,
                 help your employees do their jobs, and more. Cozilo provides a secured marketplace
@@ -32,7 +32,7 @@
               <i class="fas fa-credit-card fa-2x" style="color: white;"></i>
             </div>
             <div class="text">
-              <h2 class="color-green hidden">Sell headline</h2>
+              <h2 class="color-green hidden">Sell</h2>
               <p class="hidden">
                 Cozilo provides a secure marketplace to sell your business’ items, whether
                 moving offices, looking to sell excess goods, or need to liquidate assets.
@@ -47,7 +47,7 @@
               <i class="fas fa-exchange-alt fa-2x" style="color: white;"></i>
             </div>
             <div class="text">
-              <h2 class="color-orange hidden">Trade headline</h2>
+              <h2 class="color-orange hidden">Trade</h2>
               <p class="hidden">
                 Buy simpler and sell quicker with the option of using Cozilo tokens. These
                 tokens never disappear from your business’ account and receive 500 free tokens
