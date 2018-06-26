@@ -13,14 +13,15 @@ Vue.config.productionTip = false;
 Vue.use(VueScrollTo);
 Vue.use(VueCollapse);
 
-router.beforeEach((to, from, next) => {
-  store.commit('closeMenu');
-  document.title = to.meta.title ? to.meta.title : 'Welcome | Cozilo';
-  if (document.querySelector('meta[name="description"]')) {
-    document.querySelector('meta[name="description"').content = to.meta.description ? to.meta.description : '';
-  }
-  next();
-});
+// router.beforeEach((to, from, next) => {
+//   store.commit('closeMenu');
+//   document.title = to.meta.title ? to.meta.title : 'Welcome | Cozilo';
+//   if (document.querySelector('meta[name="description"]')) {
+// eslint-disable-next-line
+//     document.querySelector('meta[name="description"').content = to.meta.description ? to.meta.description : '';
+//   }
+//   next();
+// });
 
 /* eslint-disable no-new */
 new Vue({
