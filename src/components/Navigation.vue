@@ -22,6 +22,9 @@
           <router-link :to="{ name: 'FAQ' }">FAQ</router-link>
         </li>
         <li>
+          <router-link :to="{ name: 'Pricing' }">Pricing</router-link>
+        </li>
+        <li>
           <router-link :to="{ name: 'Contact' }">Contact</router-link>
         </li>
       </span>
@@ -139,7 +142,7 @@ ul {
     margin-top: 15px;
     border-top: 1px solid #e2e2e2;
     padding: 15px 0;
-    height: 283px; // dear god don't make me math this again
+    height: 313px; // dear god don't make me math this again
   }
 }
 .soon {
@@ -180,10 +183,13 @@ ul {
       display: flex;
     }
     li {
-      margin-left: 50px;
+      margin-left: 35px;
       a {
         color: $lightblue;
         font-size: 16px;
+      }
+      @media only screen and (min-width: $xlarge) {
+        margin-left: 50px;
       }
     }
   }

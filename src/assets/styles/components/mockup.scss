@@ -3,8 +3,8 @@
 }
 .mockup.with-screen-scroll {
   position: relative;
-  width: 330px;
-  height: 690px;
+  width: 250px;
+  height: 500px;
   margin: 0 auto;
   overflow: hidden;
   .phone-shell {
@@ -17,8 +17,8 @@
   }
   .screen,
   .static {
-    $bezel_width: 22px;
-    $bezel_height_top: 85px;
+    $bezel_width: 16px;
+    $bezel_height_top: 61px;
     $screen_height: 521px;
     position: absolute;
     top: $bezel_height_top;
@@ -50,26 +50,26 @@
 }
 
 .bg-lightblue .mockup .phone-shell {
-  background: linear-gradient(to bottom, $lightblue 50px, transparent 50px, transparent 620px, $lightblue 620px);
+  background: linear-gradient(to bottom, $lightblue 50px, transparent 50px, transparent 450px, $lightblue 450px);
 }
 .bg-darkblue .mockup .phone-shell {
-  background: linear-gradient(to bottom, $darkblue 50px, transparent 50px, transparent 620px, $darkblue 620px);
+  background: linear-gradient(to bottom, $darkblue 50px, transparent 50px, transparent 450px, $darkblue 450px);
 }
 .bg-orange .mockup .phone-shell {
-  background: linear-gradient(to bottom, $orange 50px, transparent 50px, transparent 620px, $orange 620px);
+  background: linear-gradient(to bottom, $orange 50px, transparent 50px, transparent 450px, $orange 450px);
 }
 .bg-green .mockup .phone-shell {
-  background: linear-gradient(to bottom, $green 50px, transparent 50px, transparent 620px, $green 620px);
+  background: linear-gradient(to bottom, $green 50px, transparent 50px, transparent 450px, $green 450px);
 }
 .bg-gray .mockup .phone-shell {
-  background: linear-gradient(to bottom, $gray 50px, transparent 50px, transparent 620px, $gray 620px);
+  background: linear-gradient(to bottom, $gray 50px, transparent 50px, transparent 450px, $gray 450px);
 }
 .bg-lightgray .mockup .phone-shell {
-  background: linear-gradient(to bottom, $lightgray 50px, transparent 50px, transparent 620px, $lightgray 620px);
+  background: linear-gradient(to bottom, $lightgray 50px, transparent 50px, transparent 450px, $lightgray 450px);
 }
 .bg-offwhite .mockup .phone-shell {
-  background: linear-gradient(to bottom, $white 50px, transparent 50px, transparent 620px, $white 620px);
+  background: linear-gradient(to bottom, $white 50px, transparent 50px, transparent 450px, $white 450px);
 }
 .bg-white .mockup .phone-shell {
-  background: linear-gradient(to bottom, white 50px, transparent 50px, transparent 620px, white 620px);
+  background: linear-gradient(to bottom, white 50px, transparent 50px, transparent 450px, white 450px);
 }

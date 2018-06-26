@@ -4,8 +4,7 @@ input {
   border-radius: 3px;
   outline: none;
   border: none;
-  height: 52px;
-  padding: 0 20px;
+  height: 44px;
   font-size: 16px;
 }
 
@@ -20,7 +19,7 @@ button {
   border-radius: 3px;
   outline: none;
   border: none;
-  height: 52px;
+  height: 44px;
   padding: 0 30px;
   text-decoration: none;
   font-size: 16px;
@@ -28,9 +27,6 @@ button {
   img.arrow {
     height: 10px;
     margin-left: 10px;
-  }
-  @media only screen and (min-width: 1000px) {
-    font-size: 18px;
   }
   &:hover {
     background: $green;

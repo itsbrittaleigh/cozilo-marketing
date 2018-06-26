@@ -13,15 +13,6 @@ li {
     font-size: 20px;
     line-height: normal;
   }
-  @media only screen and (min-width: 1000px) {
-    font-size: 22px;
-    &.small {
-      font-size: 18px;
-    }
-    &.large {
-      font-size: 28px;
-    }
-  }
 }
 p,
 li,
@@ -38,24 +29,18 @@ a:not(.button) {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 0.95;
-  @media only screen and (min-width: 1000px) {
-    font-size: 90px;
-  }
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2em;
   line-height: 0.95;
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
-  @media only screen and (min-width: 1000px) {
-    font-size: 65px;
-  }
 }
 
 .section-header-icon {

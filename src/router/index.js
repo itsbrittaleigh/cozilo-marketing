@@ -6,6 +6,7 @@ import Contact from '../pages/Contact';
 import About from '../pages/About';
 import Faq from '../pages/Faq';
 import Features from '../pages/Features';
+import Pricing from '../pages/Pricing';
 
 Vue.use(Router);
 
@@ -39,6 +40,11 @@ export default new Router({
       path: '/features',
       name: 'Features',
       component: Features,
+    },
+    {
+      path: '/pricing',
+      name: 'Pricing',
+      component: Pricing,
     },
   ],
 });

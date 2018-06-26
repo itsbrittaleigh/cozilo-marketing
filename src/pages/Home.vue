@@ -13,7 +13,7 @@
         <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">
-          <h1 class="fade-in">The Cozilo way to</h1>
+          <h1 class="fade-in">The <span>mobile way</span><br>for businesses to</h1>
           <div class="value-props">
             <div class="prop fade-in">
               <i class="fas fa-shopping-cart fa-3x"></i>
@@ -28,6 +28,11 @@
               <p>Trade</p>
             </div>
           </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem aliquid facere
+            nobis deserunt delectus repellat suscipit perspiciatis fugiat dolore? Perferendis
+            recusandae magnam ipsa aliquam sequi corporis iure facere distinctio?
+          </p>
         </div>
         <a href="#" class="more" v-scroll-to="'#marketplace'">
           Learn more
@@ -76,10 +81,6 @@
             </p>
           </div>
         </div>
-        <div class="mockup with-screen-scroll small hidden">
-          <img src="../assets/images/iphone.png" alt="" class="phone-shell">
-          <img src="../assets/images/mockups/cozilo_mainpage.jpg" alt="" class="screen long">
-        </div>
         <div class="text text-right bg-cement">
           <div class="wrapper">
             <div class="section-header-icon bg-offwhite hidden">
@@ -93,10 +94,7 @@
           </div>
         </div>
       </section>
-      <div class="container pagination-section" style="height: auto; padding: 40px 0 0;">
-        <h2 class="color-darkblue" style="text-align: center">And everything in-between</h2>
-      </div>
-      <section class="items">
+      <section class="items pagination-section">
         <div class="item hidden">
           <img src="../assets/images/item1.png" alt="">
           <span class="price">Home Goods</span>
@@ -253,7 +251,7 @@
           </div>
         </div>
       </section>
-      <section class="newsletter bg-orange pagination-section">
+      <section class="newsletter bg-green pagination-section">
         <div class="container">
           <p class="large color-white">Sign up for our newsletter to stay up to date.</p>
           <newsletter-form></newsletter-form>
@@ -360,6 +358,15 @@ $mockup_width: 250px;
     color: $white;
     text-align: center;
     margin-top: 0;
+    span {
+      color: $green;
+    }
+  }
+  p {
+    color: $white;
+    text-align: center;
+    max-width: 580px;
+    margin: 40px auto 0;
   }
   .value-props {
     display: flex;
@@ -409,6 +416,7 @@ $mockup_width: 250px;
       p {
         margin: 15px 0 0;
         color: $white;
+        @include title-font;
       }
     }
   }
@@ -453,15 +461,15 @@ $mockup_width: 250px;
     }
   }
   @media only screen and (min-width: 1215px) {
-    padding: 80px 0 200px;
+    padding: 60px 0 150px;
     > .container {
       max-width: 90%;
     }
     .value-props {
       .prop {
-        width: 250px;
-        height: 250px;
-        border-radius: 250px;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
         &:nth-child(1),
         &:nth-child(2),
         &:nth-child(3) {
@@ -469,7 +477,7 @@ $mockup_width: 250px;
         }
         i,
         svg {
-          font-size: 5em;
+          font-size: 4em;
         }
       }
     }

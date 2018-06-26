@@ -16,6 +16,9 @@
                 <router-link :to="{ name: 'FAQ' }">FAQ</router-link>
               </li>
               <li>
+                <router-link :to="{ name: 'Pricing' }">Pricing</router-link>
+              </li>
+              <li>
                 <router-link :to="{ name: 'Contact' }">Contact</router-link>
               </li>
             </ul>
@@ -46,7 +49,7 @@ export default {
 @import '../assets/styles/variables';
 
 footer {
-  padding: 50px 0;
+  padding: 30px 0;
   background: $darkblue;
   .logo {
     width: 200px;
