@@ -455,14 +455,12 @@ $mockup_width: 250px;
         padding: 100px 0 100px ($mockup_width / 2);
       }
     }
-    .mockup {
-      display: block;
-    }
   }
   @media only screen and (min-width: 1200px) {
     $mockup_width: 300px;
     $mockup_height: 600px;
     .mockup {
+      display: block;
       top: 50%;
       margin-top: -($mockup_height / 2);
       left: 50%;
@@ -479,19 +477,10 @@ $mockup_width: 250px;
   }
 }
 .items {
-  padding: 30px 30px 0;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 30px;
+  @include grid-boxes(2, 2, 1fr, auto, 30px);
   .item {
-    margin-bottom: 30px;
-    width: calc((100vw - 90px) / 2);
     position: relative;
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-    &:last-of-type {
-      display: none;
-    }
     img {
       width: 100%;
       height: 100%;
@@ -507,15 +496,17 @@ $mockup_width: 250px;
       border-bottom-right-radius: 200px;
       padding: 10px 25px 10px 20px;
     }
+    &:last-of-type {
+      display: none;
+    }
     &.fade-in {
       @include fade-in-up;
     }
   }
   @media only screen and (min-width: 768px) {
     padding: 30px;
+    @include grid-boxes(5, 1, 1fr, auto, 30px);
     .item {
-      margin: 0 30px 0 0;
-      width: calc((100vw - 180px) / 5);
       &:last-of-type {
         display: block;
         margin-right: 0;
