@@ -329,26 +329,45 @@ $mockup_height: 500px;
 $mockup_width: 250px;
 .pagination {
   position: fixed;
-  left: 15px;
-  top: 10px;
-  height: calc(100vh - 20px);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   z-index: 100;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: $darkblue;
   i {
     width: 10px;
     height: 10px;
     border-radius: 10px;
     border: 1px solid $white;
-    margin-bottom: 15px;
+    margin-right: 20px;
     box-shadow: 1px 2px 2px 0 rgba($darkblue, 0.5);
+    cursor: pointer;
     transition: 0.3s;
     &:last-of-type {
-      margin-bottom: 0;
+      margin-right: 0;
     }
     &.active {
       background: $white;
+    }
+  }
+  @media only screen and (min-width: $large) {
+    left: 15px;
+    right: auto;
+    top: 10px;
+    bottom: 10px;
+    height: calc(100vh - 20px);
+    flex-direction: column;
+    padding: 0;
+    background: none;
+    i {
+      margin: 0 0 15px 0;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }
