@@ -1,7 +1,15 @@
 <template>
   <base-page>
     <template slot="content">
-      <section class="hero home with-bg-image">
+      <div class="pagination">
+        <i
+          v-for="(section, index) in sections"
+          :key="index"
+          :class="{ 'active': section.isActive }"
+          v-scroll-to="`#section${section.id}`"
+        ></i>
+      </div>
+      <section class="hero home with-bg-image pagination-section">
         <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">
@@ -26,7 +34,10 @@
           <img src="../assets/images/icons/arrow-blue-down.svg" alt="">
         </a>
       </section>
-      <section id="marketplace" class="value-section padded-section bg-lightblue">
+      <section
+        id="marketplace"
+        class="value-section padded-section bg-lightblue pagination-section"
+      >
         <div class="container">
           <div class="text color-white">
             <div class="section-header-icon bg-darkblue hidden">
@@ -52,7 +63,7 @@
           </div>
         </div>
       </section>
-      <section class="from-to">
+      <section class="from-to pagination-section">
         <div class="text text-left bg-wood">
           <div class="wrapper">
             <div class="section-header-icon bg-orange hidden">
@@ -82,7 +93,7 @@
           </div>
         </div>
       </section>
-      <div class="container" style="height: auto; padding: 40px 0 0;">
+      <div class="container pagination-section" style="height: auto; padding: 40px 0 0;">
         <h2 class="color-darkblue" style="text-align: center">And everything in-between</h2>
       </div>
       <section class="items">
@@ -107,7 +118,7 @@
           <span class="price">Construction</span>
         </div>
       </section>
-      <section class="value-section padded-section bg-orange reverse-desktop">
+      <section class="value-section padded-section bg-orange reverse-desktop pagination-section">
         <div class="container">
           <div class="text">
             <div class="section-header-icon bg-offwhite hidden">
@@ -132,7 +143,7 @@
           </div>
         </div>
       </section>
-      <section class="value-section padded-section bg-lightblue">
+      <section class="value-section padded-section bg-lightblue pagination-section">
         <div class="container">
           <div class="text">
             <div class="section-header-icon bg-offwhite hidden">
@@ -158,7 +169,7 @@
           </div>
         </div>
       </section>
-      <section class="app-markup padded-section bg-white">
+      <section class="app-markup padded-section bg-white pagination-section">
         <div class="container">
           <h2 class="color-lightgray hidden">
             Cozilo: The truly mobile way to buy, sell, and trade
@@ -242,7 +253,7 @@
           </div>
         </div>
       </section>
-      <section class="newsletter bg-orange">
+      <section class="newsletter bg-orange pagination-section">
         <div class="container">
           <p class="large color-white">Sign up for our newsletter to stay up to date.</p>
           <newsletter-form></newsletter-form>
@@ -263,6 +274,8 @@ export default {
   data() {
     return {
       sections: [],
+      viewportHeight: 0,
+      scrollPosition: 0,
     };
   },
   components: {
@@ -273,6 +286,42 @@ export default {
     ScreenScroll,
     TagAsVisible,
   ],
+  methods: {
+    measureViewport() {
+      this.viewportHeight = window.innerHeight;
+    },
+    getPosition(element) {
+      return element.getBoundingClientRect().top;
+    },
+    updateScrollPosition() {
+      const scrollPosition = window.scrollY;
+      this.sections.forEach((section, index) => {
+        this.sections[index].isActive = (
+          section.toTopOfPage - scrollPosition
+        ) < (
+          (window.innerHeight / 2)
+        );
+        if (this.sections[index].isActive && index > 0) {
+          this.sections[index - 1].isActive = false;
+        }
+      });
+    },
+  },
+  mounted() {
+    this.updateScrollPosition();
+    window.addEventListener('scroll', () => {
+      this.updateScrollPosition();
+    });
+    const sections = document.getElementsByClassName('pagination-section');
+    for (let i = 0; i < sections.length; i += 1) {
+      this.sections.push({
+        isActive: false,
+      });
+      this.sections[i].id = `section${i}`;
+      this.sections[i].toTopOfPage = this.getPosition(sections[i]);
+      sections[i].id = `section${i}`;
+    }
+  },
 };
 </script>
 
@@ -280,6 +329,31 @@ export default {
 @import '../assets/styles/variables';
 $mockup_height: 500px;
 $mockup_width: 250px;
+.pagination {
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+  i {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid $white;
+    margin-bottom: 15px;
+    box-shadow: 1px 2px 2px 0 rgba($darkblue, 0.5);
+    transition: 0.3s;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &.active {
+      background: $white;
+    }
+  }
+}
 .hero {
   padding: 40px 0 120px;
   h1 {
