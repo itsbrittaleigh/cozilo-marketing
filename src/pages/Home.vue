@@ -30,11 +30,17 @@
               Sign Up For Free &rarr;
             </router-link>
           </div>
-          <div class="svg-container">
-            <svg class="value-props">
+          <div
+            class="svg-container"
+            :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
+          >
+            <svg
+              class="value-props"
+              :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
+            >
               <circle class="outer-circle"
-                :cx="canvasWidth / 2"
-                :cy="(canvasWidth / 2) + (margin / 2)"
+                :cx="outerCircleXCoordinate"
+                :cy="outerCircleYCoordinate"
                 :r="outerCircleRadius"
                 stroke-dasharray="1000"
                 stroke-dashoffset="1000"
@@ -296,9 +302,9 @@ export default {
       sections: [],
       viewportHeight: 0,
       scrollPosition: 0,
-      innerCircleRadius: 70,
+      innerCircleRadius: 75,
       outerCircleRadius: 100,
-      canvasWidth: 320,
+      canvasWidth: 330,
     };
   },
   components: {
@@ -318,6 +324,12 @@ export default {
     },
     offset() {
       return Math.sqrt((this.outerCircleRadius ** 2) - (this.a ** 2));
+    },
+    outerCircleXCoordinate() {
+      return this.canvasWidth / 2;
+    },
+    outerCircleYCoordinate() {
+      return (this.canvasWidth / 2) + (this.margin / 2);
     },
     buyCircleXCoordinate() {
       return (this.outerCircleRadius - this.offset) + this.margin;
@@ -451,13 +463,9 @@ $mockup_width: 250px;
     background: rgba($darkblue, 0.92);
   }
   .svg-container {
-    width: 320px;
-    height: 320px;
-    margin: 0 auto;
+    margin: 40px auto 0;
   }
   .value-props {
-    width: 320px;
-    height: 320px;
     .outer-circle {
       fill: none;
       stroke: white;
