@@ -69,7 +69,7 @@ header {
       height: auto;
     }
     @media only screen and (min-width: 1000px) {
-      padding: 20px 0;
+      padding: 25px 0;
     }
     a {
       line-height: normal;

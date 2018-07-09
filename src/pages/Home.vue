@@ -13,31 +13,53 @@
         <img src="static/covers/home.jpg" alt="" class="background-image">
         <div class="overlay"></div>
         <div class="container">
-          <h1 class="fade-in">The <span>mobile way</span><br>for businesses to</h1>
-          <div class="value-props">
-            <div class="prop fade-in">
-              <i class="fas fa-shopping-cart fa-3x"></i>
-              <p>Buy</p>
-            </div>
-            <div class="prop fade-in">
-              <i class="fas fa-credit-card fa-3x"></i>
-              <p>Sell</p>
-            </div>
-            <div class="prop fade-in">
-              <i class="fas fa-exchange-alt fa-3x"></i>
-              <p>Trade</p>
-            </div>
+          <div class="content">
+            <h1 class="fade-in">
+              <span class="green">The business only,</span>
+              <span class="blue">mobile marketplace</span>
+            </h1>
+            <p class="fade-in">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem aliquid facere
+              nobis deserunt delectus repellat suscipit perspiciatis fugiat dolore? Perferendis
+              recusandae magnam ipsa aliquam sequi corporis iure facere distinctio?
+            </p>
+            <router-link
+              :to="{ name: 'Contact' }"
+              class="fade-in button bg-green"
+            >
+              Sign Up For Free &rarr;
+            </router-link>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem aliquid facere
-            nobis deserunt delectus repellat suscipit perspiciatis fugiat dolore? Perferendis
-            recusandae magnam ipsa aliquam sequi corporis iure facere distinctio?
-          </p>
+          <div class="svg-container">
+            <svg class="value-props">
+              <circle class="outer-circle"
+                :cx="canvasWidth / 2"
+                :cy="(canvasWidth / 2) + (margin / 2)"
+                :r="outerCircleRadius"
+                stroke-dasharray="1000"
+                stroke-dashoffset="1000"
+              />
+              <circle
+                class="buy"
+                :cx="buyCircleXCoordinate"
+                :cy="buyCircleYCoordinate"
+                :r="innerCircleRadius"
+              />
+              <circle
+                class="sell"
+                :cx="sellCircleXCoordinate"
+                :cy="sellCircleYCoordinate"
+                :r="innerCircleRadius"
+              />
+              <circle
+                class="trade"
+                :cx="tradeCircleXCoordinate"
+                :cy="tradeCircleYCoordinate"
+                :r="innerCircleRadius"
+              />
+            </svg>
+          </div>
         </div>
-        <a href="#" class="more" v-scroll-to="'#marketplace'">
-          Learn more
-          <img src="../assets/images/icons/arrow-blue-down.svg" alt="">
-        </a>
       </section>
       <section
         id="marketplace"
@@ -274,6 +296,9 @@ export default {
       sections: [],
       viewportHeight: 0,
       scrollPosition: 0,
+      innerCircleRadius: 70,
+      outerCircleRadius: 100,
+      canvasWidth: 320,
     };
   },
   components: {
@@ -284,6 +309,35 @@ export default {
     ScreenScroll,
     TagAsVisible,
   ],
+  computed: {
+    margin() {
+      return (this.canvasWidth / 2) - this.outerCircleRadius;
+    },
+    a() {
+      return this.outerCircleRadius / 2;
+    },
+    offset() {
+      return Math.sqrt((this.outerCircleRadius ** 2) - (this.a ** 2));
+    },
+    buyCircleXCoordinate() {
+      return (this.outerCircleRadius - this.offset) + this.margin;
+    },
+    buyCircleYCoordinate() {
+      return (this.outerCircleRadius + (this.outerCircleRadius / 2)) + (this.margin * 1.5);
+    },
+    sellCircleXCoordinate() {
+      return (this.outerCircleRadius + this.offset) + this.margin;
+    },
+    sellCircleYCoordinate() {
+      return (this.outerCircleRadius + (this.outerCircleRadius / 2)) + (this.margin * 1.5);
+    },
+    tradeCircleXCoordinate() {
+      return this.canvasWidth / 2;
+    },
+    tradeCircleYCoordinate() {
+      return (this.margin * 1.5);
+    },
+  },
   methods: {
     measureViewport() {
       this.viewportHeight = window.innerHeight;
@@ -319,6 +373,10 @@ export default {
       this.sections[i].toTopOfPage = this.getPosition(sections[i]);
       sections[i].id = `section${i}`;
     }
+    const shape = document.querySelector('.outer-circle');
+    setTimeout(() => {
+      shape.setAttribute('stroke-dashoffset', 0);
+    }, 0);
   },
 };
 </script>
@@ -372,133 +430,48 @@ $mockup_width: 250px;
   }
 }
 .hero {
-  padding: 40px 0 120px;
+  padding: 70px 0 120px;
   h1 {
     color: $white;
-    text-align: center;
     margin-top: 0;
-    span {
+    font-weight: lighter;
+    margin: 0 0 20px;
+    .green {
       color: $green;
+    }
+    .blue {
+      color: $lightblue;
     }
   }
   p {
     color: $white;
-    text-align: center;
-    max-width: 580px;
-    margin: 40px auto 0;
-  }
-  .value-props {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 320px;
-    margin: 0 auto;
-    .prop {
-      width: 150px;
-      height: 150px;
-      border-radius: 150px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      i,
-      svg {
-        color: white;
-      }
-      &:nth-child(1) {
-        background: $lightblue;
-        margin: 0 20px 20px 0;
-        &.fade-in {
-          @include fade-in-up;
-        }
-      }
-      &:nth-child(2) {
-        background: $green;
-        margin: 0 0 20px 0;
-        &.fade-in {
-          @include fade-in-up-offset-1;
-        }
-      }
-      &:nth-child(3) {
-        background: $orange;
-        margin: 0;
-        &.fade-in {
-          @include fade-in-up-offset-2;
-        }
-      }
-      img {
-        width: 70px;
-        height: 70px;
-        object-fit: contain;
-      }
-      p {
-        margin: 15px 0 0;
-        color: $white;
-        @include title-font;
-      }
-    }
+    margin: 0 0 20px;
   }
   .overlay {
-    background: rgba($darkblue, 0.95);
+    background: rgba($darkblue, 0.92);
   }
-  .more {
-    $width: 170px;
-    position: absolute;
-    width: $width;
-    bottom: 0;
-    left: 50%;
-    margin-left: -($width / 2);
-    background: $white;
-    color: $gray;
-    display: block;
-    text-align: center;
-    z-index: 3;
-    text-decoration: none;
-    padding: 20px 0;
-    @include title-font;
-    font-size: 15px;
-    img {
-      display: block;
-      margin: 10px auto 0;
-      width: 10px;
-    }
+  .svg-container {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
   }
-  @media only screen and (min-width: 768px) {
-    .value-props {
-      width: 100%;
-      .prop {
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(3) {
-          margin: 0 20px 0 0;
-        }
-        &:nth-child(4) {
-          margin: 0;
-        }
-      }
+  .value-props {
+    width: 320px;
+    height: 320px;
+    .outer-circle {
+      fill: none;
+      stroke: white;
+      stroke-width: 1;
+      transition: all 4s ease-in-out;
     }
-  }
-  @media only screen and (min-width: 1215px) {
-    padding: 60px 0 150px;
-    > .container {
-      max-width: 90%;
+    .buy {
+      fill: $lightblue;
     }
-    .value-props {
-      .prop {
-        width: 200px;
-        height: 200px;
-        border-radius: 200px;
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(3) {
-          margin: 0 30px 0 0;
-        }
-        i,
-        svg {
-          font-size: 4em;
-        }
-      }
+    .sell {
+      fill: $green;
+    }
+    .trade {
+      fill: $orange;
     }
   }
 }

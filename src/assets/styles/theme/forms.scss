@@ -37,4 +37,12 @@ button {
   &.bg-darkblue:hover {
     background: $green;
   }
+  &.bg-green {
+    background: $green;
+    color: $gray;
+  }
+  &.bg-green:hover {
+    background: $orange;
+    color: $white;
+  }
 }
