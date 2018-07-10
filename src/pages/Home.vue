@@ -30,41 +30,7 @@
               Sign Up For Free &rarr;
             </router-link>
           </div>
-          <div
-            class="svg-container"
-            :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
-          >
-            <svg
-              class="value-props"
-              :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
-            >
-              <circle class="outer-circle"
-                :cx="outerCircleXCoordinate"
-                :cy="outerCircleYCoordinate"
-                :r="outerCircleRadius"
-                stroke-dasharray="1000"
-                stroke-dashoffset="1000"
-              />
-              <circle
-                class="buy"
-                :cx="buyCircleXCoordinate"
-                :cy="buyCircleYCoordinate"
-                :r="innerCircleRadius"
-              />
-              <circle
-                class="sell"
-                :cx="sellCircleXCoordinate"
-                :cy="sellCircleYCoordinate"
-                :r="innerCircleRadius"
-              />
-              <circle
-                class="trade"
-                :cx="tradeCircleXCoordinate"
-                :cy="tradeCircleYCoordinate"
-                :r="innerCircleRadius"
-              />
-            </svg>
-          </div>
+          <bst-svg></bst-svg>
         </div>
       </section>
       <section
@@ -292,6 +258,7 @@
 <script>
 import Base from '../templates/Base';
 import NewsletterForm from '../components/NewsletterForm';
+import BSTSvg from '../components/BSTSvg';
 import ScreenScroll from '../mixins/ScreenScroll';
 import TagAsVisible from '../mixins/TagAsVisible';
 
@@ -302,54 +269,17 @@ export default {
       sections: [],
       viewportHeight: 0,
       scrollPosition: 0,
-      innerCircleRadius: 75,
-      outerCircleRadius: 100,
-      canvasWidth: 330,
     };
   },
   components: {
     'base-page': Base,
     'newsletter-form': NewsletterForm,
+    'bst-svg': BSTSvg,
   },
   mixins: [
     ScreenScroll,
     TagAsVisible,
   ],
-  computed: {
-    margin() {
-      return (this.canvasWidth / 2) - this.outerCircleRadius;
-    },
-    a() {
-      return this.outerCircleRadius / 2;
-    },
-    offset() {
-      return Math.sqrt((this.outerCircleRadius ** 2) - (this.a ** 2));
-    },
-    outerCircleXCoordinate() {
-      return this.canvasWidth / 2;
-    },
-    outerCircleYCoordinate() {
-      return (this.canvasWidth / 2) + (this.margin / 2);
-    },
-    buyCircleXCoordinate() {
-      return (this.outerCircleRadius - this.offset) + this.margin;
-    },
-    buyCircleYCoordinate() {
-      return (this.outerCircleRadius + (this.outerCircleRadius / 2)) + (this.margin * 1.5);
-    },
-    sellCircleXCoordinate() {
-      return (this.outerCircleRadius + this.offset) + this.margin;
-    },
-    sellCircleYCoordinate() {
-      return (this.outerCircleRadius + (this.outerCircleRadius / 2)) + (this.margin * 1.5);
-    },
-    tradeCircleXCoordinate() {
-      return this.canvasWidth / 2;
-    },
-    tradeCircleYCoordinate() {
-      return (this.margin * 1.5);
-    },
-  },
   methods: {
     measureViewport() {
       this.viewportHeight = window.innerHeight;
@@ -385,10 +315,6 @@ export default {
       this.sections[i].toTopOfPage = this.getPosition(sections[i]);
       sections[i].id = `section${i}`;
     }
-    const shape = document.querySelector('.outer-circle');
-    setTimeout(() => {
-      shape.setAttribute('stroke-dashoffset', 0);
-    }, 0);
   },
 };
 </script>
@@ -462,24 +388,22 @@ $mockup_width: 250px;
   .overlay {
     background: rgba($darkblue, 0.92);
   }
-  .svg-container {
-    margin: 40px auto 0;
+  @media only screen and (min-width: $medium) {
+    > .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 850px;
+    }
+    .content {
+      margin-right: 20px;
+      flex: 1;
+    }
   }
-  .value-props {
-    .outer-circle {
-      fill: none;
-      stroke: white;
-      stroke-width: 1;
-      transition: all 4s ease-in-out;
-    }
-    .buy {
-      fill: $lightblue;
-    }
-    .sell {
-      fill: $green;
-    }
-    .trade {
-      fill: $orange;
+  @media only screen and (min-width: $large) {
+    .content {
+      max-width: 430px;
+      margin-right: 40px;
     }
   }
 }
