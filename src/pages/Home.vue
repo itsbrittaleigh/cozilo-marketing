@@ -10,7 +10,9 @@
         ></i>
       </div>
       <section class="hero home with-bg-image pagination-section">
-        <img src="static/covers/home.jpg" alt="" class="background-image">
+        <parallax :speed-factor="0.3">
+          <img src="static/covers/home.jpg" alt="" class="background-image">
+        </parallax>
         <div class="overlay"></div>
         <div class="container">
           <div class="content">
@@ -54,6 +56,14 @@
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
             </ul>
+          </div>
+        </div>
+        <div class="mockup">
+          <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
+          <div class="screen-container">
+            <parallax :speed-factor="0.1">
+              <img src="../assets/images/mockups/cozilo_marketscroll.jpg" alt="" class="screen">
+            </parallax>
           </div>
         </div>
         <div class="col-rt padded-section">
@@ -128,6 +138,14 @@
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
             </ul>
+          </div>
+        </div>
+        <div class="mockup item-overview">
+          <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
+          <div class="screen-container">
+            <parallax>
+              <img src="../assets/images/mockups/cozilo_itemoverview1.jpg" alt="" class="screen">
+            </parallax>
           </div>
         </div>
         <div class="col-rt padded-section">
@@ -244,10 +262,10 @@
 </template>
 
 <script>
+import Parallax from 'vue-parallaxy';
 import Base from '../templates/Base';
 import NewsletterForm from '../components/NewsletterForm';
 import BSTSvg from '../components/BSTSvg';
-import ScreenScroll from '../mixins/ScreenScroll';
 import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
@@ -263,9 +281,9 @@ export default {
     'base-page': Base,
     'newsletter-form': NewsletterForm,
     'bst-svg': BSTSvg,
+    Parallax,
   },
   mixins: [
-    ScreenScroll,
     TagAsVisible,
   ],
   methods: {
@@ -309,8 +327,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/styles/variables';
-$mockup_height: 500px;
-$mockup_width: 250px;
 .pagination {
   position: fixed;
   display: flex;
@@ -355,6 +371,15 @@ $mockup_width: 250px;
     }
   }
 }
+.Masthead {
+  position: absolute;
+  min-height: 0;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
 .hero {
   padding: 70px 0 120px;
   h1 {
@@ -377,6 +402,7 @@ $mockup_width: 250px;
     background: rgba($darkblue, 0.92);
   }
   @media only screen and (min-width: $medium) {
+    padding: 120px 0 200px;
     > .container {
       display: flex;
       justify-content: space-between;
@@ -425,6 +451,7 @@ $mockup_width: 250px;
     .front {
       background-size: cover;
       background-repeat: no-repeat;
+      height: 100%;
       > .container {
         display: flex;
         flex-direction: column;
@@ -451,44 +478,6 @@ $mockup_width: 250px;
     .toggle {
       margin: 0 20px 0 0;
       &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-}
-.items {
-  padding: 30px;
-  @include grid-boxes(2, 2, 1fr, auto, 30px);
-  .item {
-    position: relative;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .price {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      background: $darkblue;
-      color: $white;
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      padding: 10px 25px 10px 20px;
-    }
-    &:last-of-type {
-      display: none;
-    }
-    &.fade-in {
-      @include fade-in-up;
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    padding: 30px;
-    @include grid-boxes(5, 1, 1fr, auto, 30px);
-    .item {
-      &:last-of-type {
-        display: block;
         margin-right: 0;
       }
     }
