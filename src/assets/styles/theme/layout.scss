@@ -102,7 +102,7 @@ body {
   @media only screen and (min-width: $large) {
     display: flex;
     justify-content: space-between;
-    background:linear-gradient(105deg, #f1f1f1 0, #f1f1f1 49%, white 49%, white 51%, #e4e4e4 51%, #e4e4e4 100%);
+    background:linear-gradient(98deg, #f1f1f1 0, #f1f1f1 49%, white 49%, white 51%, #e4e4e4 51%, #e4e4e4 100%);
     .col-lt,
     .col-rt {
       width: 50%;
@@ -120,7 +120,7 @@ body {
       padding: 180px 0 100px;
     }
     &.angle-color {
-      background:linear-gradient(105deg, $green 0, $green 49%, white 49%, white 51%, $lightblue 51%, $lightblue 100%);
+      background:linear-gradient(98deg, $green 0, $green 49%, white 49%, white 51%, $lightblue 51%, $lightblue 100%);
       .col-lt,
       .col-rt {
         background: none;
