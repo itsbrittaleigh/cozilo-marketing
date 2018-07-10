@@ -32,7 +32,7 @@ a:not(.button) {
 h1 {
   font-size: 3em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: lighter;
   line-height: 1;
 }
 
@@ -41,17 +41,18 @@ h2 {
   line-height: 0.95;
   margin: 0;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: lighter;
+  color: $gray;
 }
 
 .section-header-icon {
-  height: 75px;
-  width: 75px;
-  border-radius: 75px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   img {
     display: block;
     width: 65%;
@@ -85,5 +86,23 @@ h2 {
     h2 {
       font-size: 24px;
     }
+  }
+}
+
+ul.feature-list {
+  &.darkblue {
+    list-style-image: url('~/static/icons/check-darkblue.png');
+  }
+  &.lightblue {
+    list-style-image: url('~/static/icons/check-lightblue.png');
+  }
+  &.green {
+    list-style-image: url('~/static/icons/check-green.png');
+  }
+  &.white {
+    list-style-image: url('~/static/icons/check-white.png');
+  }
+  li {
+    margin-bottom: 15px;
   }
 }

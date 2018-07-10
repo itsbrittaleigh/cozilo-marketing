@@ -68,45 +68,63 @@ body {
 }
 
 .value-section {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .button {
-    margin-bottom: 30px;
+  margin: 20px 0;
+  @media only screen and (min-width: $medium) {
+    margin: 30px 0;
   }
   .fade-in {
     @include fade-in-up-from-left;
   }
-  .mockup.fade-in {
-    animation: fade-in 0.4s;
+}
+
+.angle-split {
+  .col-lt {
+    background: #f1f1f1;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   }
-  @media only screen and (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      justify-content: center;
-      .text {
-        flex: 1;
-      }
-      div:first-of-type {
-        margin-right: 100px;
-      }
+  .col-rt {
+    background: #e4e4e4;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+  }
+  &.angle-color {
+    .col-lt {
+      background: $green;
+    }
+    .col-rt {
+      background: $lightblue;
+    }
+    h2,
+    p,
+    li {
+      color: white;
     }
   }
-  &.reverse-desktop {
-    .text {
-      order: 1;
-      margin: 50px 0 0 0;
-      .fade-in {
-        @include fade-in-up-from-right;
-      }
-      @media only screen and (min-width: $medium) {
-        margin: 0 0 0 100px;
+  @media only screen and (min-width: $large) {
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(105deg, #f1f1f1 0, #f1f1f1 49%, white 49%, white 51%, #e4e4e4 51%, #e4e4e4 100%);
+    .col-lt,
+    .col-rt {
+      width: 50%;
+      background: none;
+      > .container {
+        width: 50%;
       }
     }
-    .mockup {
-      order: 0;
+    .col-lt {
+      clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
+      padding: 100px 0;
+    }
+    .col-rt {
+      clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+      padding: 180px 0 100px;
+    }
+    &.angle-color {
+      background:linear-gradient(105deg, $green 0, $green 49%, white 49%, white 51%, $lightblue 51%, $lightblue 100%);
+      .col-lt,
+      .col-rt {
+        background: none;
+      }
     }
   }
 }

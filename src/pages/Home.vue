@@ -35,129 +35,117 @@
       </section>
       <section
         id="marketplace"
-        class="value-section padded-section bg-lightblue pagination-section"
+        class="value-section pagination-section angle-split"
       >
-        <div class="container">
-          <div class="text color-white">
-            <div class="section-header-icon bg-darkblue hidden">
-              <i class="fas fa-building fa-2x"></i>
+        <div class="col-lt padded-section">
+          <div class="container">
+            <div class="section-header-icon bg-lightblue hidden">
+              <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden">The business only, mobile marketplace</h2>
-            <p class="hidden">
-              Whether you’re just starting a company or you’ve been in business for decades,
-              Cozilo is the business-focused app to help you easily and quickly buy, sell,
-              and trade goods, right from your phone.
+            <h2 class="hidden">Buy headline goes here</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
+              ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
+              repellat.
             </p>
-            <router-link
-              :to="{ name: 'Features' }"
-              class="button hidden"
-            >
-              Learn more
-              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
-            </router-link>
+            <ul class="feature-list lightblue">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
           </div>
-          <div class="mockup with-screen-scroll hidden">
-            <img src="../assets/images/iphone.png" alt="" class="phone-shell">
-            <img src="../assets/images/mockups/cozilo_signin.jpg" alt="" class="screen">
+        </div>
+        <div class="col-rt padded-section">
+          <div class="container">
+            <div class="section-header-icon bg-green hidden">
+              <i class="fas fa-credit-card" style="color: white;"></i>
+            </div>
+            <h2 class="hidden">Sell headline goes here</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
+              consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
+              voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
+            </p>
+            <ul class="feature-list green">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="from-to pagination-section">
-        <div class="text text-left bg-wood">
-          <div class="wrapper">
-            <div class="section-header-icon bg-orange hidden">
-              <i class="fas fa-briefcase fa-2x" style="color: white;"></i>
+        <div class="toggle">
+          <div class="front padded-section">
+            <div class="container">
+              <div class="section-header-icon bg-lightblue hidden">
+                <i class="fas fa-industry" style="color: white;"></i>
+              </div>
+              <h2>From the factory floor</h2>
             </div>
-            <h2 class="color-orange hidden">From<br>the<br>office<br>cubicle</h2>
-            <p class="color-gray hidden">
-              <strong>Buy</strong> office furniture your business needs to grow.
-              <strong>Sell</strong> supplies to save space.
-            </p>
           </div>
+          <div class="back"></div>
         </div>
-        <div class="text text-right bg-cement">
-          <div class="wrapper">
-            <div class="section-header-icon bg-offwhite hidden">
-              <i class="fas fa-industry fa-2x" style="color: #ec632e"></i>
+        <div class="toggle">
+          <div class="front padded-section">
+            <div class="container">
+              <div class="section-header-icon bg-orange hidden">
+                <i class="fas fa-briefcase" style="color: white;"></i>
+              </div>
+              <h2>To the office cubicle</h2>
             </div>
-            <h2 class="color-white hidden">To<br>the<br>factory<br>floor<br></h2>
-            <p class="color-white hidden">
-              <strong>Trade</strong> machinery or equipment for nearly any industry.
-              <strong>Hire</strong> extra help to meet a deadline.
-            </p>
           </div>
+          <div class="back"></div>
+        </div>
+        <div class="toggle">
+          <div class="front padded-section">
+            <div class="container">
+              <div class="section-header-icon bg-green hidden">
+                <i class="fas fa-leaf" style="color: white;"></i>
+              </div>
+              <h2>And everything in between</h2>
+            </div>
+          </div>
+          <div class="back"></div>
         </div>
       </section>
-      <section class="items pagination-section">
-        <div class="item hidden">
-          <img src="../assets/images/item1.png" alt="">
-          <span class="price">Home Goods</span>
-        </div>
-        <div class="item hidden">
-          <img src="../assets/images/item2.png" alt="">
-          <span class="price">Machinery</span>
-        </div>
-        <div class="item hidden">
-          <img src="../assets/images/item3.png" alt="">
-          <span class="price">Consumer Electronics</span>
-        </div>
-        <div class="item hidden">
-          <img src="../assets/images/item4.png" alt="">
-          <span class="price">Office Furniture</span>
-        </div>
-        <div class="item hidden">
-          <img src="../assets/images/item5.png" alt="">
-          <span class="price">Construction</span>
-        </div>
-      </section>
-      <section class="value-section padded-section bg-orange reverse-desktop pagination-section">
-        <div class="container">
-          <div class="text">
-            <div class="section-header-icon bg-offwhite hidden">
-              <i class="fas fa-coins fa-2x" style="color: #ec632e"></i>
+      <section class="value-section pagination-section angle-split angle-color">
+        <div class="col-lt padded-section">
+          <div class="container">
+            <div class="section-header-icon bg-darkblue hidden">
+              <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden color-white">Trade using Cozilo tokens</h2>
-            <p class="hidden color-white">
-              Buy simpler and sell quicker with the option of using Cozilo tokens.
-              Tokens never disappear and receive 500 when you sign up.
+            <h2 class="hidden">Top feature goes here</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
+              ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
+              repellat.
             </p>
-            <router-link
-              :to="{ name: 'Features' }"
-              class="button hidden"
-            >
-              Learn more
-              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
-            </router-link>
-          </div>
-          <div class="mockup with-screen-scroll hidden">
-            <img src="../assets/images/iphone.png" alt="" class="phone-shell">
-            <img src="../assets/images/mockups/cozilo_marketscroll.jpg" alt="" class="screen">
+            <ul class="feature-list darkblue">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section class="value-section padded-section bg-lightblue pagination-section">
-        <div class="container">
-          <div class="text">
-            <div class="section-header-icon bg-offwhite hidden">
-              <i class="fas fa-lock fa-2x" style="color: #62a9c5;"></i>
+        <div class="col-rt padded-section">
+          <div class="container">
+            <div class="section-header-icon bg-darkblue hidden">
+              <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden color-white">Secure and reliable</h2>
-            <p class="hidden color-white">
-              In addition to our secure buying and selling platform, Cozilo is only available
-              to approved and verified businesses, so you never have to worry about the
-              safety of your transactions.
+            <h2 class="hidden">Top feature goes here</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
+              consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
+              voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
             </p>
-            <router-link
-              :to="{ name: 'Features' }"
-              class="button hidden"
-            >
-              Learn more
-              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
-            </router-link>
-          </div>
-          <div class="mockup with-screen-scroll hidden">
-            <img src="../assets/images/iphone.png" alt="" class="phone-shell">
-            <img src="../assets/images/mockups/cozilo_itemoverview1.jpg" alt="" class="screen long">
+            <ul class="feature-list darkblue">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -245,7 +233,7 @@
           </div>
         </div>
       </section>
-      <section class="newsletter bg-green pagination-section">
+      <section class="newsletter bg-orange pagination-section">
         <div class="container">
           <p class="large color-white">Sign up for our newsletter to stay up to date.</p>
           <newsletter-form></newsletter-form>
@@ -410,74 +398,60 @@ $mockup_width: 250px;
 .from-to {
   display: flex;
   flex-direction: column;
-  position: relative;
-  .text {
-    .wrapper {
-      width: 90%;
-      margin: 0 auto;
+  justify-content: space-between;
+  .toggle {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex: 1;
+    &:nth-child(1) {
+      .front {
+        background-image: url('~/static/covers/cement.jpg');
+      }
     }
-    &.text-left,
-    &.text-right {
-      padding: 30px 0;
+    &:nth-child(2) {
+      .front {
+        background-image: url('~/static/covers/wood.jpg');
+        h2 {
+          color: $gray;
+        }
+      }
     }
-    &.text-left {
-      > .wrapper {
+    &:nth-child(3) {
+      .front {
+        background-image: url('~/static/covers/dirt.jpg');
+      }
+    }
+    .front {
+      background-size: cover;
+      background-repeat: no-repeat;
+      > .container {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-      }
-      h2,
-      p {
-        text-align: right;
-      }
-      .fade-in {
-        @include fade-in-up-from-left;
+        align-items: center;
+        justify-content: center;
       }
     }
-    &.text-right {
-      .fade-in {
-        @include fade-in-up-from-right;
+    h2 {
+      color: white;
+      text-align: center;
+    }
+    .back {
+      top: 100%;
+      transition: 0.4s;
+    }
+    &.open {
+      .back {
+        top: 0;
       }
     }
   }
-  .mockup {
-    display: none;
-    position: absolute;
-    top: 50%;
-    margin-top: -($mockup_height / 2);
-    left: 50%;
-  }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $large) {
     flex-direction: row;
-    .text {
-      width: 50%;
-      p {
-        max-width: 310px;
-      }
-      &.text-left {
-        padding: 100px ($mockup_width / 2) 100px 0;
-      }
-      &.text-right {
-        padding: 100px 0 100px ($mockup_width / 2);
-      }
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    $mockup_width: 300px;
-    $mockup_height: 600px;
-    .mockup {
-      display: block;
-      top: 50%;
-      margin-top: -($mockup_height / 2);
-      left: 50%;
-      margin-left: -($mockup_width / 2);
-    }
-    .text {
-      &.text-left {
-        padding: 100px (($mockup_width / 2) + 30px) 100px 0;
-      }
-      &.text-right {
-        padding: 100px 0 100px (($mockup_width / 2) + 30px);
+    .toggle {
+      margin: 0 20px 0 0;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
