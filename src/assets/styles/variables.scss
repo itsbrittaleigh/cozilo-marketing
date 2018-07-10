@@ -169,3 +169,37 @@ $font: 'Avenir', 'Verdana', sans-serif;
   animation: fade-in $duration,
     up-from-right $duration;
 }
+
+/**
+ * [05] Icons
+ */
+@mixin icon-plus($container_width: 40px, $icon_width: 20px, $line_width: 2px) {
+  width: $container_width;
+  height: $container_width;
+  z-index: 10;
+  &:after,
+  &:before {
+    content: '';
+    transition: 0.4s;
+    position: absolute;
+    display: block;
+    background: white;
+    z-index: 10;
+  }
+  &:after {
+    width: $line_width;
+    height: $icon_width - ($line_width / 2);
+    margin-top: - (($icon_width / 2) - ($line_width / 2));
+    top: 50%;
+    left: (($container_width - $icon_width) / 2) + ($icon_width / 2) - ($line_width / 2);
+    right: ($icon_width / 2) - ($line_width / 2);
+  }
+  &:before {
+    height: $line_width;
+    width: $icon_width - ($line_width / 2);
+    margin-left: - (($icon_width / 2) - ($line_width / 2));
+    left: 50%;
+    top: (($container_width - $icon_width) / 2) + ($icon_width / 2) - ($line_width / 2);
+    bottom: ($icon_width / 2) - ($line_width / 2);
+  }
+}

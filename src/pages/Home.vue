@@ -6,7 +6,7 @@
           v-for="(section, index) in sections"
           :key="index"
           :class="{ 'active': section.isActive }"
-          v-scroll-to="`#section${section.id}`"
+          v-scroll-to="`#${section.id}`"
         ></i>
       </div>
       <section class="hero home with-bg-image pagination-section">
@@ -211,73 +211,65 @@
       </section>
       <section class="app-markup padded-section bg-white pagination-section">
         <div class="container">
-          <h2 class="color-lightgray hidden">
-            Cozilo: The truly mobile way to buy, sell, and trade
+          <h2 class="hidden">
+            Cozilo:
+            <span class="lower">
+              The truly mobile way to
+              <span class="color-lightblue">buy,</span>
+              <span class="color-green">sell,</span>
+              <span class="color-orange">and trade.</span>
+            </span>
           </h2>
           <div class="value-props">
             <div class="col-lt">
-              <div class="prop">
-                <p class="large color-darkblue hidden">A business-focused platform</p>
+              <div :class="{'prop lightblue': true, 'selected': featureOneIsSelected}">
+                <i class="icon-plus" @click="toggleFeatureOne"></i>
+                <p class="large hidden">Feature one</p>
                 <p class="hidden">
-                  Cozilo is a business-focused marketplace that allows you to transparently
-                  set your pricing levels: wholesale, volume, individual goods&mdash;whatever
-                  your business needs.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="prop color-lightblue">
-                <p class="large hidden">Find used and new</p>
+              <div :class="{'prop orange': true, 'selected': featureTwoIsSelected}">
+                <i class="icon-plus" @click="toggleFeatureTwo"></i>
+                <p class="large hidden">Feature two</p>
                 <p class="hidden">
-                  Depending on your company's budget and needs, you can find both new and
-                  used goods on Cozilo, unlike other selling apps and marketplaces.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="prop color-orange">
-                <p class="large hidden">Simple interface and payment structure</p>
+              <div :class="{'prop green': true, 'selected': featureThreeIsSelected}">
+                <i class="icon-plus" @click="toggleFeatureThree"></i>
+                <p class="large hidden">Feature three</p>
                 <p class="hidden">
-                  With one simple push of a button, you can take high-quality photos of your
-                  goods and post them directly on the Cozilo B2B marketplace for thousands
-                  of other business owners to see.
-                </p>
-              </div>
-              <div class="prop color-green">
-                <p class="large hidden">Advertise while you're here</p>
-                <p class="hidden">
-                  Connect directly and securely with other buyers, sellers, and traders on the
-                  Cozilo app to create your own personal B2B network and advertise your company.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
             </div>
-            <div class="mockup with-screen-scroll">
-              <img src="../assets/images/iphone.png" alt="" class="phone-shell">
-              <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="static">
+            <div class="mockup item-overview">
+              <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
+              <div class="screen-container">
+                <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
+              </div>
             </div>
             <div class="col-rt">
-              <div class="prop color-lightblue">
-                <p class="large hidden">Chat with sellers</p>
+              <div :class="{'prop lightblue': true, 'selected': featureFourIsSelected}">
+                <i class="icon-plus" @click="toggleFeatureFour"></i>
+                <p class="large hidden">Feature four</p>
                 <p class="hidden">
-                  Connect and communicate with other business owners directly through the app before
-                  meeting in person to complete your transactions.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="prop color-orange">
-                <p class="large hidden">Take the hassle out of shipping</p>
+              <div :class="{'prop orange': true, 'selected': featureFiveIsSelected}">
+                <i class="icon-plus" @click="toggleFeatureFive"></i>
+                <p class="large hidden">Feature five</p>
                 <p class="hidden">
-                  Cozilo takes all the hassle out of shipping goods by offering fast and efficient
-                  freight shipping assistance.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="prop color-green">
-                <p class="large hidden">Safe transcations with user ratings and an escrow</p>
+              <div :class="{'prop green': true, 'selected': featureSixIsSelected}">
+                <i class="icon-plus" @click="toggleFeatureSix"></i>
+                <p class="large hidden">Feature six</p>
                 <p class="hidden">
-                  With our multi-step verification process for all Cozilo business users, you can
-                  be sure that every transaction is secure before ever even meeting.
-                </p>
-              </div>
-              <div class="prop">
-                <p class="large color-darkblue hidden">Choose your method of payment</p>
-                <p class="hidden">
-                  The Cozilo app accepts all major credit cards, including VISA, Mastercard,
-                  American Express, and more.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
             </div>
@@ -287,8 +279,7 @@
               :to="{ name: 'Features' }"
               class="button bg-lightblue hidden"
             >
-              Learn More About The App Features
-              <img class="arrow" src="../assets/images/icons/arrow-white-right.svg" alt="">
+              Learn More About Cozilo's Features &rarr;
             </router-link>
           </div>
         </div>
@@ -320,6 +311,12 @@ export default {
       factoryIsOpen: false,
       cubicleIsOpen: false,
       betweenIsOpen: false,
+      featureOneIsSelected: false,
+      featureTwoIsSelected: false,
+      featureThreeIsSelected: false,
+      featureFourIsSelected: false,
+      featureFiveIsSelected: false,
+      featureSixIsSelected: false,
     };
   },
   components: {
@@ -340,6 +337,24 @@ export default {
     },
     toggleBetween() {
       this.betweenIsOpen = !this.betweenIsOpen;
+    },
+    toggleFeatureOne() {
+      this.featureOneIsSelected = !this.featureOneIsSelected;
+    },
+    toggleFeatureTwo() {
+      this.featureTwoIsSelected = !this.featureTwoIsSelected;
+    },
+    toggleFeatureThree() {
+      this.featureThreeIsSelected = !this.featureThreeIsSelected;
+    },
+    toggleFeatureFour() {
+      this.featureFourIsSelected = !this.featureFourIsSelected;
+    },
+    toggleFeatureFive() {
+      this.featureFiveIsSelected = !this.featureFiveIsSelected;
+    },
+    toggleFeatureSix() {
+      this.featureSixIsSelected = !this.featureSixIsSelected;
     },
     measureViewport() {
       this.viewportHeight = window.innerHeight;
@@ -393,19 +408,18 @@ export default {
   padding: 20px;
   background: $darkblue;
   i {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    border: 1px solid $white;
-    margin-right: 20px;
-    box-shadow: 1px 2px 2px 0 rgba($darkblue, 0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #d9d9d9;
+    margin-right: 15px;
     cursor: pointer;
     transition: 0.3s;
     &:last-of-type {
       margin-right: 0;
     }
     &.active {
-      background: $white;
+      background: #d9d9d9;
     }
   }
   @media only screen and (min-width: $large) {
@@ -548,6 +562,12 @@ export default {
         }
       }
     }
+    .icon-plus {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      @include icon-plus;
+    }
     &.open {
       .icon-plus {
         &:after,
@@ -557,42 +577,6 @@ export default {
       }
       .back {
         top: 0;
-      }
-    }
-    .icon-plus {
-      $container_width: 40px;
-      $icon_width: 20px;
-      $line_width: 2px;
-      position: absolute;
-      top: ($container_width - $icon_width) / 2;
-      right: ($container_width - $icon_width) / 2;
-      width: $container_width;
-      height: $container_width;
-      z-index: 10;
-      &:after,
-      &:before {
-        content: '';
-        transition: 0.4s;
-        position: absolute;
-        display: block;
-        background: white;
-        z-index: 10;
-      }
-      &:after {
-        width: $line_width;
-        height: $icon_width - ($line_width / 2);
-        margin-top: - (($icon_width / 2) - ($line_width / 2));
-        top: 50%;
-        left: (($container_width - $icon_width) / 2) + ($icon_width / 2) - ($line_width / 2);
-        right: ($icon_width / 2) - ($line_width / 2);
-      }
-      &:before {
-        height: $line_width;
-        width: $icon_width - ($line_width / 2);
-        margin-left: - (($icon_width / 2) - ($line_width / 2));
-        left: 50%;
-        top: (($container_width - $icon_width) / 2) + ($icon_width / 2) - ($line_width / 2);
-        bottom: ($icon_width / 2) - ($line_width / 2);
       }
     }
   }
@@ -609,73 +593,104 @@ export default {
   }
 }
 .app-markup {
-  > .container {
-    max-width: 1200px;
-  }
   h2 {
+    color: $lightgray;
     text-align: center;
-  }
-  p {
-    margin: 0;
-    &:not(.large) {
-      color: $lightgray;
+    margin-bottom: 40px;
+    .lower {
+      text-transform: none;
     }
-    &.large {
-      font-weight: bold;
-    }
-  }
-  .value-props {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    .col-lt {
-      margin-right: 20px;
-      .fade-in {
-        @include fade-in-up-from-left;
-      }
-    }
-    .col-rt {
-      .fade-in {
-        @include fade-in-up-from-right;
-      }
-    }
-    .prop {
-      margin-bottom: 20px;
-    }
-  }
-  .mockup {
-    display: none;
   }
   .button-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 60px;
   }
-  @media only screen and (min-width: 1000px) {
-    .value-props {
-      margin-top: 80px;
-      .col-lt,
-      .col-rt {
-        width: 300px;
+  .mockup {
+    display: none;
+    visibility: hidden;
+  }
+  .value-props {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    .prop {
+      width: 300px;
+      padding: 20px 40px;
+      margin-bottom: 20px;
+      background: #f6f6f6;
+      border-radius: 5px;
+      position: relative;
+      transition: 0.4s;
+      &.selected {
+        &.orange,
+        &.lightblue,
+        &.green {
+          p,
+          p.large {
+            color: white;
+          }
+          .icon-plus {
+            background: $darkblue;
+          }
+        }
       }
-      .prop {
-        margin-bottom: 60px;
-        &:last-of-type {
-          margin-bottom: 0;
+      .icon-plus {
+        position: absolute;
+        left: -10px;
+        top: 20px;
+        border-radius: 20px;
+        transition: 0.4s;
+        @include icon-plus(20px, 11px, 1px);
+      }
+      &.green {
+        p.large {
+          color: $green;
+        }
+        .icon-plus {
+          background: $green;
+        }
+        &.selected {
+          background: $green;
+        }
+      }
+      &.orange {
+        p.large {
+          color: $orange;
+        }
+        .icon-plus {
+          background: $orange;
+        }
+        &.selected {
+          background: $orange;
+        }
+      }
+      &.lightblue {
+        p.large {
+          color: $lightblue;
+        }
+        .icon-plus {
+          background: $lightblue;
+        }
+        &.selected {
+          background: $lightblue;
+        }
+      }
+      p {
+        margin: 0;
+        &.large {
+          font-weight: bold;
         }
       }
     }
-    p:not(.large) {
-      font-size: 18px;
-    }
-    p.large  {
-      line-height: 1.2;
-    }
-    .mockup {
-      display: block;
-      // width: 400px;
-      // object-fit: contain;
-      align-self: center;
+    @media only screen and (min-width: $large) {
+      justify-content: space-between;
+      .mockup {
+        display: block;
+        visibility: visible;
+      }
     }
   }
 }
