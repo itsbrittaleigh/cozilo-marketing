@@ -86,7 +86,8 @@
         </div>
       </section>
       <section class="from-to pagination-section">
-        <div class="toggle">
+        <div :class="{ toggle: true, open: factoryIsOpen }">
+          <i class="icon-plus" @click="toggleFactory"></i>
           <div class="front padded-section">
             <div class="container">
               <div class="section-header-icon bg-lightblue hidden">
@@ -95,9 +96,23 @@
               <h2>From the factory floor</h2>
             </div>
           </div>
-          <div class="back"></div>
+          <div class="back">
+            <div class="container">
+              <header>
+                <div class="section-header-icon bg-white">
+                  <i class="fas fa-industry" style="color: #62a9c5"></i>
+                </div>
+                <p><em>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora,
+                  ipsa repellat eius totam earum, aut officiis
+                </em></p>
+              </header>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
         </div>
-        <div class="toggle">
+        <div :class="{ toggle: true, open: cubicleIsOpen }">
+          <i class="icon-plus" @click="toggleCubicle"></i>
           <div class="front padded-section">
             <div class="container">
               <div class="section-header-icon bg-orange hidden">
@@ -106,9 +121,23 @@
               <h2>To the office cubicle</h2>
             </div>
           </div>
-          <div class="back"></div>
+          <div class="back">
+            <div class="container">
+              <header>
+                <div class="section-header-icon bg-white">
+                  <i class="fas fa-briefcase" style="color: #ec632e"></i>
+                </div>
+                <p><em>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora,
+                  ipsa repellat eius totam earum, aut officiis
+                </em></p>
+              </header>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
         </div>
-        <div class="toggle">
+        <div :class="{ toggle: true, open: betweenIsOpen }">
+          <i class="icon-plus" @click="toggleBetween"></i>
           <div class="front padded-section">
             <div class="container">
               <div class="section-header-icon bg-green hidden">
@@ -117,10 +146,23 @@
               <h2>And everything in between</h2>
             </div>
           </div>
-          <div class="back"></div>
+          <div class="back">
+            <div class="container">
+              <header>
+                <div class="section-header-icon bg-white">
+                  <i class="fas fa-leaf" style="color: #77c373"></i>
+                </div>
+                <p><em>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora,
+                  ipsa repellat eius totam earum, aut officiis
+                </em></p>
+              </header>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="value-section pagination-section angle-split angle-color">
+      <section class="pagination-section angle-split angle-color">
         <div class="col-lt padded-section">
           <div class="container">
             <div class="section-header-icon bg-darkblue hidden">
@@ -275,6 +317,9 @@ export default {
       sections: [],
       viewportHeight: 0,
       scrollPosition: 0,
+      factoryIsOpen: false,
+      cubicleIsOpen: false,
+      betweenIsOpen: false,
     };
   },
   components: {
@@ -287,6 +332,15 @@ export default {
     TagAsVisible,
   ],
   methods: {
+    toggleCubicle() {
+      this.cubicleIsOpen = !this.cubicleIsOpen;
+    },
+    toggleFactory() {
+      this.factoryIsOpen = !this.factoryIsOpen;
+    },
+    toggleBetween() {
+      this.betweenIsOpen = !this.betweenIsOpen;
+    },
     measureViewport() {
       this.viewportHeight = window.innerHeight;
     },
@@ -429,10 +483,13 @@ export default {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    flex: 1;
+    height: 450px;
     &:nth-child(1) {
       .front {
         background-image: url('~/static/covers/cement.jpg');
+      }
+      .back {
+        background: $lightblue;
       }
     }
     &:nth-child(2) {
@@ -442,10 +499,16 @@ export default {
           color: $gray;
         }
       }
+      .back {
+        background: $orange;
+      }
     }
     &:nth-child(3) {
       .front {
         background-image: url('~/static/covers/dirt.jpg');
+      }
+      .back {
+        background: $green;
       }
     }
     .front {
@@ -464,19 +527,81 @@ export default {
       text-align: center;
     }
     .back {
+      position: absolute;
       top: 100%;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
       transition: 0.4s;
+      padding: 40px 20px 20px;
+      p,
+      li {
+        color: white;
+      }
+      header {
+        display: flex;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        p {
+          flex: 1;
+          margin: 0 0 0 15px;
+        }
+      }
     }
     &.open {
+      .icon-plus {
+        &:after,
+        &:before {
+          transform: rotate(45deg);
+        }
+      }
       .back {
         top: 0;
+      }
+    }
+    .icon-plus {
+      $container_width: 40px;
+      $icon_width: 20px;
+      $line_width: 2px;
+      position: absolute;
+      top: ($container_width - $icon_width) / 2;
+      right: ($container_width - $icon_width) / 2;
+      width: $container_width;
+      height: $container_width;
+      z-index: 10;
+      &:after,
+      &:before {
+        content: '';
+        transition: 0.4s;
+        position: absolute;
+        display: block;
+        background: white;
+        z-index: 10;
+      }
+      &:after {
+        width: $line_width;
+        height: $icon_width - ($line_width / 2);
+        margin-top: - (($icon_width / 2) - ($line_width / 2));
+        top: 50%;
+        left: (($container_width - $icon_width) / 2) + ($icon_width / 2) - ($line_width / 2);
+        right: ($icon_width / 2) - ($line_width / 2);
+      }
+      &:before {
+        height: $line_width;
+        width: $icon_width - ($line_width / 2);
+        margin-left: - (($icon_width / 2) - ($line_width / 2));
+        left: 50%;
+        top: (($container_width - $icon_width) / 2) + ($icon_width / 2) - ($line_width / 2);
+        bottom: ($icon_width / 2) - ($line_width / 2);
       }
     }
   }
   @media only screen and (min-width: $large) {
     flex-direction: row;
+    margin-bottom: 30px;
     .toggle {
-      margin: 0 20px 0 0;
+      flex: 1;
+      margin: 0 30px 0 0;
       &:last-child {
         margin-right: 0;
       }
