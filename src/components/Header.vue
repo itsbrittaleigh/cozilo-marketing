@@ -63,6 +63,7 @@ header {
       align-items: center;
       justify-content: space-between;
       position: relative;
+      max-width: 850px;
     }
     .logo {
       width: 200px;

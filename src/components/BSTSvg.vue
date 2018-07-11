@@ -15,19 +15,15 @@
         stroke-dashoffset="1000"
       />
       <g>
-        <circle
-          class="buy"
-          :cx="buyCircleXCoordinate"
-          :cy="buyCircleYCoordinate"
-          :r="innerCircleRadius"
-        />
         <foreignObject
+          class="buy"
           :x="buyCircleXCoordinate - innerCircleRadius"
           :y="buyCircleYCoordinate - innerCircleRadius"
           :width="innerCircleRadius * 2"
           :height="innerCircleRadius * 2"
         >
           <div class="content-circle">
+            <i class="icon-plus"></i>
             <p>
               <i class="fas fa-shopping-cart fa-lg"></i>
               BUY
@@ -36,19 +32,15 @@
         </foreignObject>
       </g>
       <g>
-        <circle
-          class="sell"
-          :cx="sellCircleXCoordinate"
-          :cy="sellCircleYCoordinate"
-          :r="innerCircleRadius"
-        />
         <foreignObject
+          class="sell"
           :x="sellCircleXCoordinate - innerCircleRadius"
           :y="sellCircleYCoordinate - innerCircleRadius"
           :width="innerCircleRadius * 2"
           :height="innerCircleRadius * 2"
         >
           <div class="content-circle">
+            <i class="icon-plus"></i>
             <p>
               <i class="fas fa-credit-card fa-lg"></i>
               SELL
@@ -57,19 +49,15 @@
         </foreignObject>
       </g>
       <g>
-        <circle
-          class="trade"
-          :cx="tradeCircleXCoordinate"
-          :cy="tradeCircleYCoordinate"
-          :r="innerCircleRadius"
-        />
         <foreignObject
+          class="trade"
           :x="tradeCircleXCoordinate - innerCircleRadius"
           :y="tradeCircleYCoordinate - innerCircleRadius"
           :width="innerCircleRadius * 2"
           :height="innerCircleRadius * 2"
         >
           <div class="content-circle">
+            <i class="icon-plus"></i>
             <p>
               <i class="fas fa-exchange-alt fa-lg"></i>
               TRADE
@@ -114,16 +102,16 @@ export default {
     buyCircleYCoordinate() {
       return (this.outerCircleRadius + (this.outerCircleRadius / 2)) + (this.margin * 1.5);
     },
-    sellCircleXCoordinate() {
+    tradeCircleXCoordinate() {
       return (this.outerCircleRadius + this.offset) + this.margin;
     },
-    sellCircleYCoordinate() {
+    tradeCircleYCoordinate() {
       return (this.outerCircleRadius + (this.outerCircleRadius / 2)) + (this.margin * 1.5);
     },
-    tradeCircleXCoordinate() {
+    sellCircleXCoordinate() {
       return this.canvasWidth / 2;
     },
-    tradeCircleYCoordinate() {
+    sellCircleYCoordinate() {
       return (this.margin * 1.5);
     },
   },
@@ -138,10 +126,24 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";
+@keyframes pop-in {
+  0% {
+    transform: rotate(-30deg) scale(0);
+  }
+  75% {
+    transform: rotate(-30deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(-30deg) scale(1);
+  }
+}
 .svg-container {
   margin: 40px auto 0;
+  transform: rotate(30deg);
+  overflow: visible;
 }
 .value-props {
+  overflow: visible;
   .outer-circle {
     fill: none;
     stroke: white;
@@ -149,15 +151,61 @@ export default {
     transition: all 4s ease-in-out;
   }
   .buy {
-    fill: $lightblue;
+    overflow: visible;
+    .content-circle {
+      @keyframes fade-in {
+        0% {
+          opacity: 0
+        }
+        39% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      animation: 1s ease-in 0.6s pop-in, 1.6s ease-in 0s fade-in;
+      background: $lightblue;
+    }
   }
   .sell {
-    fill: $green;
+    overflow: visible;
+    .content-circle {
+      @keyframes fade-in {
+        0% {
+          opacity: 0
+        }
+        49% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      animation: 1s ease-in 0.9s pop-in, 1.9s ease-in 0s fade-in;
+      background: $green;
+    }
   }
   .trade {
-    fill: $orange;
+    overflow: visible;
+    .content-circle {
+      @keyframes fade-in {
+        0% {
+          opacity: 0
+        }
+        24% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      animation: 1s ease-in 0.3s pop-in, 1.3s ease-in 0s fade-in;
+      background: $orange;
+    }
   }
   .content-circle {
+    transform: rotate(-30deg);
     height: 100%;
     width: 100%;
     border-radius: 100%;
@@ -165,7 +213,16 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .icon-plus {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      margin-left: -14px;
+      transition: 0.4s;
+      @include icon-plus(28px, 13px, 1px);
+    }
     p {
+      padding-top: 10px;
       text-align: center;
       font: $font;
       margin: 0;
@@ -173,6 +230,11 @@ export default {
       svg {
         display: block;
         margin: 0 auto 10px;
+      }
+    }
+    &.selected {
+      .icon-plus {
+        transform: rotate(45deg);
       }
     }
   }

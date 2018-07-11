@@ -1,5 +1,5 @@
 <template>
-  <div class="form-container">
+  <div class="form-container hidden">
     <form action="https://cozilo.us18.list-manage.com/subscribe/post?u=fa27529a5d259d242d544ac90&amp;id=07e41434a5" method="post" id="news" target="_blank">
       <div style="position: absolute; left: -5000px;" aria-hidden="true">
         <input type="text" name="b_fa27529a5d259d242d544ac90_07e41434a5" tabindex="-1" value="">

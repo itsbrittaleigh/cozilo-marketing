@@ -45,13 +45,13 @@
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <h2 class="hidden">Buy headline goes here</h2>
-            <p>
+            <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
               ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
               repellat.
             </p>
-            <ul class="feature-list lightblue">
+            <ul class="feature-list lightblue hidden">
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
@@ -72,12 +72,12 @@
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
             <h2 class="hidden">Sell headline goes here</h2>
-            <p>
+            <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
               voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
             </p>
-            <ul class="feature-list green">
+            <ul class="feature-list green hidden">
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
@@ -93,7 +93,7 @@
               <div class="section-header-icon bg-lightblue hidden">
                 <i class="fas fa-industry" style="color: white;"></i>
               </div>
-              <h2>From the factory floor</h2>
+              <h2 class="hidden">From the factory floor</h2>
             </div>
           </div>
           <div class="back">
@@ -118,7 +118,7 @@
               <div class="section-header-icon bg-orange hidden">
                 <i class="fas fa-briefcase" style="color: white;"></i>
               </div>
-              <h2>To the office cubicle</h2>
+              <h2 class="hidden">To the office cubicle</h2>
             </div>
           </div>
           <div class="back">
@@ -143,7 +143,7 @@
               <div class="section-header-icon bg-green hidden">
                 <i class="fas fa-leaf" style="color: white;"></i>
               </div>
-              <h2>And everything in between</h2>
+              <h2 class="hidden">And everything in between</h2>
             </div>
           </div>
           <div class="back">
@@ -169,13 +169,13 @@
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <h2 class="hidden">Top feature goes here</h2>
-            <p>
+            <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
               ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
               repellat.
             </p>
-            <ul class="feature-list darkblue">
+            <ul class="feature-list darkblue hidden">
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
@@ -196,12 +196,12 @@
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
             <h2 class="hidden">Top feature goes here</h2>
-            <p>
+            <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
               voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
             </p>
-            <ul class="feature-list darkblue">
+            <ul class="feature-list darkblue hidden">
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
               <li>Lorem ipsum</li>
@@ -222,24 +222,24 @@
           </h2>
           <div class="value-props">
             <div class="col-lt">
-              <div :class="{'prop lightblue': true, 'selected': featureOneIsSelected}">
+              <div :class="{'prop lightblue hidden': true, 'selected': featureOneIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureOne"></i>
-                <p class="large hidden">Feature one</p>
-                <p class="hidden">
+                <p class="large">Feature one</p>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div :class="{'prop orange': true, 'selected': featureTwoIsSelected}">
+              <div :class="{'prop orange hidden': true, 'selected': featureTwoIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureTwo"></i>
-                <p class="large hidden">Feature two</p>
-                <p class="hidden">
+                <p class="large">Feature two</p>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div :class="{'prop green': true, 'selected': featureThreeIsSelected}">
+              <div :class="{'prop green hidden': true, 'selected': featureThreeIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureThree"></i>
-                <p class="large hidden">Feature three</p>
-                <p class="hidden">
+                <p class="large">Feature three</p>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
@@ -251,24 +251,24 @@
               </div>
             </div>
             <div class="col-rt">
-              <div :class="{'prop lightblue': true, 'selected': featureFourIsSelected}">
+              <div :class="{'prop lightblue hidden': true, 'selected': featureFourIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureFour"></i>
-                <p class="large hidden">Feature four</p>
-                <p class="hidden">
+                <p class="large">Feature four</p>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div :class="{'prop orange': true, 'selected': featureFiveIsSelected}">
+              <div :class="{'prop orange hidden': true, 'selected': featureFiveIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureFive"></i>
-                <p class="large hidden">Feature five</p>
-                <p class="hidden">
+                <p class="large">Feature five</p>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-              <div :class="{'prop green': true, 'selected': featureSixIsSelected}">
+              <div :class="{'prop green hidden': true, 'selected': featureSixIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureSix"></i>
-                <p class="large hidden">Feature six</p>
-                <p class="hidden">
+                <p class="large">Feature six</p>
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
@@ -286,7 +286,7 @@
       </section>
       <section class="newsletter bg-orange pagination-section">
         <div class="container">
-          <p class="large color-white">Sign up for our newsletter to stay up to date.</p>
+          <p class="large color-white hidden">Sign up for our newsletter to stay up to date.</p>
           <newsletter-form></newsletter-form>
         </div>
       </section>
@@ -408,11 +408,11 @@ export default {
   padding: 20px;
   background: $darkblue;
   i {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
     border: 1px solid #d9d9d9;
-    margin-right: 15px;
+    margin-right: 10px;
     cursor: pointer;
     transition: 0.3s;
     &:last-of-type {
@@ -606,10 +606,15 @@ export default {
     align-items: center;
     justify-content: center;
     margin-top: 60px;
+    .button {
+      position: relative;
+      z-index: 100;
+    }
   }
   .mockup {
     display: none;
     visibility: hidden;
+    pointer-events: none;
   }
   .value-props {
     display: flex;
@@ -634,10 +639,12 @@ export default {
           }
           .icon-plus {
             background: $darkblue;
+            transform: rotate(45deg);
           }
         }
       }
       .icon-plus {
+        cursor: pointer;
         position: absolute;
         left: -10px;
         top: 20px;

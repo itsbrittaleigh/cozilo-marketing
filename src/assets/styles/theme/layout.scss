@@ -148,16 +148,27 @@ body {
       width: 50%;
       background: none;
       > .container {
-        width: 50%;
+        width: 320px;
+        box-sizing: content-box;
+      }
+      &.padded-section {
+        transition: 0.4s;
       }
     }
     .col-lt {
       clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
       padding: 100px 0;
+      &:hover {
+        padding-top: 140px;
+        padding-left: 30px;
+      }
     }
     .col-rt {
       clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
       padding: 180px 0 100px;
+      &:hover {
+        padding: 140px 30px 140px 0;
+      }
     }
     &.angle-color {
       background:linear-gradient(98deg, $green 0, $green 49%, white 49%, white 51%, $lightblue 51%, $lightblue 100%);
