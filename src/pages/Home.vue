@@ -17,13 +17,12 @@
         <div class="container">
           <div class="content">
             <h1 class="fade-in">
-              <span class="green">The business only,</span>
+              <span class="green">The business-focused,</span>
               <span class="blue">mobile marketplace</span>
             </h1>
             <p class="fade-in">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quidem aliquid facere
-              nobis deserunt delectus repellat suscipit perspiciatis fugiat dolore? Perferendis
-              recusandae magnam ipsa aliquam sequi corporis iure facere distinctio?
+              Reach out to serious buyers and sellers to streamline your business’ supply chain
+              quickly and easily, right from our free mobile app.
             </p>
             <router-link
               :to="{ name: 'Contact' }"
@@ -44,7 +43,7 @@
             <div class="section-header-icon bg-lightblue hidden">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Buy headline goes here</h2>
+            <h2 class="hidden">Buy new &amp; used goods</h2>
             <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
@@ -52,9 +51,9 @@
               repellat.
             </p>
             <ul class="feature-list lightblue hidden">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Opening your new business</li>
+              <li>Expanding your current business</li>
+              <li>Get your employees the products they need</li>
             </ul>
           </div>
         </div>
@@ -71,16 +70,16 @@
             <div class="section-header-icon bg-green hidden">
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Sell headline goes here</h2>
+            <h2 class="hidden">Sell new &amp; used goods</h2>
             <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
               voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
             </p>
             <ul class="feature-list green hidden">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Sell off overstock goods</li>
+              <li>Liquidate excess products</li>
+              <li>Remove clutter from your office space</li>
             </ul>
           </div>
         </div>
@@ -107,7 +106,50 @@
                   ipsa repellat eius totam earum, aut officiis
                 </em></p>
               </header>
-              <p>Lorem ipsum dolor sit.</p>
+              <div class="categories">
+                <div class="col-lt">
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Electronics </h3>
+                    <ul>
+                      <li>Computer Hardware</li>
+                      <li>Computer Software</li>
+                      <li>Consumer Electronics</li>
+                      <li>Printers and Scanners</li>
+                      <li>Computer Security Systems</li>
+                      <li>Hard Drives</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Office Furniture</h3>
+                    <ul>
+                      <li>Desks and Chairs</li>
+                      <li>Conference Tables</li>
+                      <li>Filing Cabinets</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-rt">
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Electrical Equipment</h3>
+                    <ul>
+                      <li>Electrical Equipment and Supplies</li>
+                      <li>Telecommunications</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Packaging and Office Supplies</h3>
+                    <ul>
+                      <li>Packaging and Printing</li>
+                      <li>Office and School Supplies</li>
+                      <li>Service Equipment</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +174,50 @@
                   ipsa repellat eius totam earum, aut officiis
                 </em></p>
               </header>
-              <p>Lorem ipsum dolor sit.</p>
+              <div class="categories">
+                <div class="col-lt">
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Electronics </h3>
+                    <ul>
+                      <li>Computer Hardware</li>
+                      <li>Computer Software</li>
+                      <li>Consumer Electronics</li>
+                      <li>Printers and Scanners</li>
+                      <li>Computer Security Systems</li>
+                      <li>Hard Drives</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Office Furniture</h3>
+                    <ul>
+                      <li>Desks and Chairs</li>
+                      <li>Conference Tables</li>
+                      <li>Filing Cabinets</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-rt">
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Electrical Equipment</h3>
+                    <ul>
+                      <li>Electrical Equipment and Supplies</li>
+                      <li>Telecommunications</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Packaging and Office Supplies</h3>
+                    <ul>
+                      <li>Packaging and Printing</li>
+                      <li>Office and School Supplies</li>
+                      <li>Service Equipment</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -157,7 +242,50 @@
                   ipsa repellat eius totam earum, aut officiis
                 </em></p>
               </header>
-              <p>Lorem ipsum dolor sit.</p>
+              <div class="categories">
+                <div class="col-lt">
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Electronics </h3>
+                    <ul>
+                      <li>Computer Hardware</li>
+                      <li>Computer Software</li>
+                      <li>Consumer Electronics</li>
+                      <li>Printers and Scanners</li>
+                      <li>Computer Security Systems</li>
+                      <li>Hard Drives</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Office Furniture</h3>
+                    <ul>
+                      <li>Desks and Chairs</li>
+                      <li>Conference Tables</li>
+                      <li>Filing Cabinets</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-rt">
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Electrical Equipment</h3>
+                    <ul>
+                      <li>Electrical Equipment and Supplies</li>
+                      <li>Telecommunications</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Packaging and Office Supplies</h3>
+                    <ul>
+                      <li>Packaging and Printing</li>
+                      <li>Office and School Supplies</li>
+                      <li>Service Equipment</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -529,11 +657,18 @@ export default {
       background-size: cover;
       background-repeat: no-repeat;
       height: 100%;
+      padding: 0 30px;
       > .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: 0.4s;
+      }
+      &:hover {
+        > .container {
+          padding-bottom: 40px;
+        }
       }
     }
     h2 {
@@ -546,12 +681,9 @@ export default {
       height: 100%;
       width: 100%;
       z-index: 5;
-      transition: 0.4s;
-      padding: 40px 20px 20px;
-      p,
-      li {
-        color: white;
-      }
+      transition: 0.7s;
+      padding: 50px 20px 20px;
+      overflow: scroll;
       header {
         display: flex;
         padding-bottom: 10px;
@@ -561,12 +693,48 @@ export default {
           margin: 0 0 0 15px;
         }
       }
+      h3,
+      p,
+      li {
+        color: white;
+      }
+      .categories {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .col-lt,
+        .col-rt {
+          flex: 1;
+        }
+        .col-lt {
+          margin-right: 10px;
+        }
+      }
+      .category {
+        margin-top: 20px;
+        img {
+          height: 15px;
+        }
+        h3 {
+          font-weight: bold;
+          margin: 5px 0;
+          font-size: 16px;
+        }
+        ul {
+          margin: 0;
+          padding: 0 20px;
+          li {
+            font-size: 12px;
+          }
+        }
+      }
     }
     .icon-plus {
       position: absolute;
       top: 10px;
       right: 10px;
       @include icon-plus;
+      cursor: pointer;
     }
     &.open {
       .icon-plus {
