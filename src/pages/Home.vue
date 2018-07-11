@@ -33,11 +33,11 @@
           </div>
           <bst-svg></bst-svg>
         </div>
+        <a href="" class="arrow" v-scroll-to="'#section1'">
+          <img src="static/icons/arrow-down.png" alt="">
+        </a>
       </section>
-      <section
-        id="marketplace"
-        class="value-section pagination-section angle-split"
-      >
+      <section class="value-section pagination-section angle-split">
         <div class="col-lt padded-section">
           <div class="container">
             <div class="section-header-icon bg-lightblue hidden">
@@ -578,6 +578,23 @@ export default {
 }
 .hero {
   padding: 70px 0 120px;
+  position: relative;
+  .arrow {
+    width: 60px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 10;
+    &:hover {
+      @keyframes slide {
+        0% { bottom: 60px; }
+        50% { bottom: 40px }
+        100% { bottom: 60px }
+      }
+      animation: 1s ease-in-out 0s slide infinite;
+    }
+  }
   h1 {
     color: $white;
     margin-top: 0;
