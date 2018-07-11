@@ -22,12 +22,24 @@
           :width="innerCircleRadius * 2"
           :height="innerCircleRadius * 2"
         >
-          <div class="content-circle">
+          <div
+            :class="{
+              'content-circle': true,
+              'selected': buyIsSelected
+            }"
+            @click="toggleBuy"
+          >
             <i class="icon-plus"></i>
-            <p>
-              <i class="fas fa-shopping-cart fa-lg"></i>
-              BUY
-            </p>
+            <div class="content">
+              <p>
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                BUY
+              </p>
+              <p class="selected-text">
+                Buy new &amp; used goods to stock your office, expand your business,
+                and more.
+              </p>
+            </div>
           </div>
         </foreignObject>
       </g>
@@ -39,12 +51,24 @@
           :width="innerCircleRadius * 2"
           :height="innerCircleRadius * 2"
         >
-          <div class="content-circle">
-            <i class="icon-plus"></i>
+          <div
+            :class="{
+              'content-circle': true,
+              'selected': sellIsSelected
+            }"
+            @click="toggleSell"
+          >
+          <i class="icon-plus"></i>
+          <div class="content">
             <p>
               <i class="fas fa-credit-card fa-lg"></i>
               SELL
             </p>
+            <p class="selected-text">
+              Quickly &amp; easily sell new or used goods to other local businesses
+              through Cozilo.
+            </p>
+          </div>
           </div>
         </foreignObject>
       </g>
@@ -56,12 +80,24 @@
           :width="innerCircleRadius * 2"
           :height="innerCircleRadius * 2"
         >
-          <div class="content-circle">
+          <div
+            :class="{
+              'content-circle': true,
+              'selected': tradeIsSelected
+            }"
+            @click="toggleTrade"
+          >
             <i class="icon-plus"></i>
-            <p>
-              <i class="fas fa-exchange-alt fa-lg"></i>
-              TRADE
-            </p>
+            <div class="content">
+              <p>
+                <i class="fas fa-exchange-alt fa-lg"></i>
+                TRADE
+              </p>
+              <p class="selected-text">
+                Cozilo trading tokens help you gain "future value" for items you
+                don't want or need today.
+              </p>
+            </div>
           </div>
         </foreignObject>
       </g>
@@ -78,6 +114,9 @@ export default {
       innerCircleRadius: 75,
       outerCircleRadius: 100,
       canvasWidth: 330,
+      buyIsSelected: false,
+      sellIsSelected: false,
+      tradeIsSelected: false,
     };
   },
   computed: {
@@ -113,6 +152,17 @@ export default {
     },
     sellCircleYCoordinate() {
       return (this.margin * 1.5);
+    },
+  },
+  methods: {
+    toggleBuy() {
+      this.buyIsSelected = !this.buyIsSelected;
+    },
+    toggleSell() {
+      this.sellIsSelected = !this.sellIsSelected;
+    },
+    toggleTrade() {
+      this.tradeIsSelected = !this.tradeIsSelected;
     },
   },
   mounted() {
@@ -213,6 +263,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     .icon-plus {
       position: absolute;
       top: 10px;
@@ -230,11 +281,36 @@ export default {
       svg {
         display: block;
         margin: 0 auto 10px;
+        transition: 0.4s;
       }
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      padding: 0 10px;
+      transition: 0.4s;
+    }
+    .selected-text {
+      opacity: 0;
+      font-size: 12px;
+      padding: 0;
+      transition: 0.4s;
     }
     &.selected {
       .icon-plus {
         transform: rotate(45deg);
+      }
+      p:not(.selected-text),
+      svg {
+        opacity: 0;
+      }
+      .content {
+        top: -25px;
+        margin-top: 0;
+      }
+      .selected-text {
+        opacity: 1;
       }
     }
   }
