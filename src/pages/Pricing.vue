@@ -109,6 +109,7 @@ export default {
   @media only screen and (min-width: $large) {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     .price-tag {
       margin-right: 20px;
       flex: 1;
