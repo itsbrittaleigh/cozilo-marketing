@@ -16,6 +16,67 @@
           </p>
         </template>
       </hero-section>
+      <p class="lead">
+        With three unique pricing tiers, there's a Cozilo tier for every kind of member:
+        individual sellers, small business owners, enterprise business owners, and
+        everything in between.
+      </p>
+      <div class="container padded-section">
+        <div class="price-tag">
+          <div class="header bg-lightblue">
+            <div class="dot"></div>
+            <h2>Cozilo Entry</h2>
+            <p class="lead"><em>Free</em></p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="" class="button bg-white color-lightblue">Sign Up &rarr;</a>
+          </div>
+          <div class="list lightblue">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="price-tag">
+          <div class="header bg-orange">
+            <div class="dot"></div>
+            <h2>Cozilo Premium</h2>
+            <p class="lead"><em>$29.99/month</em></p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="" class="button bg-white color-orange">Sign Up &rarr;</a>
+          </div>
+          <div class="list orange">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="price-tag">
+          <div class="header bg-green">
+            <div class="dot"></div>
+            <h2>Cozilo Enterprise</h2>
+            <p class="lead"><em>Contact for Quote</em></p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="" class="button bg-white color-green">Sign Up &rarr;</a>
+          </div>
+          <div class="list green">
+            <ul>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </template>
   </base-page>
 </template>
@@ -35,3 +96,94 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
+.lead {
+  width: 90%;
+  max-width: 850px;
+  margin: 50px auto 0;
+}
+.container {
+  max-width: 850px;
+  @media only screen and (min-width: $large) {
+    display: flex;
+    justify-content: space-between;
+    .price-tag {
+      margin-right: 20px;
+      flex: 1;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.price-tag {
+  border-radius: 10px;
+  position: relative;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  .header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 80px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .dot {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: white;
+    }
+    p,
+    h2 {
+      color: white;
+      text-align: center;
+      margin: 0 0 10px;
+    }
+    h2 {
+      @include title-font;
+    }
+  }
+  .list {
+    padding: 40px;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      &:before {
+        width: 10px;
+        height: 10px;
+        margin-right: 20px;
+        display: block;
+      }
+    }
+    &.lightblue {
+      li:before {
+        content: url('../assets/images/icons/checkbox-lightblue.png');
+      }
+    }
+    &.orange {
+      li:before {
+        content: url('../assets/images/icons/checkbox-orange.png');
+      }
+    }
+    &.green {
+      li:before {
+        content: url('../assets/images/icons/checkbox-green.png');
+      }
+    }
+  }
+}
+</style>
+
