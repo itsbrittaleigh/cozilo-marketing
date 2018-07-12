@@ -1,23 +1,23 @@
 <template>
   <form @submit.prevent="submitForm" id="contact">
     <div class="fields">
-      <div class="field input hidden">
+      <div class="field input fade-in">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" v-model="contact.name" required>
       </div>
-      <div class="field input hidden">
+      <div class="field input fade-in">
         <label for="company">Company Name</label>
         <input type="text" id="company" name="company" v-model="contact.company" required>
       </div>
-      <div class="field input hidden">
+      <div class="field input fade-in">
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" v-model="contact.phone" required>
       </div>
-      <div class="field input hidden">
+      <div class="field input fade-in">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" v-model="contact.email" required>
       </div>
-      <div class="field textarea hidden">
+      <div class="field textarea fade-in">
         <label for="message">Message</label>
         <textarea
           name="message"
@@ -85,7 +85,7 @@ label {
   align-items: center;
   label {
     width: 120px;
-    background: white;
+    background: #e7e7e7;
     height: 52px;
     display: flex;
     align-items: center;
@@ -96,6 +96,7 @@ label {
     border-radius: 0 5px 5px 0;
     height: 52px;
     flex: 1;
+    background: #e7e7e7;
   }
 }
 .field.textarea {
@@ -104,6 +105,7 @@ label {
     position: absolute;
     top: 20px;
     left: 10px;
+    background: #e7e7e7;
   }
   textarea {
     border-radius: 5px;
@@ -112,6 +114,7 @@ label {
     width: 100%;
     padding: 50px 10px 10px;
     height: 200px;
+    background: #e7e7e7;
   }
 }
 .button-container {
