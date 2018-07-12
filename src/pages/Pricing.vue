@@ -150,6 +150,14 @@ export default {
     h2 {
       @include title-font;
     }
+    .button{
+      margin-top: 20px;
+      &:hover {
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+      }
+    }
   }
   .list {
     padding: 40px;
