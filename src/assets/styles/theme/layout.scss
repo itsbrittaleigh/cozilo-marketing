@@ -87,6 +87,7 @@ body {
   height: $screen_height;
   margin-left: -($screen_width / 2);
   margin-top: -($screen_height / 2);
+  pointer-events: none;
   .phone-shell {
     position: absolute;
     top: 0;
@@ -142,11 +143,10 @@ body {
   @media only screen and (min-width: $large) {
     display: flex;
     justify-content: space-between;
-    background:linear-gradient(98deg, #f1f1f1 0, #f1f1f1 49%, white 49%, white 51%, #e4e4e4 51%, #e4e4e4 100%);
     .col-lt,
     .col-rt {
       width: 50%;
-      background: none;
+      transition: 0.4s;
       > .container {
         width: 320px;
         box-sizing: content-box;
@@ -156,25 +156,28 @@ body {
       }
     }
     .col-lt {
-      clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, calc(100% - 65px) 100%, 0 100%);
       padding: 100px 0;
+      width: calc(50% + 35px);
       &:hover {
-        padding-top: 140px;
-        padding-left: 30px;
+        background: darken(#f1f1f1, 10%);
       }
     }
     .col-rt {
-      clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(65px 0, 100% 0, 100% 100%, 0 100%);
       padding: 180px 0 100px;
+      width: calc(50% + 35px);
+      margin-left: -45px;
       &:hover {
-        padding: 140px 30px 140px 0;
+        background: darken(#e4e4e4, 10%);
       }
     }
     &.angle-color {
-      background:linear-gradient(98deg, $green 0, $green 49%, white 49%, white 51%, $lightblue 51%, $lightblue 100%);
-      .col-lt,
-      .col-rt {
-        background: none;
+      .col-lt:hover {
+        background: darken($green, 10%);
+      }
+      .col-rt:hover {
+        background: darken($lightblue, 10%);
       }
     }
   }

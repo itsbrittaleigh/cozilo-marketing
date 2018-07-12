@@ -577,7 +577,7 @@ export default {
   z-index: 1;
 }
 .hero {
-  padding: 70px 0 120px;
+  padding: 70px 0 180px;
   position: relative;
   .arrow {
     width: 60px;
