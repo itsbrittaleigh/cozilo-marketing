@@ -2,9 +2,21 @@
   <base-page>
     <template slot="content">
       <hero-section
-        title="Frequently Asked Questions"
         name="faq"
-      ></hero-section>
+        title="FAQ's"
+        icon-class="exchange-alt"
+        header-color="white"
+        bg-color="orange"
+      >
+        <template slot="description">
+          <p>
+            Below is a list of <strong>frequently asked questions</strong> that
+            Cozilo users have about signing up, payment options, and more. If you
+            don't see an answer to your question below, reach out to us using our
+            <router-link :to="{ name: 'Contact' }">contact form</router-link>.
+          </p>
+        </template>
+      </hero-section>
       <section class="faq">
         <div class="container content-container content padded-section">
           <p class="lead fade-in">

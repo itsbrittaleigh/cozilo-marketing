@@ -1,42 +1,58 @@
 .hero:not(.home) {
-  height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  > .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  h1 {
-    color: $darkblue;
-    font-size: 40px;
-    font-weight: normal;
-    margin: 0 0 40px;
-    text-transform: none;
-    width: 60%;
-    @include fade-in-up-from-right;
-  }
-  &.about {
-    background-image: url('~/static/covers/about.jpg');
-  }
-  &.features {
-    background-image: url('~/static/covers/features.jpg');
-  }
-  &.faq {
-    background-image: url('~/static/covers/faq.jpg');
-  }
-  &.contact {
-    background-image: url('~/static/covers/contact.jpg');
-  }
-
-  @media only screen and (min-width: $large) {
-    height: 400px;
+  .content {
+    padding: 40px 0 50px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 0 100%);
+    h1,
+    p,
+    svg {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
     h1 {
-      font-size: 90px;
-      width: 50%;
+      margin: 20px 0 10px;
+    }
+    p {
+      color: white;
+      margin: 0;
+    }
+  }
+  .image {
+    margin-top: -15px;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    clip-path: polygon(0 25px, 100% 0, 100% 100%, 0 100%);
+    &.about {
+      background-image: url(/static/covers/about.jpg);
+    }
+    &.features {
+      background-image: url(/static/covers/features.jpg);
+    }
+    &.faq {
+      background-image: url(/static/covers/faq.jpg);
+    }
+    &.pricing {
+      background-image: url(/static/covers/pricing.jpg);
+    }
+    &.contact {
+      background-image: url(/static/covers/contact.jpg);
+    }
+  }
+  @media only screen and (min-width: $large) {
+    display: flex;
+    .content {
+      width: 45%;
+      padding: 70px 60px 70px 40px;
+      clip-path: polygon(0 0, 100% 0, calc(100% - 25px) 100%, 0 100%);
+    }
+    .image {
+      width: calc(55% + 15px);
+      margin: 0 0 0 -15px;
+      height: auto;
+      clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
     }
   }
 }

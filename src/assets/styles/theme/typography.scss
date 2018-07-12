@@ -16,10 +16,19 @@ li {
   }
 }
 p,
+li {
+  color: #868686;
+}
+p,
 li,
 a {
   line-height: 1.56;
-  color: #868686;
+}
+a {
+  color: inherit;
+}
+strong {
+  font-weight: 400;
 }
 
 a:not(.button) {

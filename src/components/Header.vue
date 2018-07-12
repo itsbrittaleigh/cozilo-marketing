@@ -1,10 +1,12 @@
 <template>
   <header>
     <div class="headline">
-      <p>Coming soon to</p>
-      <img src="../assets/images/icons/apple-white.png" alt="Apple App Store logo">
-      <img src="../assets/images/icons/google-play-white.png" alt="Google Play Store logo">
-      <p>Available for free</p>
+      <p>
+        Coming soon to
+        <i class="fab fa-apple fa-lg"></i>
+        <i class="fab fa-google-play fa-lg"></i>
+        Available for free
+      </p>
     </div>
     <div class="header">
       <div class="container">
@@ -40,24 +42,25 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 5px 0;
+    padding: 8px 0;
     p {
       color: white;
       @include title-font;
-      margin: 0 15px;
+      margin: 0;
       font-size: 12px;
       line-height: normal;
     }
-    img {
-      max-height: 15px;
-      max-width: 13px;
+    svg {
       &:first-of-type {
-        margin-right: 15px;
+        margin: 0 3px 0 5px;
+      }
+      &:last-of-type {
+        margin: 0 5px 0 0;
       }
     }
   }
   .header {
-    padding: 15px 0;
+    padding: 20px 0;
     .container {
       display: flex;
       align-items: center;
@@ -70,7 +73,7 @@ header {
       height: auto;
     }
     @media only screen and (min-width: 1000px) {
-      padding: 25px 0;
+      padding: 30px 0;
     }
     a {
       line-height: normal;

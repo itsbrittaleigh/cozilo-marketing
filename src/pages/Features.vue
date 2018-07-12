@@ -2,9 +2,21 @@
   <base-page>
     <template slot="content">
       <hero-section
-        title="Cozilo Features"
         name="features"
-      ></hero-section>
+        title="Features"
+        icon-class="exchange-alt"
+        header-color="green"
+      >
+        <template slot="description">
+          <p>
+            Cozilo is a truly <strong>business-only, mobile marketplace</strong>
+            for business owners who want to
+            <strong>buy, sell, or trade new or used goods</strong> without
+            having to sort through the clutter of consumer goods like in other
+            selling platforms.
+          </p>
+        </template>
+      </hero-section>
       <section class="features">
         <div class="container content-container content padded-section">
           <p class="lead fade-in">

@@ -2,9 +2,18 @@
   <base-page>
     <template slot="content">
       <hero-section
-        title="About Cozilo"
         name="about"
-      ></hero-section>
+        title="About"
+        icon-class="shopping-cart"
+      >
+        <template slot="description">
+          <p>
+            Cozilo is an app <strong>for business owners, by business owners:</strong>
+            a truly B2B, business-only marketplace community that helps businesses of all
+            sizes buy, sell, and trade goods at wholesale and volume pricing.
+          </p>
+        </template>
+      </hero-section>
       <section class="about padded-section">
         <div class="container content-container content">
           <p class="lead fade-in">

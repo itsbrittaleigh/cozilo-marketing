@@ -2,9 +2,20 @@
   <base-page>
     <template slot="content">
       <hero-section
-        title="Pricing"
         name="pricing"
-      ></hero-section>
+        title="Pricing"
+        icon-class="shopping-cart"
+        header-color="darkblue"
+        bg-color="green"
+      >
+        <template slot="description">
+          <p>
+            Sign up for your free Cozilo account today, and during the 3-month
+            promotional period,
+            <strong>receive Cozilo Premium member benefits for free!</strong>
+          </p>
+        </template>
+      </hero-section>
     </template>
   </base-page>
 </template>
@@ -24,8 +35,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
-

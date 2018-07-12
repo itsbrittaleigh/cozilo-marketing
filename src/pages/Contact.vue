@@ -2,9 +2,21 @@
   <base-page>
     <template slot="content">
       <hero-section
-        title="Contact"
         name="contact"
-      ></hero-section>
+        title="Contact"
+        icon-class="shopping-cart"
+        header-color="darkblue"
+        bg-color="lightblue"
+      >
+        <template slot="description">
+          <p>
+            Our customer support team is <strong>available 24/7</strong> to answer
+            any inquiries you might have about the Cozilo platform, a recent
+            transaction, or any other questions you might have. Fill out the form
+            below or contact us through email, phone, or live chat now.
+          </p>
+        </template>
+      </hero-section>
       <section class="form-container padded-section bg-lightblue">
         <div class="container content-container content">
           <p class="lead color-white fade-in">
