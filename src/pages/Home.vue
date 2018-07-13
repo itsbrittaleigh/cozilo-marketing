@@ -21,8 +21,8 @@
               <span class="blue">mobile marketplace</span>
             </h1>
             <p class="fade-in">
-              Reach out to serious buyers and sellers to streamline your business’ supply chain
-              quickly and easily, right from our free mobile app.
+              Reach out to serious buyers and sellers to streamline your business’s supply chain
+              quickly and easily, right from our free mobile app available on iOS and Android.
             </p>
             <router-link
               :to="{ name: 'Contact' }"
@@ -45,15 +45,13 @@
             </div>
             <h2 class="hidden">Buy new &amp; used goods</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
-              ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
-              repellat.
+              With thousands of new & used goods across 50+ categories on the Cozilo
+              feed, quickly and easily find the products you need.
             </p>
             <ul class="feature-list lightblue hidden">
               <li>Opening your new business</li>
               <li>Expanding your current business</li>
-              <li>Get your employees the products they need</li>
+              <li>Getting your employees the products they need</li>
             </ul>
           </div>
         </div>
@@ -70,16 +68,16 @@
             <div class="section-header-icon bg-green hidden">
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Sell new &amp; used goods</h2>
+            <h2 class="hidden">Sell overstock goods</h2>
             <p class="hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
-              consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
-              voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
+              Take high-definition images of the overstock goods you’re looking to sell
+              quickly and easily to the Cozilo feed and communicate directly with buyers
+              near you.
             </p>
             <ul class="feature-list green hidden">
-              <li>Sell off overstock goods</li>
-              <li>Liquidate excess products</li>
-              <li>Remove clutter from your office space</li>
+              <li>Selling off overstock goods</li>
+              <li>Liquidating excess products</li>
+              <li>Removing clutter from your office space</li>
             </ul>
           </div>
         </div>
@@ -102,50 +100,65 @@
                   <i class="fas fa-industry" style="color: #62a9c5"></i>
                 </div>
                 <p><em>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora,
-                  ipsa repellat eius totam earum, aut officiis
+                  From heavy machinery to textiles and automotive parts, you
+                  can find all of your industrial business needs on Cozilo.
                 </em></p>
               </header>
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Electronics </h3>
+                    <h3>Machinery, Industrial, &amp; Tools</h3>
                     <ul>
-                      <li>Computer Hardware</li>
-                      <li>Computer Software</li>
-                      <li>Consumer Electronics</li>
-                      <li>Printers and Scanners</li>
-                      <li>Computer Security Systems</li>
-                      <li>Hard Drives</li>
+                      <li>Machinery</li>
+                      <li>Industrial Parts</li>
+                      <li>Tools</li>
+                      <li>Hardware</li>
                     </ul>
                   </div>
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Office Furniture</h3>
+                    <h3>Metals, Chemicals, Rubber, and Plastics</h3>
                     <ul>
-                      <li>Desks and Chairs</li>
-                      <li>Conference Tables</li>
-                      <li>Filing Cabinets</li>
+                      <li>Minerals and Metallurgy</li>
+                      <li>Chemicals</li>
+                      <li>Rubber and Plastics</li>
+                      <li>Energy and Environmental</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Home, Lights, and Construction</h3>
+                    <ul>
+                      <li>Construction Equipment</li>
+                      <li>Lights and Lighting</li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-rt">
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Electrical Equipment</h3>
+                    <h3>Auto &amp; Transportation</h3>
                     <ul>
-                      <li>Electrical Equipment and Supplies</li>
-                      <li>Telecommunications</li>
+                      <li>Automotive and Motorcycle Components</li>
+                      <li>Transportation</li>
                     </ul>
                   </div>
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Packaging and Office Supplies</h3>
+                    <h3>Apparel, Textiles, and Accessories</h3>
                     <ul>
-                      <li>Packaging and Printing</li>
-                      <li>Office and School Supplies</li>
-                      <li>Service Equipment</li>
+                      <li>Apparel</li>
+                      <li>Textile and Leather</li>
+                      <li>Fashion, Jewelry, and Accessories</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <img src="static/icons/check-white.png" alt="">
+                    <h3>Agriculture and Food</h3>
+                    <ul>
+                      <li>Agricultural Goods</li>
+                      <li>Food and Beverage Goods</li>
                     </ul>
                   </div>
                 </div>
@@ -170,21 +183,21 @@
                   <i class="fas fa-briefcase" style="color: #ec632e"></i>
                 </div>
                 <p><em>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora,
-                  ipsa repellat eius totam earum, aut officiis
+                  Stock your entire office with products ranging from electronics
+                  hardware or software to packaging and office supplies.
                 </em></p>
               </header>
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Electronics </h3>
+                    <h3>Electronics</h3>
                     <ul>
                       <li>Computer Hardware</li>
                       <li>Computer Software</li>
                       <li>Consumer Electronics</li>
                       <li>Printers and Scanners</li>
-                      <li>Computer Security Systems</li>
+                      <li>Security Systems</li>
                       <li>Hard Drives</li>
                     </ul>
                   </div>
@@ -238,50 +251,28 @@
                   <i class="fas fa-leaf" style="color: #77c373"></i>
                 </div>
                 <p><em>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora,
-                  ipsa repellat eius totam earum, aut officiis
+                  Find consumer goods like bags, accessories,
                 </em></p>
               </header>
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Electronics </h3>
+                    <h3>Bags, Shoes, and Accessories</h3>
                     <ul>
-                      <li>Computer Hardware</li>
-                      <li>Computer Software</li>
-                      <li>Consumer Electronics</li>
-                      <li>Printers and Scanners</li>
-                      <li>Computer Security Systems</li>
-                      <li>Hard Drives</li>
-                    </ul>
-                  </div>
-                  <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Office Furniture</h3>
-                    <ul>
-                      <li>Desks and Chairs</li>
-                      <li>Conference Tables</li>
-                      <li>Filing Cabinets</li>
+                      <li>Luggage, Bags, and Cases</li>
+                      <li>Shoes and Accessories</li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-rt">
                   <div class="category">
                     <img src="static/icons/check-white.png" alt="">
-                    <h3>Electrical Equipment</h3>
+                    <h3>Gifts, Toys, and Sporting Goods</h3>
                     <ul>
-                      <li>Electrical Equipment and Supplies</li>
-                      <li>Telecommunications</li>
-                    </ul>
-                  </div>
-                  <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Packaging and Office Supplies</h3>
-                    <ul>
-                      <li>Packaging and Printing</li>
-                      <li>Office and School Supplies</li>
-                      <li>Service Equipment</li>
+                      <li>Sports and Entertainment</li>
+                      <li>Gifts and Crafts</li>
+                      <li>Toys and Hobbies</li>
                     </ul>
                   </div>
                 </div>
