@@ -251,7 +251,8 @@
                   <i class="fas fa-leaf" style="color: #77c373"></i>
                 </div>
                 <p><em>
-                  Find consumer goods like bags, accessories,
+                  Find consumer goods like bags, luggage, sporting goods, toys,
+                  and more to replenish your business’ supply, all on Cozilo.
                 </em></p>
               </header>
               <div class="categories">
@@ -287,7 +288,7 @@
             <div class="section-header-icon bg-darkblue hidden">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Top feature goes here</h2>
+            <h2 class="hidden">A truly mobile, business-focused app</h2>
             <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
@@ -295,9 +296,9 @@
               repellat.
             </p>
             <ul class="feature-list darkblue hidden">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Mobile app for on-the-move business owners</li>
+              <li>Seamless navigation from sales feed to purchasing process</li>
+              <li>Verified interactions with other local companies</li>
             </ul>
           </div>
         </div>
@@ -314,16 +315,16 @@
             <div class="section-header-icon bg-darkblue hidden">
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Top feature goes here</h2>
+            <h2 class="hidden">Chat with other local businesses</h2>
             <p class="hidden">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
               voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
             </p>
             <ul class="feature-list darkblue hidden">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Get quotes from multiple buyers or sellers</li>
+              <li>Save and group messages</li>
+              <li>Send images directly within chat</li>
             </ul>
           </div>
         </div>
@@ -343,23 +344,28 @@
             <div class="col-lt">
               <div :class="{'prop lightblue hidden': true, 'selected': featureOneIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureOne"></i>
-                <p class="large">Feature one</p>
+                <p class="large">Easy-to-Navigate Interface</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  With one simple push of a button, you can take high-quality photos of your
+                  goods and post them directly on the Cozilo B2B marketplace for thousands of
+                  other business owners to see.
                 </p>
               </div>
               <div :class="{'prop orange hidden': true, 'selected': featureTwoIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureTwo"></i>
-                <p class="large">Feature two</p>
+                <p class="large">Customizable Price Setting</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cozilo is a business-focused marketplace that allows you to transparently
+                  set your pricing levels: wholesale, volume, individual goods - whatever your
+                  business needs.
                 </p>
               </div>
               <div :class="{'prop green hidden': true, 'selected': featureThreeIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureThree"></i>
-                <p class="large">Feature three</p>
+                <p class="large">Safe & Reliable Transactions</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  With our multi-step verification process for all Cozilo business users,
+                  you can be sure that every transaction is secure before ever even meeting.
                 </p>
               </div>
             </div>
@@ -372,23 +378,28 @@
             <div class="col-rt">
               <div :class="{'prop lightblue hidden': true, 'selected': featureFourIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureFour"></i>
-                <p class="large">Feature four</p>
+                <p class="large">Advertise Your Company</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Create your customizable profile to connect directly with other buyers, sellers,
+                  and traders on the Cozilo app and create your own personal B2B network to
+                  advertise your company.
                 </p>
               </div>
               <div :class="{'prop orange hidden': true, 'selected': featureFiveIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureFive"></i>
-                <p class="large">Feature five</p>
+                <p class="large">Simple & Quick Shipping</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cozilo takes all the hassle out of shipping goods by offering fast and
+                  efficient freight shipping assistance.
                 </p>
               </div>
               <div :class="{'prop green hidden': true, 'selected': featureSixIsSelected}">
                 <i class="icon-plus" @click="toggleFeatureSix"></i>
-                <p class="large">Feature six</p>
+                <p class="large">Pay Your Own Way</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  The Cozilo app accepts ACH, Cozilo tokens, smart wallets like Apple and Google
+                  Pay, as well as  all major credit cards, including VISA, MasterCard, and
+                  American Express.
                 </p>
               </div>
             </div>

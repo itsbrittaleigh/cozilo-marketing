@@ -10,51 +10,51 @@
       >
         <template slot="description">
           <p>
-            Sign up for your free Cozilo account today, and during the 3-month
-            promotional period,
-            <strong>receive Cozilo Premium member benefits for free!</strong>
+            Sign up for your free Cozilo account today, and during the 3-month promotional
+            period, receive Cozilo Premium member benefits for free!
           </p>
         </template>
       </hero-section>
       <p class="lead">
-        With three unique pricing tiers, there's a Cozilo tier for every kind of member:
-        individual sellers, small business owners, enterprise business owners, and
-        everything in between.
+        With three unique pricing tiers, there’s a Cozilo tier for every kind of member:
+        individual sellers, small business owners, enterprise business owners, and everything
+        in between.
       </p>
       <div class="container padded-section">
         <div class="price-tag">
           <div class="header bg-lightblue">
             <div class="dot"></div>
-            <h2>Cozilo Entry</h2>
+            <h2>Cozilo Free</h2>
             <p class="lead"><em>Free</em></p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
             <a href="" class="button bg-white color-lightblue">Sign Up &rarr;</a>
           </div>
           <div class="list lightblue">
             <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Free account</li>
+              <li>Unlimited product listings with limited display time</li>
+              <li>Ability to connect with interested buyers and fellow business owners</li>
+              <li>1-5 GB of storage for video and image assets</li>
+              <li>Email support</li>
             </ul>
           </div>
         </div>
         <div class="price-tag">
           <div class="header bg-orange">
             <div class="dot"></div>
-            <h2>Cozilo Premium</h2>
-            <p class="lead"><em>$29.99/month</em></p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <h2>Cozilo Plus</h2>
+            <p class="lead"><em>$29.99/month or $330/year</em></p>
             <a href="" class="button bg-white color-orange">Sign Up &rarr;</a>
           </div>
           <div class="list orange">
             <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Free account</li>
+              <li>Unlimited product listings with limited display time</li>
+              <li>Ability to connect with interested buyers and fellow business owners</li>
+              <li>1-5 GB of storage for video and image assets</li>
+              <li>Email support</li>
+              <li>Priority customer support</li>
+              <li>5-10 GB of storage for video and image assets</li>
+              <li>Increased marketing exposure</li>
             </ul>
           </div>
         </div>
@@ -63,16 +63,19 @@
             <div class="dot"></div>
             <h2>Cozilo Enterprise</h2>
             <p class="lead"><em>Contact for Quote</em></p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
             <a href="" class="button bg-white color-green">Sign Up &rarr;</a>
           </div>
           <div class="list green">
             <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Free account</li>
+              <li>Unlimited product listings with limited display time</li>
+              <li>Ability to connect with interested buyers and fellow business owners</li>
+              <li>1-5 GB of storage for video and image assets</li>
+              <li>Email support</li>
+              <li>Priority customer support</li>
+              <li>5-10 GB of storage for video and image assets</li>
+              <li>Increased marketing exposure</li>
+              <li>Additional features coming soon!</li>
             </ul>
           </div>
         </div>

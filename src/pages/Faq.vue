@@ -10,9 +10,9 @@
       >
         <template slot="description">
           <p>
-            Below is a list of <strong>frequently asked questions</strong> that
-            Cozilo users have about signing up, payment options, and more. If you
-            don't see an answer to your question below, reach out to us using our
+            Below are a list of frequently asked questions that Cozilo users have about
+            signing up, payment options, and more. If you don’t see an answer to your
+            question below, reach out to us via phone, email, or our
             <router-link :to="{ name: 'Contact' }">contact form</router-link>.
           </p>
         </template>
@@ -28,9 +28,9 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  To sign up for Cozilo, simply download the app on iOS or Android
-                  and follow the prompts to create an account for your approved and
-                  verified business.
+                  To sign up for Cozilo, simply download the app on iOS or Android and
+                  follow the prompts to create an account for your approved and verified
+                  business.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -58,9 +58,10 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  The Cozilo app accepts ACH, Cozilo tokens, smart wallets like Apple and Google
-                  Pay, as well as  all major credit cards, including VISA, MasterCard, and
-                  American Express.
+                  In addition to Cozilo tokens, ACH, smart wallets like Apple Pay and
+                  Google Pay, all major credit cards - Visa, MasterCard, Discover, and
+                  American Express - are accepted payment options on Cozilo. Set your
+                  value and pay how you like.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -71,10 +72,11 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  As soon as both parties mark transaction as completed satisfactorily, funds
-                  are transferred directly from the buyer to the seller. If the exchange is agreed
-                  upon in part or in full with Cozilo Tokens, tokens are immediately available.
-                  Other means of payment have industry standard processing times for availability.
+                  As soon as both parties mark transaction as completed satisfactorily, funds are
+                  transferred directly from the buyer to the seller. If the exchange is agreed upon
+                  in part or in full with Cozilo Tokens, tokens are immediately available and the
+                  funds will stay in the Cozilo app. Other means of payment have industry standard
+                  processing times for availability.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -85,10 +87,11 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Instead of having to barter over cash value for products, Cozilo Tokens supply a
-                  means of gaining ‘future value’ for items you don’t want or need today. Accept
-                  Cozilo Tokens for your items today, typically at a discount to get it off your
-                  hands sooner, and you can bank tokens for future use of something you may want.
+                  Instead of having to barter over cash value for products, Cozilo Tokens
+                  supply a means of gaining ‘future value’ for items you don’t want or need
+                  today. Accept Cozilo Tokens for your items today, typically at a discount
+                  to get it off your hands sooner, and you can bank tokens for future use of
+                  something you may want.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -99,10 +102,9 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit modi eius
-                  praesentium cumque culpa, excepturi, et aliquid inventore qui autem totam
-                  quidem asperiores officia perspiciatis maxime sapiente. Voluptate, nulla
-                  dolorum.
+                  The Cozilo platform uses multi-level security with the latest security
+                  protocols, along with hardware storage of keys and storage service encryption,
+                  to ensure that your business’ financial and private information is secure.
                 </p>
               </div>
             </v-collapse-wrapper>
@@ -116,8 +118,10 @@
               </div>
               <div class="my-content" v-collapse-content>
                 <p>
-                  Yes, Cozilo handles all shipping through Shippo, a cost-efficient,
-                  cloud-based, e-commerce platform.
+                  Yes, Cozilo handles all tracking & shipping. Choose from overnight,
+                  business-class, and other types of shipping from UPS, Fedex, Postal Office
+                  Services (First Class Mail, Priority Mail), or truck shipments for large and
+                  heavy items.
                 </p>
               </div>
             </v-collapse-wrapper>
