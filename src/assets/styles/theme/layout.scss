@@ -68,10 +68,7 @@ body {
 }
 
 .value-section {
-  margin: 20px 0;
-  @media only screen and (min-width: $medium) {
-    margin: 30px 0;
-  }
+  margin: 10px 0;
   .fade-in {
     @include fade-in-up-from-left;
   }
@@ -124,7 +121,7 @@ body {
   }
   .col-rt {
     padding: 250px 0 50px;
-    background: #e4e4e4;
+    background: #f1f1f1;
     clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
   }
   &.angle-color {
@@ -154,22 +151,31 @@ body {
       &.padded-section {
         transition: 0.4s;
       }
+      &:hover {
+        background: #e4e4e4;
+      }
     }
     .col-lt {
       clip-path: polygon(0 0, 100% 0, calc(100% - 65px) 100%, 0 100%);
       padding: 100px 0;
       width: calc(50% + 35px);
-      &:hover {
-        background: darken(#f1f1f1, 10%);
+      > .container {
+        margin: 0 150px 0 auto;
+        @media only screen and (min-width: $xlarge) {
+          margin: 0 auto;
+        }
       }
     }
     .col-rt {
       clip-path: polygon(65px 0, 100% 0, 100% 100%, 0 100%);
       padding: 180px 0 100px;
       width: calc(50% + 35px);
-      margin-left: -45px;
-      &:hover {
-        background: darken(#e4e4e4, 10%);
+      margin-left: -55px;
+      > .container {
+        margin: 0 0 0 150px;
+        @media only screen and (min-width: $xlarge) {
+          margin: 0 auto;
+        }
       }
     }
     &.angle-color {

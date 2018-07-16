@@ -63,7 +63,7 @@
             <div class="section-header-icon bg-darkblue hidden">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h3 class="color-darkblue hidden">The business-focused, mobile marketplace</h3>
+            <h2 class="color-darkblue hidden">The business-focused, mobile marketplace</h2>
             <p class="hidden">
               Cozilo was built to be a true B2B marketplace where approved businesses could
               buy, sell, trade, and interact specifically with other business owners in
@@ -93,7 +93,7 @@
             <div class="section-header-icon bg-darkblue hidden">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h3 class="color-white hidden">Trade using Cozilo tokens</h3>
+            <h2 class="color-white hidden">Trade using Cozilo tokens</h2>
             <p class="hidden">
               Instead of having to barter over cash value for products, Cozilo Tokens supply
               a means of gaining ‘future value’ for items you don’t want or need today. Accept
@@ -121,7 +121,7 @@
             <div class="section-header-icon bg-darkblue hidden">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h3 class="color-white hidden">Secure and reliable</h3>
+            <h2 class="color-white hidden">Secure and reliable</h2>
             <p class="hidden">
               Requiring verification in Cozilo helps us make sure that any and all
               transactions happen between real, actual businesses and their owners -
@@ -238,7 +238,6 @@ export default {
 @import '../assets/styles/variables';
 .features {
   > .container {
-    max-width: 850px;
     .point {
       padding: 20px 0;
       border-bottom: 1px solid #e7e7e7;
@@ -295,7 +294,6 @@ export default {
   }
   @media only screen and (min-width: $large) {
     > .container {
-      max-width: 850px;
       display: flex;
       align-items: center;
     }
@@ -325,7 +323,6 @@ export default {
   @media only screen and (min-width: $medium) {
     padding: 0 0 60px;
     > .container {
-      max-width: 850px;
       display: flex;
       .col-lt,
       .col-rt {

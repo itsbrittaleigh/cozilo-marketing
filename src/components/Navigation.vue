@@ -77,7 +77,7 @@ button {
   z-index: 101;
   border: none;
   padding: 0;
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: $large) {
     display: none;
     visibility: hidden;
   }
@@ -140,7 +140,7 @@ ul {
     height: 253px;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: $large) {
   nav {
     flex: 1;
     display: flex;
@@ -161,13 +161,13 @@ ul {
       display: flex;
     }
     li {
-      margin-left: 35px;
+      margin-left: 50px;
       a {
         color: $gray;
         font-size: 16px;
       }
       @media only screen and (min-width: $xlarge) {
-        margin-left: 50px;
+        margin-left: 70px;
       }
     }
   }

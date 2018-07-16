@@ -20,63 +20,65 @@
         individual sellers, small business owners, enterprise business owners, and everything
         in between.
       </p>
-      <div class="container padded-section">
-        <div class="price-tag">
-          <div class="header bg-lightblue">
-            <div class="dot"></div>
-            <h2>Cozilo Free</h2>
-            <p class="lead"><em>Free</em></p>
-            <a href="" class="button bg-white color-lightblue">Sign Up &rarr;</a>
+      <div class="content padded-section">
+        <div class="container padded-section">
+          <div class="price-tag">
+            <div class="header bg-lightblue">
+              <div class="dot"></div>
+              <h2>Cozilo Free</h2>
+              <p class="lead"><em>Free</em></p>
+              <a href="" class="button bg-white color-lightblue">Sign Up &rarr;</a>
+            </div>
+            <div class="list lightblue">
+              <ul>
+                <li>Free account</li>
+                <li>Unlimited product listings with limited display time</li>
+                <li>Ability to connect with interested buyers and fellow business owners</li>
+                <li>1-5 GB of storage for video and image assets</li>
+                <li>Email support</li>
+              </ul>
+            </div>
           </div>
-          <div class="list lightblue">
-            <ul>
-              <li>Free account</li>
-              <li>Unlimited product listings with limited display time</li>
-              <li>Ability to connect with interested buyers and fellow business owners</li>
-              <li>1-5 GB of storage for video and image assets</li>
-              <li>Email support</li>
-            </ul>
+          <div class="price-tag">
+            <div class="header bg-orange">
+              <div class="dot"></div>
+              <h2>Cozilo Plus</h2>
+              <p class="lead"><em>$29.99/month or $330/year</em></p>
+              <a href="" class="button bg-white color-orange">Sign Up &rarr;</a>
+            </div>
+            <div class="list orange">
+              <ul>
+                <li>Free account</li>
+                <li>Unlimited product listings with limited display time</li>
+                <li>Ability to connect with interested buyers and fellow business owners</li>
+                <li>1-5 GB of storage for video and image assets</li>
+                <li>Email support</li>
+                <li class="break">Priority customer support</li>
+                <li>5-10 GB of storage for video and image assets</li>
+                <li>Increased marketing exposure</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="price-tag">
-          <div class="header bg-orange">
-            <div class="dot"></div>
-            <h2>Cozilo Plus</h2>
-            <p class="lead"><em>$29.99/month or $330/year</em></p>
-            <a href="" class="button bg-white color-orange">Sign Up &rarr;</a>
-          </div>
-          <div class="list orange">
-            <ul>
-              <li>Free account</li>
-              <li>Unlimited product listings with limited display time</li>
-              <li>Ability to connect with interested buyers and fellow business owners</li>
-              <li>1-5 GB of storage for video and image assets</li>
-              <li>Email support</li>
-              <li>Priority customer support</li>
-              <li>5-10 GB of storage for video and image assets</li>
-              <li>Increased marketing exposure</li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-tag">
-          <div class="header bg-green">
-            <div class="dot"></div>
-            <h2>Cozilo Enterprise</h2>
-            <p class="lead"><em>Contact for Quote</em></p>
-            <a href="" class="button bg-white color-green">Sign Up &rarr;</a>
-          </div>
-          <div class="list green">
-            <ul>
-              <li>Free account</li>
-              <li>Unlimited product listings with limited display time</li>
-              <li>Ability to connect with interested buyers and fellow business owners</li>
-              <li>1-5 GB of storage for video and image assets</li>
-              <li>Email support</li>
-              <li>Priority customer support</li>
-              <li>5-10 GB of storage for video and image assets</li>
-              <li>Increased marketing exposure</li>
-              <li>Additional features coming soon!</li>
-            </ul>
+          <div class="price-tag">
+            <div class="header bg-green">
+              <div class="dot"></div>
+              <h2>Cozilo Enterprise</h2>
+              <p class="lead"><em>Contact for Quote</em></p>
+              <a href="" class="button bg-white color-green">Sign Up &rarr;</a>
+            </div>
+            <div class="list green">
+              <ul>
+                <li>Free account</li>
+                <li>Unlimited product listings with limited display time</li>
+                <li>Ability to connect with interested buyers and fellow business owners</li>
+                <li>1-5 GB of storage for video and image assets</li>
+                <li>Email support</li>
+                <li class="break">Priority customer support</li>
+                <li>5-10 GB of storage for video and image assets</li>
+                <li>Increased marketing exposure</li>
+                <li class="break">Additional features coming soon!</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -104,11 +106,9 @@ export default {
 @import "../assets/styles/variables.scss";
 .lead {
   width: 90%;
-  max-width: 850px;
   margin: 50px auto 0;
 }
 .container {
-  max-width: 850px;
   @media only screen and (min-width: $large) {
     display: flex;
     justify-content: space-between;
@@ -131,9 +131,11 @@ export default {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 80px 30px 20px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 280px;
     .dot {
       position: absolute;
       top: 20px;
@@ -149,12 +151,17 @@ export default {
       color: white;
       text-align: center;
       margin: 0 0 10px;
+      line-height: 1.1;
     }
     h2 {
       @include title-font;
     }
     .button{
-      margin-top: 20px;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      width: 140px;
+      margin-left: -70px;
       &:hover {
         background: transparent;
         color: white;
@@ -174,10 +181,16 @@ export default {
       display: flex;
       align-items: flex-start;
       &:before {
+        content: '';
         width: 10px;
         height: 10px;
         margin-right: 20px;
         display: block;
+      }
+      &.break {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid #e4e4e4;
       }
     }
     &.lightblue {

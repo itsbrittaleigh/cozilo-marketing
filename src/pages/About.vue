@@ -3,7 +3,7 @@
     <template slot="content">
       <hero-section
         name="about"
-        title="Cozilo: The Future of B2B Transactions"
+        title="The Future of B2B Transactions"
         icon-class="shopping-cart"
       >
         <template slot="description">

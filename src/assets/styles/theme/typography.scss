@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 0.95;
   margin: 0;
   text-transform: uppercase;
@@ -81,6 +81,11 @@ strong {
     width: 65%;
     height: 65%;
     object-fit: contain;
+  }
+  &.section-header-icon-large {
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
   }
 }
 

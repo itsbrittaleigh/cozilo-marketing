@@ -85,7 +85,7 @@
       <section class="from-to pagination-section">
         <div :class="{ toggle: true, open: factoryIsOpen }">
           <i class="icon-plus" @click="toggleFactory"></i>
-          <div class="front padded-section">
+          <div class="front padded-section" @click="toggleFactory">
             <div class="container">
               <div class="section-header-icon bg-lightblue hidden">
                 <i class="fas fa-industry" style="color: white;"></i>
@@ -96,8 +96,8 @@
           <div class="back">
             <div class="container">
               <header>
-                <div class="section-header-icon bg-white">
-                  <i class="fas fa-industry" style="color: #62a9c5"></i>
+                <div class="section-header-icon section-header-icon-large bg-white">
+                  <i class="fas fa-industry fa-lg" style="color: #62a9c5"></i>
                 </div>
                 <p><em>
                   From heavy machinery to textiles and automotive parts, you
@@ -107,8 +107,10 @@
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Machinery, Industrial, &amp; Tools</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Machinery, Industrial, &amp; Tools
+                    </h3>
                     <ul>
                       <li>Machinery</li>
                       <li>Industrial Parts</li>
@@ -117,48 +119,37 @@
                     </ul>
                   </div>
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Metals, Chemicals, Rubber, and Plastics</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Metals, Chemicals, Rubber, and Plastics
+                    </h3>
                     <ul>
-                      <li>Minerals and Metallurgy</li>
+                      <li>Minerals, Metallurgy</li>
                       <li>Chemicals</li>
-                      <li>Rubber and Plastics</li>
-                      <li>Energy and Environmental</li>
-                    </ul>
-                  </div>
-                  <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Home, Lights, and Construction</h3>
-                    <ul>
-                      <li>Construction Equipment</li>
-                      <li>Lights and Lighting</li>
+                      <li>Rubber, Plastics</li>
+                      <li>Energy, Environmental</li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Auto &amp; Transportation</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Auto &amp; Transportation
+                    </h3>
                     <ul>
                       <li>Automotive and Motorcycle Components</li>
                       <li>Transportation</li>
                     </ul>
                   </div>
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Apparel, Textiles, and Accessories</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Home, Lights, and Construction
+                    </h3>
                     <ul>
-                      <li>Apparel</li>
-                      <li>Textile and Leather</li>
-                      <li>Fashion, Jewelry, and Accessories</li>
-                    </ul>
-                  </div>
-                  <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Agriculture and Food</h3>
-                    <ul>
-                      <li>Agricultural Goods</li>
-                      <li>Food and Beverage Goods</li>
+                      <li>Construction Equipment</li>
+                      <li>Lights and Lighting</li>
                     </ul>
                   </div>
                 </div>
@@ -168,7 +159,7 @@
         </div>
         <div :class="{ toggle: true, open: cubicleIsOpen }">
           <i class="icon-plus" @click="toggleCubicle"></i>
-          <div class="front padded-section">
+          <div class="front padded-section" @click="toggleCubicle">
             <div class="container">
               <div class="section-header-icon bg-orange hidden">
                 <i class="fas fa-briefcase" style="color: white;"></i>
@@ -179,8 +170,8 @@
           <div class="back">
             <div class="container">
               <header>
-                <div class="section-header-icon bg-white">
-                  <i class="fas fa-briefcase" style="color: #ec632e"></i>
+                <div class="section-header-icon section-header-icon-large bg-white">
+                  <i class="fas fa-briefcase fa-lg" style="color: #ec632e"></i>
                 </div>
                 <p><em>
                   Stock your entire office with products ranging from electronics
@@ -190,8 +181,10 @@
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Electronics</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Electronics
+                    </h3>
                     <ul>
                       <li>Computer Hardware</li>
                       <li>Computer Software</li>
@@ -202,8 +195,10 @@
                     </ul>
                   </div>
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Office Furniture</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Office Furniture
+                    </h3>
                     <ul>
                       <li>Desks and Chairs</li>
                       <li>Conference Tables</li>
@@ -213,16 +208,20 @@
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Electrical Equipment</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Electrical Equipment
+                    </h3>
                     <ul>
                       <li>Electrical Equipment and Supplies</li>
                       <li>Telecommunications</li>
                     </ul>
                   </div>
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Packaging and Office Supplies</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Packaging and Office Supplies
+                    </h3>
                     <ul>
                       <li>Packaging and Printing</li>
                       <li>Office and School Supplies</li>
@@ -236,7 +235,7 @@
         </div>
         <div :class="{ toggle: true, open: betweenIsOpen }">
           <i class="icon-plus" @click="toggleBetween"></i>
-          <div class="front padded-section">
+          <div class="front padded-section" @click="toggleBetween">
             <div class="container">
               <div class="section-header-icon bg-green hidden">
                 <i class="fas fa-leaf" style="color: white;"></i>
@@ -247,33 +246,58 @@
           <div class="back">
             <div class="container">
               <header>
-                <div class="section-header-icon bg-white">
-                  <i class="fas fa-leaf" style="color: #77c373"></i>
+                <div class="section-header-icon section-header-icon-large bg-white">
+                  <i class="fas fa-leaf fa-lg" style="color: #77c373"></i>
                 </div>
                 <p><em>
                   Find consumer goods like bags, luggage, sporting goods, toys,
-                  and more to replenish your business’ supply, all on Cozilo.
+                  and more to replenish your business’s supply, all on Cozilo.
                 </em></p>
               </header>
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Bags, Shoes, and Accessories</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Bags, Shoes, and Accessories
+                    </h3>
                     <ul>
                       <li>Luggage, Bags, and Cases</li>
                       <li>Shoes and Accessories</li>
                     </ul>
                   </div>
+                  <div class="category">
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Apparel, Textiles, and Accessories
+                    </h3>
+                    <ul>
+                      <li>Apparel</li>
+                      <li>Textile and Leather</li>
+                      <li>Fashion, Jewelry, and Accessories</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <img src="static/icons/check-white.png" alt="">
-                    <h3>Gifts, Toys, and Sporting Goods</h3>
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Gifts, Toys, and Sporting Goods
+                    </h3>
                     <ul>
                       <li>Sports and Entertainment</li>
                       <li>Gifts and Crafts</li>
                       <li>Toys and Hobbies</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <h3>
+                      <img src="static/icons/check-white.png" alt="">
+                      Agriculture and Food
+                    </h3>
+                    <ul>
+                      <li>Agricultural Goods</li>
+                      <li>Food and Beverage Goods</li>
                     </ul>
                   </div>
                 </div>
@@ -342,8 +366,11 @@
           </h2>
           <div class="value-props">
             <div class="col-lt">
-              <div :class="{'prop lightblue hidden': true, 'selected': featureOneIsSelected}">
-                <i class="icon-plus" @click="toggleFeatureOne"></i>
+              <div
+                :class="{'prop lightblue': true, 'selected': features[0]}"
+                @click="toggleFeature(0)"
+              >
+                <i class="icon-plus"></i>
                 <p class="large">Easy-to-Navigate Interface</p>
                 <p>
                   With one simple push of a button, you can take high-quality photos of your
@@ -351,8 +378,11 @@
                   other business owners to see.
                 </p>
               </div>
-              <div :class="{'prop orange hidden': true, 'selected': featureTwoIsSelected}">
-                <i class="icon-plus" @click="toggleFeatureTwo"></i>
+              <div
+                :class="{'prop orange': true, 'selected': features[1]}"
+                @click="toggleFeature(1)"
+              >
+                <i class="icon-plus"></i>
                 <p class="large">Customizable Price Setting</p>
                 <p>
                   Cozilo is a business-focused marketplace that allows you to transparently
@@ -360,8 +390,11 @@
                   business needs.
                 </p>
               </div>
-              <div :class="{'prop green hidden': true, 'selected': featureThreeIsSelected}">
-                <i class="icon-plus" @click="toggleFeatureThree"></i>
+              <div
+                :class="{'prop green': true, 'selected': features[2]}"
+                @click="toggleFeature(2)"
+              >
+                <i class="icon-plus"></i>
                 <p class="large">Safe & Reliable Transactions</p>
                 <p>
                   With our multi-step verification process for all Cozilo business users,
@@ -376,8 +409,11 @@
               </div>
             </div>
             <div class="col-rt">
-              <div :class="{'prop lightblue hidden': true, 'selected': featureFourIsSelected}">
-                <i class="icon-plus" @click="toggleFeatureFour"></i>
+              <div
+                :class="{'prop lightblue': true, 'selected': features[3]}"
+                @click="toggleFeature(3)"
+              >
+                <i class="icon-plus"></i>
                 <p class="large">Advertise Your Company</p>
                 <p>
                   Create your customizable profile to connect directly with other buyers, sellers,
@@ -385,16 +421,22 @@
                   advertise your company.
                 </p>
               </div>
-              <div :class="{'prop orange hidden': true, 'selected': featureFiveIsSelected}">
-                <i class="icon-plus" @click="toggleFeatureFive"></i>
+              <div
+                :class="{'prop orange': true, 'selected': features[4]}"
+                @click="toggleFeature(4)"
+              >
+                <i class="icon-plus"></i>
                 <p class="large">Simple & Quick Shipping</p>
                 <p>
                   Cozilo takes all the hassle out of shipping goods by offering fast and
                   efficient freight shipping assistance.
                 </p>
               </div>
-              <div :class="{'prop green hidden': true, 'selected': featureSixIsSelected}">
-                <i class="icon-plus" @click="toggleFeatureSix"></i>
+              <div
+                :class="{'prop green': true, 'selected': features[5]}"
+                @click="toggleFeature(5)"
+              >
+                <i class="icon-plus"></i>
                 <p class="large">Pay Your Own Way</p>
                 <p>
                   The Cozilo app accepts ACH, Cozilo tokens, smart wallets like Apple and Google
@@ -407,7 +449,7 @@
           <div class="button-container">
             <router-link
               :to="{ name: 'Features' }"
-              class="button bg-lightblue hidden"
+              class="button bg-lightblue"
             >
               Learn More About Cozilo's Features &rarr;
             </router-link>
@@ -441,12 +483,14 @@ export default {
       factoryIsOpen: false,
       cubicleIsOpen: false,
       betweenIsOpen: false,
-      featureOneIsSelected: false,
-      featureTwoIsSelected: false,
-      featureThreeIsSelected: false,
-      featureFourIsSelected: false,
-      featureFiveIsSelected: false,
-      featureSixIsSelected: false,
+      features: [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ],
     };
   },
   components: {
@@ -468,23 +512,9 @@ export default {
     toggleBetween() {
       this.betweenIsOpen = !this.betweenIsOpen;
     },
-    toggleFeatureOne() {
-      this.featureOneIsSelected = !this.featureOneIsSelected;
-    },
-    toggleFeatureTwo() {
-      this.featureTwoIsSelected = !this.featureTwoIsSelected;
-    },
-    toggleFeatureThree() {
-      this.featureThreeIsSelected = !this.featureThreeIsSelected;
-    },
-    toggleFeatureFour() {
-      this.featureFourIsSelected = !this.featureFourIsSelected;
-    },
-    toggleFeatureFive() {
-      this.featureFiveIsSelected = !this.featureFiveIsSelected;
-    },
-    toggleFeatureSix() {
-      this.featureSixIsSelected = !this.featureSixIsSelected;
+    toggleFeature(index) {
+      this.features = [false, false, false, false, false, false];
+      this.features[index] = true;
     },
     measureViewport() {
       this.viewportHeight = window.innerHeight;
@@ -622,7 +652,6 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 850px;
     }
     .content {
       margin-right: 20px;
@@ -643,7 +672,7 @@ export default {
   .toggle {
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     height: 450px;
     &:nth-child(1) {
       .front {
@@ -673,10 +702,13 @@ export default {
       }
     }
     .front {
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
+      background-position: center center;
       height: 100%;
       padding: 0 30px;
+      transition: 0.4s;
+      cursor: pointer;
       > .container {
         display: flex;
         flex-direction: column;
@@ -685,6 +717,7 @@ export default {
         transition: 0.4s;
       }
       &:hover {
+        background-size: 120% 120%;
         > .container {
           padding-bottom: 40px;
         }
@@ -769,10 +802,10 @@ export default {
   }
   @media only screen and (min-width: $large) {
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     .toggle {
       flex: 1;
-      margin: 0 30px 0 0;
+      margin: 0 10px 0 0;
       &:last-child {
         margin-right: 0;
       }
@@ -808,6 +841,13 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    padding: 50px 0;
+    .col-lt,
+    .col-rt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .prop {
       width: 300px;
       padding: 20px 40px;
@@ -815,8 +855,14 @@ export default {
       background: #f6f6f6;
       border-radius: 5px;
       position: relative;
+      max-height: 90px;
+      cursor: pointer;
       transition: 0.4s;
+      &:hover {
+        box-shadow: 0 2px 2px 0 rgba($lightgray, 0.5);
+      }
       &.selected {
+        max-height: 400px;
         &.orange,
         &.lightblue,
         &.green {
@@ -828,6 +874,10 @@ export default {
             background: $darkblue;
             transform: rotate(45deg);
           }
+        }
+        p:not(.large) {
+          opacity: 1;
+          visibility: visible;
         }
       }
       .icon-plus {
@@ -876,6 +926,11 @@ export default {
         margin: 0;
         &.large {
           font-weight: bold;
+        }
+        &:not(.large) {
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.4s;
         }
       }
     }
