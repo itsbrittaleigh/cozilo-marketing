@@ -210,6 +210,9 @@ export default {
         39% {
           opacity: 0;
         }
+        40% {
+          opacity: 1;
+        }
         100% {
           opacity: 1;
         }
@@ -227,6 +230,9 @@ export default {
         }
         49% {
           opacity: 0;
+        }
+        50% {
+          opacity: 1;
         }
         100% {
           opacity: 1;
@@ -246,6 +252,9 @@ export default {
         24% {
           opacity: 0;
         }
+        25% {
+          opacity: 1;
+        }
         100% {
           opacity: 1;
         }
@@ -264,6 +273,7 @@ export default {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: 0.4s;
     .icon-plus {
       position: absolute;
       top: 10px;
@@ -312,6 +322,9 @@ export default {
       .selected-text {
         opacity: 1;
       }
+    }
+    &:hover {
+      transform: rotate(-30deg) scale(1.1);
     }
   }
 }

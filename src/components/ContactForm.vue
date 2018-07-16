@@ -79,24 +79,30 @@ label {
 }
 .field {
   margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  transition: 0.4s;
+  &:focus-within {
+    background: #e7e7e7;
+  }
 }
 .field.input {
   display: flex;
   align-items: center;
   label {
-    width: 120px;
-    background: #e7e7e7;
+    width: 125px;
     height: 52px;
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 15px;
     border-radius: 5px 0 0 5px;
+    background: transparent;
   }
   input {
     border-radius: 0 5px 5px 0;
     height: 52px;
     flex: 1;
-    background: #e7e7e7;
+    background: transparent;
   }
 }
 .field.textarea {
@@ -104,8 +110,8 @@ label {
   label {
     position: absolute;
     top: 20px;
-    left: 10px;
-    background: #e7e7e7;
+    left: 15px;
+    background: transparent;
   }
   textarea {
     border-radius: 5px;
@@ -114,7 +120,7 @@ label {
     width: 100%;
     padding: 50px 10px 10px;
     height: 200px;
-    background: #e7e7e7;
+    background: transparent;
   }
 }
 .button-container {

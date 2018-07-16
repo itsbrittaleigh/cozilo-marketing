@@ -308,7 +308,9 @@ export default {
   &.reverse {
     .content {
       order: 2;
-      margin: 0 0 0 100px;
+      @media only screen and (min-width: $large) {
+        margin: 0 0 0 100px;
+      }
     }
     .mockup-container {
       order: 1;
@@ -318,7 +320,10 @@ export default {
 .feature-overview {
   padding: 0 0 40px;
   h3 {
-    margin-top: 40px;
+    margin: 40px 0 5px;
+  }
+  p {
+    margin: 0;
   }
   @media only screen and (min-width: $medium) {
     padding: 0 0 60px;

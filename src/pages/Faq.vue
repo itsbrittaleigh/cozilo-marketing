@@ -156,7 +156,7 @@ export default {
 @import '../assets/styles/variables';
 .heading {
   @include title-font;
-  margin: 60px 28px 0;
+  margin: 60px 0 0;
   font-size: 12px;
   color: $darkblue;
 }
@@ -172,14 +172,18 @@ export default {
   .header {
     padding: 20px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
     img {
-      margin-right: 10px;
+      margin: 8px 10px 0 0;
+      display: block;
+      width: 18px;
+      height: 10px;
     }
     h2 {
       font-weight: normal;
       text-transform: none;
+      line-height: 1.1;
     }
   }
 }

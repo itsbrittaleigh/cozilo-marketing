@@ -109,17 +109,48 @@ strong {
 }
 
 ul.feature-list {
+  list-style-type: none;
+  padding: 0;
+  li {
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      content: url('~/static/icons/checkmark-white.png');
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   &.darkblue {
-    list-style-image: url('~/static/icons/check-darkblue.png');
+    li:before {
+      background: $darkblue;
+    }
   }
   &.lightblue {
-    list-style-image: url('~/static/icons/check-lightblue.png');
+    li:before {
+      background: $lightblue;
+    }
+  }
+  &.orange {
+    li:before {
+      background: $orange;
+    }
   }
   &.green {
-    list-style-image: url('~/static/icons/check-green.png');
+    li:before {
+      background: $green;
+    }
   }
   &.white {
-    list-style-image: url('~/static/icons/check-white.png');
+    li:before {
+      content: url('~/static/icons/check-white.png');
+    }
   }
   li {
     margin-bottom: 15px;

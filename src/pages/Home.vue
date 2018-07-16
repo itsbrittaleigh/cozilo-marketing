@@ -578,7 +578,8 @@ export default {
     &:last-of-type {
       margin-right: 0;
     }
-    &.active {
+    &.active,
+    &:hover {
       background: #d9d9d9;
     }
   }
@@ -629,9 +630,8 @@ export default {
   }
   h1 {
     color: $white;
-    margin-top: 0;
     font-weight: lighter;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     .green {
       color: $green;
     }

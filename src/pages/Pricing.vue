@@ -16,9 +16,11 @@
         </template>
       </hero-section>
       <p class="lead">
-        With three unique pricing tiers, there’s a Cozilo tier for every kind of member:
-        individual sellers, small business owners, enterprise business owners, and everything
-        in between.
+        <span class="container">
+          With three unique pricing tiers, there’s a Cozilo tier for every kind of member:
+          individual sellers, small business owners, enterprise business owners, and everything
+          in between.
+        </span>
       </p>
       <div class="content padded-section">
         <div class="container padded-section">
@@ -29,8 +31,8 @@
               <p class="lead"><em>Free</em></p>
               <a href="" class="button bg-white color-lightblue">Sign Up &rarr;</a>
             </div>
-            <div class="list lightblue">
-              <ul>
+            <div class="list">
+              <ul class="feature-list lightblue">
                 <li>Free account</li>
                 <li>Unlimited product listings with limited display time</li>
                 <li>Ability to connect with interested buyers and fellow business owners</li>
@@ -46,14 +48,14 @@
               <p class="lead"><em>$29.99/month or $330/year</em></p>
               <a href="" class="button bg-white color-orange">Sign Up &rarr;</a>
             </div>
-            <div class="list orange">
-              <ul>
+            <div class="list">
+              <ul class="feature-list orange">
                 <li>Free account</li>
                 <li>Unlimited product listings with limited display time</li>
                 <li>Ability to connect with interested buyers and fellow business owners</li>
                 <li>1-5 GB of storage for video and image assets</li>
-                <li>Email support</li>
-                <li class="break">Priority customer support</li>
+                <li class="break">Email support</li>
+                <li>Priority customer support</li>
                 <li>5-10 GB of storage for video and image assets</li>
                 <li>Increased marketing exposure</li>
               </ul>
@@ -66,17 +68,17 @@
               <p class="lead"><em>Contact for Quote</em></p>
               <a href="" class="button bg-white color-green">Sign Up &rarr;</a>
             </div>
-            <div class="list green">
-              <ul>
+            <div class="list">
+              <ul class="feature-list green">
                 <li>Free account</li>
                 <li>Unlimited product listings with limited display time</li>
                 <li>Ability to connect with interested buyers and fellow business owners</li>
                 <li>1-5 GB of storage for video and image assets</li>
-                <li>Email support</li>
-                <li class="break">Priority customer support</li>
+                <li class="break">Email support</li>
+                <li>Priority customer support</li>
                 <li>5-10 GB of storage for video and image assets</li>
-                <li>Increased marketing exposure</li>
-                <li class="break">Additional features coming soon!</li>
+                <li class="break">Increased marketing exposure</li>
+                <li>Additional features coming soon!</li>
               </ul>
             </div>
           </div>
@@ -180,32 +182,10 @@ export default {
       margin-bottom: 10px;
       display: flex;
       align-items: flex-start;
-      &:before {
-        content: '';
-        width: 10px;
-        height: 10px;
-        margin-right: 20px;
-        display: block;
-      }
       &.break {
-        padding-top: 20px;
-        margin-top: 20px;
-        border-top: 1px solid #e4e4e4;
-      }
-    }
-    &.lightblue {
-      li:before {
-        content: url('../assets/images/icons/checkbox-lightblue.png');
-      }
-    }
-    &.orange {
-      li:before {
-        content: url('../assets/images/icons/checkbox-orange.png');
-      }
-    }
-    &.green {
-      li:before {
-        content: url('../assets/images/icons/checkbox-green.png');
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e4e4e4;
       }
     }
   }
