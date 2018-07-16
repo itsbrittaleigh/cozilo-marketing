@@ -3,7 +3,7 @@
     <button
       v-if="menuIsMobile"
       @click="toggleMenu()"
-      class="burger"
+      :class="{'burger': true, 'open': menuIsOpen}"
     >
       <span></span>
       <span></span>
@@ -101,6 +101,26 @@ button {
     }
     &:nth-child(4) {
       top: 20px;
+    }
+  }
+  &.open {
+    span {
+      &:nth-child(1) {
+        top: 7px;
+        width: 0;
+        left: 50%;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      &:nth-child(4) {
+        top: 7px;
+        width: 0;
+        left: 50%;
+      }
     }
   }
 }
