@@ -364,88 +364,8 @@
               <span class="color-orange">and trade.</span>
             </span>
           </h2>
-          <div class="value-props">
-            <div class="col-lt">
-              <div
-                :class="{'prop lightblue': true, 'selected': features[0]}"
-                @click="toggleFeature(0)"
-              >
-                <i class="icon-plus"></i>
-                <p class="large">Easy-to-Navigate Interface</p>
-                <p>
-                  With one simple push of a button, you can take high-quality photos of your
-                  goods and post them directly on the Cozilo B2B marketplace for thousands of
-                  other business owners to see.
-                </p>
-              </div>
-              <div
-                :class="{'prop orange': true, 'selected': features[1]}"
-                @click="toggleFeature(1)"
-              >
-                <i class="icon-plus"></i>
-                <p class="large">Customizable Price Setting</p>
-                <p>
-                  Cozilo is a business-focused marketplace that allows you to transparently
-                  set your pricing levels: wholesale, volume, individual goods - whatever your
-                  business needs.
-                </p>
-              </div>
-              <div
-                :class="{'prop green': true, 'selected': features[2]}"
-                @click="toggleFeature(2)"
-              >
-                <i class="icon-plus"></i>
-                <p class="large">Safe & Reliable Transactions</p>
-                <p>
-                  With our multi-step verification process for all Cozilo business users,
-                  you can be sure that every transaction is secure before ever even meeting.
-                </p>
-              </div>
-            </div>
-            <div class="mockup item-overview">
-              <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-              <div class="screen-container">
-                <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
-              </div>
-            </div>
-            <div class="col-rt">
-              <div
-                :class="{'prop lightblue': true, 'selected': features[3]}"
-                @click="toggleFeature(3)"
-              >
-                <i class="icon-plus"></i>
-                <p class="large">Advertise Your Company</p>
-                <p>
-                  Create your customizable profile to connect directly with other buyers, sellers,
-                  and traders on the Cozilo app and create your own personal B2B network to
-                  advertise your company.
-                </p>
-              </div>
-              <div
-                :class="{'prop orange': true, 'selected': features[4]}"
-                @click="toggleFeature(4)"
-              >
-                <i class="icon-plus"></i>
-                <p class="large">Simple & Quick Shipping</p>
-                <p>
-                  Cozilo takes all the hassle out of shipping goods by offering fast and
-                  efficient freight shipping assistance.
-                </p>
-              </div>
-              <div
-                :class="{'prop green': true, 'selected': features[5]}"
-                @click="toggleFeature(5)"
-              >
-                <i class="icon-plus"></i>
-                <p class="large">Pay Your Own Way</p>
-                <p>
-                  The Cozilo app accepts ACH, Cozilo tokens, smart wallets like Apple and Google
-                  Pay, as well as  all major credit cards, including VISA, MasterCard, and
-                  American Express.
-                </p>
-              </div>
-            </div>
-          </div>
+          <app-markup-carousel v-if="isMobile"></app-markup-carousel>
+          <app-markup-toggle v-else></app-markup-toggle>
           <div class="button-container">
             <router-link
               :to="{ name: 'Features' }"
@@ -471,32 +391,29 @@ import Parallax from 'vue-parallaxy';
 import Base from '../templates/Base';
 import NewsletterForm from '../components/NewsletterForm';
 import BSTSvg from '../components/BSTSvg';
+import AppMarkupCarousel from '../components/AppMarkupCarousel';
+import AppMarkupToggle from '../components/AppMarkupToggle';
 import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'Home',
   data() {
     return {
+      isMobile: window.innerWidth < 992,
       sections: [],
       viewportHeight: 0,
       scrollPosition: 0,
       factoryIsOpen: false,
       cubicleIsOpen: false,
       betweenIsOpen: false,
-      features: [
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-      ],
     };
   },
   components: {
     'base-page': Base,
     'newsletter-form': NewsletterForm,
     'bst-svg': BSTSvg,
+    'app-markup-carousel': AppMarkupCarousel,
+    'app-markup-toggle': AppMarkupToggle,
     Parallax,
   },
   mixins: [
@@ -511,10 +428,6 @@ export default {
     },
     toggleBetween() {
       this.betweenIsOpen = !this.betweenIsOpen;
-    },
-    toggleFeature(index) {
-      this.features = [false, false, false, false, false, false];
-      this.features[index] = true;
     },
     measureViewport() {
       this.viewportHeight = window.innerHeight;
@@ -550,6 +463,10 @@ export default {
       this.sections[i].toTopOfPage = this.getPosition(sections[i]);
       sections[i].id = `section${i}`;
     }
+
+    window.addEventListener('resize', () => {
+      this.isMobile = window.innerWidth < 992;
+    });
   },
 };
 </script>
@@ -821,7 +738,7 @@ export default {
   h2 {
     color: $lightgray;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     .lower {
       text-transform: none;
     }
@@ -830,129 +747,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 20px;
+    @media only screen and (min-width: $large) {
+      margin-top: 60px;
+    }
     .button {
       position: relative;
-      z-index: 100;
-    }
-  }
-  .mockup {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .value-props {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    padding: 50px 0;
-    .col-lt,
-    .col-rt {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .prop {
-      width: 300px;
-      padding: 20px 40px;
-      margin-bottom: 20px;
-      background: #f6f6f6;
-      border-radius: 5px;
-      position: relative;
-      max-height: 90px;
-      cursor: pointer;
-      transition: 0.4s;
-      &:hover {
-        box-shadow: 0 2px 2px 0 rgba($lightgray, 0.5);
-      }
-      &.selected {
-        max-height: 400px;
-        &.orange,
-        &.lightblue,
-        &.green {
-          p,
-          p.large {
-            color: white;
-          }
-          .icon-plus {
-            background: $darkblue;
-            transform: rotate(45deg);
-          }
-        }
-        p:not(.large) {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-      .icon-plus {
-        cursor: pointer;
-        position: absolute;
-        left: -10px;
-        top: 20px;
-        border-radius: 20px;
-        transition: 0.4s;
-        @include icon-plus(20px, 11px, 1px);
-      }
-      &.green {
-        p.large {
-          color: $green;
-        }
-        .icon-plus {
-          background: $green;
-        }
-        &.selected {
-          background: $green;
-        }
-      }
-      &.orange {
-        p.large {
-          color: $orange;
-        }
-        .icon-plus {
-          background: $orange;
-        }
-        &.selected {
-          background: $orange;
-        }
-      }
-      &.lightblue {
-        p.large {
-          color: $lightblue;
-        }
-        .icon-plus {
-          background: $lightblue;
-        }
-        &.selected {
-          background: $lightblue;
-        }
-      }
-      p {
-        margin: 0;
-        &.large {
-          font-weight: bold;
-        }
-        &:not(.large) {
-          opacity: 0;
-          visibility: hidden;
-          transition: 0.4s;
-        }
-      }
-    }
-    @media only screen and (min-width: $large) {
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: 0 auto;
-      .mockup {
-        display: block;
-        visibility: visible;
-      }
-    }
-    @media only screen and (min-width: $xxxlarge) {
-      .prop {
-        width: 400px;
-        max-height: 68px;
-      }
+      z-index: 10;
     }
   }
 }
