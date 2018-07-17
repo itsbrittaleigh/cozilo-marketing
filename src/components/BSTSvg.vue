@@ -95,7 +95,7 @@
               </p>
               <p class="selected-text">
                 Cozilo trading tokens help you gain "future value" for items you
-                don't want or need today.
+                don't need today.
               </p>
             </div>
           </div>
@@ -273,6 +273,7 @@ export default {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    cursor: pointer;
     transition: 0.4s;
     .icon-plus {
       position: absolute;
@@ -298,12 +299,13 @@ export default {
       position: absolute;
       top: 50%;
       margin-top: -30px;
-      padding: 0 10px;
+      padding: 0 18px;
       transition: 0.4s;
     }
     .selected-text {
       opacity: 0;
-      font-size: 12px;
+      font-size: 13px;
+      line-height: 1.25;
       padding: 0;
       transition: 0.4s;
     }
