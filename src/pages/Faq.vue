@@ -53,7 +53,7 @@
               </template>
             </accordion-section>
           </div>
-          <div class="accordion">
+          <div class="accordion hidden">
             <p class="heading">Transactions and Payments</p>
             <accordion-section>
               <template slot="accordion-header">
@@ -119,7 +119,7 @@
               </template>
             </accordion-section>
           </div>
-          <div class="accordion">
+          <div class="accordion hidden">
             <p class="heading">Shipping</p>
             <accordion-section>
               <template slot="accordion-header">
@@ -206,6 +206,9 @@ export default {
       font-weight: normal;
       text-transform: none;
       line-height: 1.1;
+      @media only screen and (min-width: $xxxlarge) {
+        font-size: 2em;
+      }
     }
   }
 }

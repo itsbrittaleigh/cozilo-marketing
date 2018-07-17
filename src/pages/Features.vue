@@ -277,10 +277,6 @@ export default {
       top: -80px;
       margin-top: 0;
       .screen-container {
-        top: 137px;
-        left: 114px;
-        width: 184px;
-        height: 328px;
         .screen {
           position: absolute;
           top: -30px;
@@ -288,6 +284,9 @@ export default {
         }
       }
     }
+  }
+  @media only screen and (min-width: $xxxlarge) {
+    padding: 50px 0;
   }
   &.reverse {
     clip-path: polygon(0 0, 100% 25px, 100% calc(100% - 25px), 0 100%);

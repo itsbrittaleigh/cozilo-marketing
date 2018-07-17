@@ -19,6 +19,18 @@ li {
     line-height: 1.4;
     font-weight: 100;
   }
+  @media only screen and (min-width: $xxxlarge) {
+    font-size: 20px;
+    &.small {
+      font-size: 16px;
+    }
+    &.large {
+      font-size: 24px
+    }
+    &.lead {
+      font-size: 26px;
+    }
+  }
 }
 p,
 li {
@@ -48,6 +60,9 @@ h1 {
   text-transform: uppercase;
   font-weight: lighter;
   line-height: 1;
+  @media only screen and (min-width: $xxxlarge) {
+    font-size: 4em;
+  }
 }
 
 h2 {
@@ -57,6 +72,9 @@ h2 {
   text-transform: uppercase;
   font-weight: lighter;
   color: $gray;
+  @media only screen and (min-width: $xxxlarge) {
+    font-size: 3em;
+  }
 }
 
 h3 {
@@ -91,7 +109,6 @@ strong {
 
 .content {
   p {
-    font-size: 16px;
     margin: 0 0 40px;
     &.lead {
       font-size: 22px;

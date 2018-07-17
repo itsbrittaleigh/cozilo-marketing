@@ -664,6 +664,11 @@ export default {
       margin-right: 40px;
     }
   }
+  @media only screen and (min-width: $xxxlarge) {
+    .content {
+      max-width: 580px;
+    }
+  }
 }
 .from-to {
   display: flex;
@@ -936,9 +941,17 @@ export default {
     }
     @media only screen and (min-width: $large) {
       justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
       .mockup {
         display: block;
         visibility: visible;
+      }
+    }
+    @media only screen and (min-width: $xxxlarge) {
+      .prop {
+        width: 400px;
+        max-height: 68px;
       }
     }
   }

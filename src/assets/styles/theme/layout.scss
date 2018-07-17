@@ -19,6 +19,9 @@ body {
   &.content-container {
     max-width: 860px;
   }
+  @media only screen and (min-width: $xxxlarge) {
+    max-width: 1580px;
+  }
 }
 
 .page {
@@ -110,6 +113,20 @@ body {
       height: 350%;
     }
   }
+  @media only screen and (min-width: $xxxlarge) {
+    $screen_width: 465px;
+    $screen_height: 670px;
+    width: $screen_width;
+    height: $screen_height;
+    margin-left: -($screen_width / 2);
+    margin-top: -($screen_height / 2);
+    .screen-container {
+      top: 153px;
+      left: 128px;
+      width: 205px;
+      height: 366px;
+    }
+  }
 }
 
 .angle-split {
@@ -184,6 +201,14 @@ body {
       }
       .col-rt:hover {
         background: darken($lightblue, 10%);
+      }
+    }
+  }
+  @media only screen and (min-width: $xxxlarge) {
+    .col-lt,
+    .col-rt {
+      > .container {
+        width: 460px;
       }
     }
   }
