@@ -540,6 +540,9 @@ export default {
     }
   }
   @media only screen and (min-width: $large) {
+    min-height: calc(100vh - 144px);
+    display: flex;
+    align-items: center;
     .content {
       max-width: 430px;
       margin-right: 40px;

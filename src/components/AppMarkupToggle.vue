@@ -221,8 +221,6 @@ export default {
     }
     @media only screen and (min-width: $large) {
       justify-content: space-between;
-      max-width: 1200px;
-      margin: 0 auto;
       .mockup {
         display: block;
         visibility: visible;
@@ -231,7 +229,6 @@ export default {
     @media only screen and (min-width: $xxxlarge) {
       .prop {
         width: 400px;
-        max-height: 68px;
       }
     }
   }

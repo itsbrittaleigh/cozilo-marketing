@@ -17,7 +17,7 @@
       </hero-section>
 
       <section class="about padded-section">
-        <div class="container content-container content">
+        <div class="container content">
           <div class="point">
             <div class="section-header-icon bg-lightblue fade-in">
               <i class="fas fa-shopping-cart" style="color: white;"></i>
@@ -110,7 +110,6 @@ export default {
 .point {
   display: flex;
   align-items: flex-start;
-  max-width: 750px;
   margin: 0 auto;
   padding: 30px 0 10px;
   border-bottom: 1px solid #e7e7e7;

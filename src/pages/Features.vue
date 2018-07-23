@@ -252,8 +252,12 @@ export default {
         border-bottom: none;
         border-right: 1px solid #e7e7e7;
         flex: 1;
+        &:first-of-type {
+          padding-left: 0;
+        }
         &:last-of-type {
           border-right: none;
+          padding-right: 0;
         }
       }
     }
