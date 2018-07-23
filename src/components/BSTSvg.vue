@@ -111,15 +111,25 @@ export default {
   props: [],
   data() {
     return {
-      innerCircleRadius: 75,
-      outerCircleRadius: 100,
-      canvasWidth: 330,
+      isMobile: window.innerWidth < 1200,
       buyIsSelected: false,
       sellIsSelected: false,
       tradeIsSelected: false,
     };
   },
   computed: {
+    canvasWidth() {
+      if (this.isMobile) return 330;
+      return 500;
+    },
+    outerCircleRadius() {
+      if (this.isMobile) return 100;
+      return 150;
+    },
+    innerCircleRadius() {
+      if (this.isMobile) return 75;
+      return 100;
+    },
     margin() {
       return (this.canvasWidth / 2) - this.outerCircleRadius;
     },
@@ -170,6 +180,9 @@ export default {
     setTimeout(() => {
       shape.setAttribute('stroke-dashoffset', 0);
     }, 0);
+    window.addEventListener('resize', () => {
+      this.isMobile = window.innerWidth < 1200;
+    });
   },
 };
 </script>
@@ -286,7 +299,7 @@ export default {
     p {
       padding-top: 10px;
       text-align: center;
-      font: $font;
+      font-family: $font;
       margin: 0;
       color: white;
       svg {
@@ -308,6 +321,10 @@ export default {
       line-height: 1.25;
       padding: 0;
       transition: 0.4s;
+      @media only screen and (min-width: $xlarge) {
+        font-size: 16px;
+        padding-top: 15px;
+      }
     }
     &.selected {
       .icon-plus {

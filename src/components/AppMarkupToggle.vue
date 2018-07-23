@@ -226,7 +226,7 @@ export default {
         visibility: visible;
       }
     }
-    @media only screen and (min-width: $xxxlarge) {
+    @media only screen and (min-width: $xlarge) {
       .prop {
         width: 400px;
       }

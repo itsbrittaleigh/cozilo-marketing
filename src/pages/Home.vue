@@ -544,7 +544,7 @@ export default {
     display: flex;
     align-items: center;
     .content {
-      max-width: 430px;
+      max-width: 570px;
       margin-right: 40px;
     }
   }
