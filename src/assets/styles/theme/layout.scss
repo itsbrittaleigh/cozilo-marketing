@@ -113,6 +113,20 @@ body {
       height: 350%;
     }
   }
+  &.large {
+    $screen_width: 525px;
+    $screen_height: 760px;
+    width: $screen_width;
+    height: $screen_height;
+    margin-left: -($screen_width / 2);
+    margin-top: -($screen_height / 2);
+    .screen-container {
+      top: 174px;
+      left: 144px;
+      width: 232px;
+      height: 414px;
+    }
+  }
   @media only screen and (min-width: $xxxlarge) {
     $screen_width: 465px;
     $screen_height: 670px;
@@ -174,7 +188,7 @@ body {
     }
     .col-lt {
       clip-path: polygon(0 0, 100% 0, calc(100% - 65px) 100%, 0 100%);
-      padding: 100px 0;
+      padding: 200px 0;
       width: calc(50% + 35px);
       > .container {
         margin: 0 150px 0 auto;
@@ -185,7 +199,7 @@ body {
     }
     .col-rt {
       clip-path: polygon(65px 0, 100% 0, 100% 100%, 0 100%);
-      padding: 180px 0 100px;
+      padding: 280px 0 200px;
       width: calc(50% + 35px);
       margin-left: -55px;
       > .container {

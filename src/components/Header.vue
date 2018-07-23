@@ -3,8 +3,8 @@
     <div class="headline">
       <p>
         Coming soon to
-        <i class="fab fa-apple fa-lg"></i>
-        <i class="fab fa-google-play fa-lg"></i>
+        <i class="fab fa-apple fa-2x"></i>
+        <i class="fab fa-google-play fa-2x"></i>
         Available for free
       </p>
     </div>
@@ -49,18 +49,27 @@ header {
       margin: 0;
       font-size: 12px;
       line-height: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     svg {
       &:first-of-type {
-        margin: 0 3px 0 5px;
+        margin: 0 10px 0 10px;
+        @media only screen and (min-width: $medium) {
+          margin: 0 15px 0 20px;
+        }
       }
       &:last-of-type {
-        margin: 0 5px 0 0;
+        margin: 0 10px 0 0;
+        @media only screen and (min-width: $medium) {
+          margin: 0 20px 0 0;
+        }
       }
     }
   }
   .header {
-    padding: 20px 0;
+    padding: 30px 0;
     .container {
       display: flex;
       align-items: center;

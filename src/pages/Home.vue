@@ -9,7 +9,7 @@
           v-scroll-to="`#${section.id}`"
         ></i>
       </div>
-      <section class="hero home with-bg-image pagination-section">
+      <section id="hero" class="hero home with-bg-image pagination-section">
         <parallax :speed-factor="0.3">
           <img src="static/covers/home.jpg" alt="" class="background-image">
         </parallax>
@@ -107,10 +107,7 @@
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Machinery, Industrial, &amp; Tools
-                    </h3>
+                    <h3>Machinery, Industrial, &amp; Tools</h3>
                     <ul>
                       <li>Machinery</li>
                       <li>Industrial Parts</li>
@@ -119,10 +116,7 @@
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Metals, Chemicals, Rubber, and Plastics
-                    </h3>
+                    <h3>Metals, Chemicals, Rubber, and Plastics</h3>
                     <ul>
                       <li>Minerals, Metallurgy</li>
                       <li>Chemicals</li>
@@ -133,20 +127,14 @@
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Auto &amp; Transportation
-                    </h3>
+                    <h3>Auto &amp; Transportation</h3>
                     <ul>
                       <li>Automotive and Motorcycle Components</li>
                       <li>Transportation</li>
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Home, Lights, and Construction
-                    </h3>
+                    <h3>Home, Lights, and Construction</h3>
                     <ul>
                       <li>Construction Equipment</li>
                       <li>Lights and Lighting</li>
@@ -181,10 +169,7 @@
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Electronics
-                    </h3>
+                    <h3>Electronics</h3>
                     <ul>
                       <li>Computer Hardware</li>
                       <li>Computer Software</li>
@@ -195,10 +180,7 @@
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Office Furniture
-                    </h3>
+                    <h3>Office Furniture</h3>
                     <ul>
                       <li>Desks and Chairs</li>
                       <li>Conference Tables</li>
@@ -208,20 +190,14 @@
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Electrical Equipment
-                    </h3>
+                    <h3>Electrical Equipment</h3>
                     <ul>
                       <li>Electrical Equipment and Supplies</li>
                       <li>Telecommunications</li>
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Packaging and Office Supplies
-                    </h3>
+                    <h3>Packaging and Office Supplies</h3>
                     <ul>
                       <li>Packaging and Printing</li>
                       <li>Office and School Supplies</li>
@@ -257,20 +233,14 @@
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Bags, Shoes, and Accessories
-                    </h3>
+                    <h3>Bags, Shoes, and Accessories</h3>
                     <ul>
                       <li>Luggage, Bags, and Cases</li>
                       <li>Shoes and Accessories</li>
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Apparel, Textiles, and Accessories
-                    </h3>
+                    <h3>Apparel, Textiles, and Accessories</h3>
                     <ul>
                       <li>Apparel</li>
                       <li>Textile and Leather</li>
@@ -280,10 +250,7 @@
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Gifts, Toys, and Sporting Goods
-                    </h3>
+                    <h3>Gifts, Toys, and Sporting Goods</h3>
                     <ul>
                       <li>Sports and Entertainment</li>
                       <li>Gifts and Crafts</li>
@@ -291,10 +258,7 @@
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>
-                      <img src="static/icons/check-white.png" alt="">
-                      Agriculture and Food
-                    </h3>
+                    <h3>Agriculture and Food</h3>
                     <ul>
                       <li>Agricultural Goods</li>
                       <li>Food and Beverage Goods</li>
@@ -376,7 +340,7 @@
           </div>
         </div>
       </section>
-      <section class="newsletter bg-orange pagination-section">
+      <section class="newsletter bg-orange">
         <div class="container">
           <p class="large color-white hidden">Sign up for our newsletter to stay up to date.</p>
           <newsletter-form></newsletter-form>
@@ -595,7 +559,7 @@ export default {
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
-    height: 450px;
+    height: 665px;
     &:nth-child(1) {
       .front {
         background-image: url('~/static/covers/cement.jpg');
@@ -678,10 +642,7 @@ export default {
         padding-bottom: 20px;
         .col-lt,
         .col-rt {
-          flex: 1;
-        }
-        .col-lt {
-          margin-right: 10px;
+          width: calc(50% - 5px);
         }
       }
       .category {

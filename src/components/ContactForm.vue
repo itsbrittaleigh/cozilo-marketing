@@ -17,6 +17,17 @@
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" v-model="contact.email" required>
       </div>
+      <div class="field input select fade-in">
+        <label for="category">Category</label>
+        <select name="category" id="category" v-model="contact.category" required>
+          <option value="1">Feedback or Suggestions</option>
+          <option value="2">My Account</option>
+          <option value="3">Reporting Bugs and Errors</option>
+          <option value="4">Business and Investors</option>
+          <option value="5">Transactions</option>
+        </select>
+        <img src="../assets/images/icons/arrow-orange-down.png" alt="" class="arrow">
+      </div>
       <div class="field textarea fade-in">
         <label for="message">Message</label>
         <textarea
@@ -50,6 +61,7 @@ export default {
         phone: '',
         email: '',
         company: '',
+        category: '',
         message: '',
       },
     };
@@ -78,6 +90,7 @@ label {
   font-size: 12px;
 }
 .field {
+  position: relative;
   margin-bottom: 15px;
   border-radius: 5px;
   background: #f1f1f1;
@@ -98,11 +111,24 @@ label {
     border-radius: 5px 0 0 5px;
     background: transparent;
   }
-  input {
+  input,
+  select {
     border-radius: 0 5px 5px 0;
     height: 52px;
     flex: 1;
     background: transparent;
+    border: none;
+    appearance: none;
+    font-size: 16px;
+    font-family: $font;
+    color: $gray;
+  }
+  .arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    height: 10px;
+    margin-top: -5px;
   }
 }
 .field.textarea {
@@ -118,7 +144,7 @@ label {
     outline: none;
     border: none;
     width: 100%;
-    padding: 50px 10px 10px;
+    padding: 50px 15px 10px;
     height: 200px;
     background: transparent;
   }
@@ -136,6 +162,7 @@ label {
       width: 49%;
     }
     .field.textarea,
+    .field.select,
     .button-container {
       width: 100%
     }

@@ -22,7 +22,7 @@
           in between.
         </span>
       </p>
-      <div class="content padded-section">
+      <div class="content">
         <div class="container padded-section">
           <div class="price-tag">
             <div class="header bg-lightblue">

@@ -2,7 +2,10 @@
   <div class="value-props">
     <div class="col-lt">
       <div
-        :class="{'prop lightblue': true, 'selected': features[0]}"
+        :class="{
+          'prop lightblue': true,
+          'selected': features[0]
+        }"
         @click="toggleFeature(0)"
       >
         <i class="icon-plus"></i>
@@ -14,7 +17,10 @@
         </p>
       </div>
       <div
-        :class="{'prop orange': true, 'selected': features[1]}"
+        :class="{
+          'prop orange': true,
+          'selected': features[1]
+        }"
         @click="toggleFeature(1)"
       >
         <i class="icon-plus"></i>
@@ -26,7 +32,10 @@
         </p>
       </div>
       <div
-        :class="{'prop green': true, 'selected': features[2]}"
+        :class="{
+          'prop green': true,
+          'selected': features[2]
+        }"
         @click="toggleFeature(2)"
       >
         <i class="icon-plus"></i>
@@ -37,7 +46,7 @@
         </p>
       </div>
     </div>
-    <div class="mockup">
+    <div class="mockup large">
       <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
       <div class="screen-container">
         <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
@@ -45,7 +54,10 @@
     </div>
     <div class="col-rt">
       <div
-        :class="{'prop lightblue': true, 'selected': features[3]}"
+        :class="{
+          'prop lightblue': true,
+          'selected': features[3]
+        }"
         @click="toggleFeature(3)"
       >
         <i class="icon-plus"></i>
@@ -57,7 +69,10 @@
         </p>
       </div>
       <div
-        :class="{'prop orange': true, 'selected': features[4]}"
+        :class="{
+          'prop orange': true,
+          'selected': features[4]
+        }"
         @click="toggleFeature(4)"
       >
         <i class="icon-plus"></i>
@@ -68,7 +83,10 @@
         </p>
       </div>
       <div
-        :class="{'prop green': true, 'selected': features[5]}"
+        :class="{
+          'prop green': true,
+          'selected': features[5]
+        }"
         @click="toggleFeature(5)"
       >
         <i class="icon-plus"></i>
@@ -129,14 +147,12 @@ export default {
       background: #f6f6f6;
       border-radius: 5px;
       position: relative;
-      max-height: 90px;
       cursor: pointer;
       transition: 0.4s;
       &:hover {
         box-shadow: 0 2px 2px 0 rgba($lightgray, 0.5);
       }
       &.selected {
-        max-height: 400px;
         &.orange,
         &.lightblue,
         &.green {
@@ -200,11 +216,6 @@ export default {
         margin: 0;
         &.large {
           font-weight: bold;
-        }
-        &:not(.large) {
-          opacity: 0;
-          visibility: hidden;
-          transition: 0.4s;
         }
       }
     }

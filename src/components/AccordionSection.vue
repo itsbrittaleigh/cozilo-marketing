@@ -63,7 +63,7 @@ export default {
     this.reference = this.createRandomRef();
     setTimeout(() => {
       if (!this.isActive) this.collapseSection();
-    }, 100);
+    }, 300);
   },
 };
 </script>
@@ -72,13 +72,12 @@ export default {
 .accordion-section {
   .accordion-content {
     overflow: hidden;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: 0.4s;
+    opacity: 0;
+    transition: height 0.4s, opacity 0.7s;
   }
   &.active {
     .accordion-content {
-      transform: scaleY(1);
+      opacity: 1;
     }
   }
 }
