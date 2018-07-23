@@ -108,7 +108,10 @@ footer {
         li {
           margin-left: 30px;
           line-height: normal;
-          font-size: 16px;
+          a {
+            font-size: 18px;
+            line-height: 1;
+          }
         }
       }
     }
@@ -117,6 +120,9 @@ footer {
       align-items: center;
       img {
         margin: 0 0 0 15px;
+      }
+      p {
+        font-size: 18px;
       }
     }
   }
