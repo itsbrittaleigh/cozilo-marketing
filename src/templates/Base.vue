@@ -42,6 +42,7 @@ export default {
 <style lang="scss">
 @import "../assets/styles/variables.scss";
 .sticky-header {
+  padding-top: 100px;
   header .header {
     position: fixed;
     top: 0;
@@ -51,6 +52,9 @@ export default {
     overflow: hidden;
     background: white;
     box-shadow: 0 0 2px 0 rgba(lightgray, 0.6);
+  }
+  @media only screen and (min-width: $large) {
+    padding-top: 104px;
   }
 }
 </style>

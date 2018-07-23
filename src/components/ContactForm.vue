@@ -129,6 +129,7 @@ label {
     top: 50%;
     height: 10px;
     margin-top: -5px;
+    pointer-events: none;
   }
 }
 .field.textarea {

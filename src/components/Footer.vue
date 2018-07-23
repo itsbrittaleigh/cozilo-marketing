@@ -106,11 +106,12 @@ footer {
         margin: 0;
         display: flex;
         li {
-          margin-left: 30px;
-          line-height: normal;
+          margin-left: 50px;
           a {
-            font-size: 18px;
-            line-height: 1;
+            font-size: 16px;
+          }
+          @media only screen and (min-width: $xlarge) {
+            margin-left: 70px;
           }
         }
       }
@@ -122,7 +123,7 @@ footer {
         margin: 0 0 0 15px;
       }
       p {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

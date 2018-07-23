@@ -494,19 +494,22 @@ export default {
   padding: 70px 0 180px;
   position: relative;
   .arrow {
-    width: 60px;
+    padding: 20px;
+    width: 100px;
     position: absolute;
     bottom: 60px;
     left: 50%;
-    margin-left: -30px;
+    margin-left: -50px;
     z-index: 10;
     &:hover {
       @keyframes slide {
-        0% { bottom: 60px; }
-        50% { bottom: 40px }
-        100% { bottom: 60px }
+        0% { margin-bottom: 0; }
+        50% { margin-bottom: -20px; }
+        100% { margin-bottom: 0; }
       }
-      animation: 1s ease-in-out 0s slide infinite;
+      img {
+        animation: 1s ease-in-out 0s slide infinite;
+      }
     }
   }
   h1 {
@@ -623,8 +626,7 @@ export default {
       width: 100%;
       z-index: 5;
       transition: 0.7s;
-      padding: 50px 20px 20px;
-      overflow: scroll;
+      padding: 50px 20px 20px 40px;
       header {
         display: flex;
         padding-bottom: 10px;
