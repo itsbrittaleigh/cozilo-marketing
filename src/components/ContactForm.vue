@@ -1,23 +1,23 @@
 <template>
   <form @submit.prevent="submitForm" id="contact">
     <div class="fields">
-      <div class="field input fade-in">
+      <div class="field input hidden" v-in-viewport.once>
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" v-model="contact.name" required>
       </div>
-      <div class="field input fade-in">
+      <div class="field input hidden" v-in-viewport.once>
         <label for="company">Company Name</label>
         <input type="text" id="company" name="company" v-model="contact.company" required>
       </div>
-      <div class="field input fade-in">
+      <div class="field input hidden" v-in-viewport.once>
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" v-model="contact.phone" required>
       </div>
-      <div class="field input fade-in">
+      <div class="field input hidden" v-in-viewport.once>
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" v-model="contact.email" required>
       </div>
-      <div class="field input select fade-in">
+      <div class="field input select hidden" v-in-viewport.once>
         <label for="category">Category</label>
         <select name="category" id="category" v-model="contact.category" required>
           <option value="1">Feedback or Suggestions</option>
@@ -28,7 +28,7 @@
         </select>
         <img src="../assets/images/icons/arrow-orange-down.png" alt="" class="arrow">
       </div>
-      <div class="field textarea fade-in">
+      <div class="field textarea hidden" v-in-viewport.once>
         <label for="message">Message</label>
         <textarea
           name="message"
@@ -38,7 +38,7 @@
         ></textarea>
       </div>
       <p v-if="showSuccess">Your message was sent successfully</p>
-      <div class="button-container hidden">
+      <div class="button-container hidden" v-in-viewport.once>
         <button type="submit">
           Submit
           <img src="../assets/images/icons/arrow-white-right.svg" alt="" class="arrow white">

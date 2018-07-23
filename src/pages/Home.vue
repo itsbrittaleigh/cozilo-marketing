@@ -16,17 +16,18 @@
         <div class="overlay"></div>
         <div class="container">
           <div class="content">
-            <h1 class="fade-in">
+            <h1 class="hidden" v-in-viewport.once>
               <span class="green">The business-focused,</span>
               <span class="blue">mobile marketplace</span>
             </h1>
-            <p class="fade-in">
+            <p class="hidden" v-in-viewport.once>
               Reach out to serious buyers and sellers to streamline your business’s supply chain
               quickly and easily, right from our free mobile app available on iOS and Android.
             </p>
             <router-link
+              v-in-viewport.once
               :to="{ name: 'Contact' }"
-              class="fade-in button bg-green"
+              class="hidden button bg-green"
             >
               Sign Up For Free &rarr;
             </router-link>
@@ -40,15 +41,15 @@
       <section class="value-section pagination-section angle-split">
         <div class="col-lt padded-section">
           <div class="container">
-            <div class="section-header-icon bg-lightblue hidden">
+            <div class="section-header-icon bg-lightblue hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Buy new &amp; used goods</h2>
-            <p class="hidden">
+            <h2 class="hidden" v-in-viewport.once>Buy new &amp; used goods</h2>
+            <p class="hidden" v-in-viewport.once>
               With thousands of new & used goods across 50+ categories on the Cozilo
               feed, quickly and easily find the products you need.
             </p>
-            <ul class="feature-list lightblue hidden">
+            <ul class="feature-list lightblue hidden" v-in-viewport.once>
               <li>Opening your new business</li>
               <li>Expanding your current business</li>
               <li>Getting your employees the products they need</li>
@@ -65,16 +66,16 @@
         </div>
         <div class="col-rt padded-section">
           <div class="container">
-            <div class="section-header-icon bg-green hidden">
+            <div class="section-header-icon bg-green hidden" v-in-viewport.once>
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Sell overstock goods</h2>
-            <p class="hidden">
+            <h2 class="hidden" v-in-viewport.once>Sell overstock goods</h2>
+            <p class="hidden" v-in-viewport.once>
               Take high-definition images of the overstock goods you’re looking to sell
               quickly and easily to the Cozilo feed and communicate directly with buyers
               near you.
             </p>
-            <ul class="feature-list green hidden">
+            <ul class="feature-list green hidden" v-in-viewport.once>
               <li>Selling off overstock goods</li>
               <li>Liquidating excess products</li>
               <li>Removing clutter from your office space</li>
@@ -87,10 +88,10 @@
           <i class="icon-plus" @click="toggleFactory"></i>
           <div class="front padded-section" @click="toggleFactory">
             <div class="container">
-              <div class="section-header-icon bg-lightblue hidden">
+              <div class="section-header-icon bg-lightblue hidden" v-in-viewport.once>
                 <i class="fas fa-industry" style="color: white;"></i>
               </div>
-              <h2 class="hidden">From the factory floor</h2>
+              <h2 class="hidden" v-in-viewport.once>From the factory floor</h2>
             </div>
           </div>
           <div class="back">
@@ -149,10 +150,10 @@
           <i class="icon-plus" @click="toggleCubicle"></i>
           <div class="front padded-section" @click="toggleCubicle">
             <div class="container">
-              <div class="section-header-icon bg-orange hidden">
+              <div class="section-header-icon bg-orange hidden" v-in-viewport.once>
                 <i class="fas fa-briefcase" style="color: white;"></i>
               </div>
-              <h2 class="hidden">To the office cubicle</h2>
+              <h2 class="hidden" v-in-viewport.once>To the office cubicle</h2>
             </div>
           </div>
           <div class="back">
@@ -213,10 +214,10 @@
           <i class="icon-plus" @click="toggleBetween"></i>
           <div class="front padded-section" @click="toggleBetween">
             <div class="container">
-              <div class="section-header-icon bg-green hidden">
+              <div class="section-header-icon bg-green hidden" v-in-viewport.once>
                 <i class="fas fa-leaf" style="color: white;"></i>
               </div>
-              <h2 class="hidden">And everything in between</h2>
+              <h2 class="hidden" v-in-viewport.once>And everything in between</h2>
             </div>
           </div>
           <div class="back">
@@ -273,17 +274,17 @@
       <section class="pagination-section angle-split angle-color">
         <div class="col-lt padded-section">
           <div class="container">
-            <div class="section-header-icon bg-darkblue hidden">
+            <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden">A truly mobile, business-focused app</h2>
-            <p class="hidden">
+            <h2 class="hidden" v-in-viewport.once>A truly mobile, business-focused app</h2>
+            <p class="hidden" v-in-viewport.once>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
               ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
               repellat.
             </p>
-            <ul class="feature-list darkblue hidden">
+            <ul class="feature-list darkblue hidden" v-in-viewport.once>
               <li>Mobile app for on-the-move business owners</li>
               <li>Seamless navigation from sales feed to purchasing process</li>
               <li>Verified interactions with other local companies</li>
@@ -300,16 +301,16 @@
         </div>
         <div class="col-rt padded-section">
           <div class="container">
-            <div class="section-header-icon bg-darkblue hidden">
+            <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden">Chat with other local businesses</h2>
-            <p class="hidden">
+            <h2 class="hidden" v-in-viewport.once>Chat with other local businesses</h2>
+            <p class="hidden" v-in-viewport.once>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
               voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
             </p>
-            <ul class="feature-list darkblue hidden">
+            <ul class="feature-list darkblue hidden" v-in-viewport.once>
               <li>Get quotes from multiple buyers or sellers</li>
               <li>Save and group messages</li>
               <li>Send images directly within chat</li>
@@ -319,7 +320,7 @@
       </section>
       <section class="app-markup padded-section bg-white pagination-section">
         <div class="container">
-          <h2 class="hidden">
+          <h2 class="hidden" v-in-viewport.once>
             Cozilo:
             <span class="lower">
               The truly mobile way to
@@ -333,7 +334,8 @@
           <div class="button-container">
             <router-link
               :to="{ name: 'Features' }"
-              class="button bg-lightblue"
+              class="button bg-lightblue hidden"
+              v-in-viewport.once
             >
               Learn More About Cozilo's Features &rarr;
             </router-link>
@@ -342,7 +344,9 @@
       </section>
       <section class="newsletter bg-orange">
         <div class="container">
-          <p class="large color-white hidden">Sign up for our newsletter to stay up to date.</p>
+          <p class="large color-white hidden" v-in-viewport.once>
+            Sign up for our newsletter to stay up to date.
+          </p>
           <newsletter-form></newsletter-form>
         </div>
       </section>
@@ -357,7 +361,6 @@ import NewsletterForm from '../components/NewsletterForm';
 import BSTSvg from '../components/BSTSvg';
 import AppMarkupCarousel from '../components/AppMarkupCarousel';
 import AppMarkupToggle from '../components/AppMarkupToggle';
-import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'Home',
@@ -380,9 +383,6 @@ export default {
     'app-markup-toggle': AppMarkupToggle,
     Parallax,
   },
-  mixins: [
-    TagAsVisible,
-  ],
   methods: {
     toggleCubicle() {
       this.cubicleIsOpen = !this.cubicleIsOpen;

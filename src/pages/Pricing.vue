@@ -9,13 +9,13 @@
         bg-color="green"
       >
         <template slot="description">
-          <p>
+          <p class="hidden" v-in-viewport.once>
             Sign up for your free Cozilo account today, and during the 3-month promotional
             period, receive Cozilo Premium member benefits for free!
           </p>
         </template>
       </hero-section>
-      <p class="lead">
+      <p class="lead hidden" v-in-viewport.once>
         <span class="container">
           With three unique pricing tiers, there’s a Cozilo tier for every kind of member:
           individual sellers, small business owners, enterprise business owners, and everything
@@ -24,7 +24,7 @@
       </p>
       <div class="content">
         <div class="container padded-section">
-          <div class="price-tag">
+          <div class="price-tag hidden" v-in-viewport.once>
             <div class="header bg-lightblue">
               <div class="dot"></div>
               <h2>Cozilo Free</h2>
@@ -41,7 +41,7 @@
               </ul>
             </div>
           </div>
-          <div class="price-tag">
+          <div class="price-tag hidden" v-in-viewport.once>
             <div class="header bg-orange">
               <div class="dot"></div>
               <h2>Cozilo Plus</h2>
@@ -61,7 +61,7 @@
               </ul>
             </div>
           </div>
-          <div class="price-tag">
+          <div class="price-tag hidden" v-in-viewport.once>
             <div class="header bg-green">
               <div class="dot"></div>
               <h2>Cozilo Enterprise</h2>

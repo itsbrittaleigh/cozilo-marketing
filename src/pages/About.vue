@@ -7,7 +7,7 @@
         icon-class="shopping-cart"
       >
         <template slot="description">
-          <p class="fade-in">
+          <p class="hidden" v-in-viewport.once>
             Cozilo is an app for business owners by business owners: a truly B2B,
             business-focused marketplace community that helps businesses of all sizes
             and ages buy, sell, and trade goods at prices they set - wholesale, volume,
@@ -19,12 +19,12 @@
       <section class="about padded-section">
         <div class="container content">
           <div class="point">
-            <div class="section-header-icon bg-lightblue fade-in">
+            <div class="section-header-icon bg-lightblue hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <div class="text">
-              <h2 class="color-lightblue fade-in">How we got started</h2>
-              <p class="fade-in">
+              <h2 class="color-lightblue hidden" v-in-viewport.once>How we got started</h2>
+              <p class="hidden" v-in-viewport.once>
                 Cozilo was created by a team of small business owners with small business
                 needs in mind. The idea came about when they began looking for business resources
                 nearby but couldn’t effectively find what was needed at the competitive cost.
@@ -35,43 +35,45 @@
             </div>
           </div>
           <div class="point">
-            <div class="section-header-icon bg-green fade-in">
+            <div class="section-header-icon bg-green hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <div class="text">
-              <h2 class="color-green fade-in">What we're doing differently</h2>
-              <p class="fade-in">
+              <h2 class="color-green hidden" v-in-viewport.once>What we're doing differently</h2>
+              <p class="hidden" v-in-viewport.once>
                 Cozilo is different from other business marketplaces in several key ways:
               </p>
-              <h3 class="color-green fade-in">Business-Focused</h3>
-              <p class="fade-in">
+              <h3 class="color-green hidden" v-in-viewport.once>Business-Focused</h3>
+              <p class="hidden" v-in-viewport.once>
                 Cozilo’s focus is on building networks for businesses while helping them
                 buy, sell, and trade goods.
               </p>
-              <h3 class="color-green hidden">Account Management</h3>
-              <p class="hidden">
+              <h3 class="color-green hidden" v-in-viewport.once>Account Management</h3>
+              <p class="hidden" v-in-viewport.once>
                 Once you set up your business’ main account, you can quickly and easily
                 grant decision-making access to others within your business.
               </p>
-              <h3 class="color-green hidden">Pricing and Variety of Goods</h3>
-              <p class="hidden">
+              <h3 class="color-green hidden" v-in-viewport.once>Pricing and Variety of Goods</h3>
+              <p class="hidden" v-in-viewport.once>
                 Unlike other selling apps, Cozilo has both new and used goods in a wide
                 variety of categories to fit your budget and needs.
               </p>
-              <h3 class="color-green hidden">Advertise and Sell at the Same Time</h3>
-              <p class="hidden">
+              <h3 class="color-green hidden" v-in-viewport.once>
+                Advertise and Sell at the Same Time
+              </h3>
+              <p class="hidden" v-in-viewport.once>
                 Cozilo is a cost-effective way to business owners to advertise their business
                 at the same time as buying or selling goods.
               </p>
             </div>
           </div>
           <div class="point">
-            <div class="section-header-icon bg-orange hidden">
+            <div class="section-header-icon bg-orange hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <div class="text">
-              <h2 class="color-orange hidden">What's next?</h2>
-              <p class="hidden">
+              <h2 class="color-orange hidden" v-in-viewport.once>What's next?</h2>
+              <p class="hidden" v-in-viewport.once>
                 As the Cozilo community grows, our services and platform will grow as well.
                 In addition to connecting small business owners to help them buy, sell, and
                 trade goods, we plan on adding additional services and features that will
@@ -88,7 +90,6 @@
 <script>
 import Base from '../templates/Base';
 import Hero from '../components/Hero';
-import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'About',
@@ -99,9 +100,6 @@ export default {
     'base-page': Base,
     'hero-section': Hero,
   },
-  mixins: [
-    TagAsVisible,
-  ],
 };
 </script>
 

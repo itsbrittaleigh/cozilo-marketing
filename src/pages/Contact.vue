@@ -9,7 +9,7 @@
         bg-color="lightblue"
       >
         <template slot="description">
-          <p>
+          <p class="hidden" v-in-viewport.once>
             Our customer support team is <strong>available 24/7</strong> to answer
             any inquiries you might have about the Cozilo platform, a recent
             transaction, or any other questions you might have. Fill out the form
@@ -30,7 +30,6 @@
 import Base from '../templates/Base';
 import Hero from '../components/Hero';
 import ContactForm from '../components/ContactForm';
-import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'Contact',
@@ -42,8 +41,5 @@ export default {
     'hero-section': Hero,
     'contact-form': ContactForm,
   },
-  mixins: [
-    TagAsVisible,
-  ],
 };
 </script>

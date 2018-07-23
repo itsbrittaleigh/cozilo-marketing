@@ -9,7 +9,7 @@
         bg-color="orange"
       >
         <template slot="description">
-          <p>
+          <p class="hidden" v-in-viewport.once>
             Below are a list of frequently asked questions that Cozilo users have about
             signing up, payment options, and more. If you don’t see an answer to your
             question below, reach out to us via phone, email, or our
@@ -19,11 +19,11 @@
       </hero-section>
       <section class="faq">
         <div class="container content-container content padded-section">
-          <div class="accordion fade-in">
-            <p class="heading">My Account</p>
+          <div class="accordion">
+            <p class="heading hidden" v-in-viewport.once>My Account</p>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-blue-down.png" alt="">
                   <h2 class="color-lightblue">How can I sign up for Cozilo?</h2>
                 </div>
@@ -38,7 +38,7 @@
             </accordion-section>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-blue-down.png" alt="">
                   <h2 class="color-lightblue">Who do I contact with account questions?</h2>
                 </div>
@@ -53,11 +53,11 @@
               </template>
             </accordion-section>
           </div>
-          <div class="accordion hidden">
-            <p class="heading">Transactions and Payments</p>
+          <div class="accordion">
+            <p class="heading hidden" v-in-viewport.once>Transactions and Payments</p>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-green-down.png" alt="">
                   <h2 class="color-green">What are my payment options?</h2>
                 </div>
@@ -72,7 +72,7 @@
             </accordion-section>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-green-down.png" alt="">
                   <h2 class="color-green">How do Cozilo tokens work?</h2>
                 </div>
@@ -89,7 +89,7 @@
             </accordion-section>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-green-down.png" alt="">
                   <h2 class="color-green">How does the trade system work?</h2>
                 </div>
@@ -105,7 +105,7 @@
             </accordion-section>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-green-down.png" alt="">
                   <h2 class="color-green">How are my transactions secured?</h2>
                 </div>
@@ -119,11 +119,11 @@
               </template>
             </accordion-section>
           </div>
-          <div class="accordion hidden">
-            <p class="heading">Shipping</p>
+          <div class="accordion">
+            <p class="heading hidden" v-in-viewport.once>Shipping</p>
             <accordion-section>
               <template slot="accordion-header">
-                <div class="header">
+                <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-orange-down.png" alt="">
                   <h2 class="color-orange">Does Cozilo manage shipping?</h2>
                 </div>
@@ -148,7 +148,6 @@
 import Base from '../templates/Base';
 import Hero from '../components/Hero';
 import AccordionSection from '../components/AccordionSection';
-import TagAsVisible from '../mixins/TagAsVisible';
 
 export default {
   name: 'FAQ',
@@ -160,9 +159,6 @@ export default {
     'hero-section': Hero,
     'accordion-section': AccordionSection,
   },
-  mixins: [
-    TagAsVisible,
-  ],
 };
 </script>
 
