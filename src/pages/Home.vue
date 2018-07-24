@@ -453,7 +453,7 @@ export default {
     height: 15px;
     border-radius: 15px;
     border: 1px solid #d9d9d9;
-    margin-right: 10px;
+    margin-right: 20px;
     cursor: pointer;
     transition: 0.3s;
     &:last-of-type {

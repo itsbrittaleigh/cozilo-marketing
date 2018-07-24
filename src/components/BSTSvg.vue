@@ -1,107 +1,112 @@
 <template>
   <div
-    class="svg-container"
-    :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
+    class="super-container"
+    :style="`padding-left: ${innerCircleRadius}px;`"
   >
-    <svg
-      class="value-props"
+    <div
+      class="svg-container"
       :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
     >
-      <circle class="outer-circle"
-        :cx="outerCircleXCoordinate"
-        :cy="outerCircleYCoordinate"
-        :r="outerCircleRadius"
-        stroke-dasharray="1000"
-        stroke-dashoffset="1000"
-      />
-      <g>
-        <foreignObject
-          class="buy"
-          :x="buyCircleXCoordinate - innerCircleRadius"
-          :y="buyCircleYCoordinate - innerCircleRadius"
-          :width="innerCircleRadius * 2"
-          :height="innerCircleRadius * 2"
-        >
-          <div
-            :class="{
-              'content-circle': true,
-              'selected': buyIsSelected
-            }"
-            @click="toggleBuy"
+      <svg
+        class="value-props"
+        :style="`width: ${canvasWidth}px; height: ${canvasWidth}px;`"
+      >
+        <circle class="outer-circle"
+          :cx="outerCircleXCoordinate"
+          :cy="outerCircleYCoordinate"
+          :r="outerCircleRadius"
+          stroke-dasharray="1000"
+          stroke-dashoffset="1000"
+        />
+        <g>
+          <foreignObject
+            class="buy"
+            :x="buyCircleXCoordinate - innerCircleRadius"
+            :y="buyCircleYCoordinate - innerCircleRadius"
+            :width="innerCircleRadius * 2"
+            :height="innerCircleRadius * 2"
           >
+            <div
+              :class="{
+                'content-circle': true,
+                'selected': buyIsSelected
+              }"
+              @click="toggleBuy"
+            >
+              <i class="icon-plus"></i>
+              <div class="content">
+                <p>
+                  <i class="fas fa-shopping-cart fa-lg"></i>
+                  BUY
+                </p>
+                <p class="selected-text">
+                  Buy new &amp; used goods to stock your office, expand your business,
+                  and more.
+                </p>
+              </div>
+            </div>
+          </foreignObject>
+        </g>
+        <g>
+          <foreignObject
+            class="sell"
+            :x="sellCircleXCoordinate - innerCircleRadius"
+            :y="sellCircleYCoordinate - innerCircleRadius"
+            :width="innerCircleRadius * 2"
+            :height="innerCircleRadius * 2"
+          >
+            <div
+              :class="{
+                'content-circle': true,
+                'selected': sellIsSelected
+              }"
+              @click="toggleSell"
+            >
             <i class="icon-plus"></i>
             <div class="content">
               <p>
-                <i class="fas fa-shopping-cart fa-lg"></i>
-                BUY
+                <i class="fas fa-credit-card fa-lg"></i>
+                SELL
               </p>
               <p class="selected-text">
-                Buy new &amp; used goods to stock your office, expand your business,
-                and more.
+                Quickly &amp; easily sell new or used goods to other local businesses
+                through Cozilo.
               </p>
             </div>
-          </div>
-        </foreignObject>
-      </g>
-      <g>
-        <foreignObject
-          class="sell"
-          :x="sellCircleXCoordinate - innerCircleRadius"
-          :y="sellCircleYCoordinate - innerCircleRadius"
-          :width="innerCircleRadius * 2"
-          :height="innerCircleRadius * 2"
-        >
-          <div
-            :class="{
-              'content-circle': true,
-              'selected': sellIsSelected
-            }"
-            @click="toggleSell"
-          >
-          <i class="icon-plus"></i>
-          <div class="content">
-            <p>
-              <i class="fas fa-credit-card fa-lg"></i>
-              SELL
-            </p>
-            <p class="selected-text">
-              Quickly &amp; easily sell new or used goods to other local businesses
-              through Cozilo.
-            </p>
-          </div>
-          </div>
-        </foreignObject>
-      </g>
-      <g>
-        <foreignObject
-          class="trade"
-          :x="tradeCircleXCoordinate - innerCircleRadius"
-          :y="tradeCircleYCoordinate - innerCircleRadius"
-          :width="innerCircleRadius * 2"
-          :height="innerCircleRadius * 2"
-        >
-          <div
-            :class="{
-              'content-circle': true,
-              'selected': tradeIsSelected
-            }"
-            @click="toggleTrade"
-          >
-            <i class="icon-plus"></i>
-            <div class="content">
-              <p>
-                <i class="fas fa-exchange-alt fa-lg"></i>
-                TRADE
-              </p>
-              <p class="selected-text">
-                Cozilo trading tokens help you gain "future value" for items you
-                don't need today.
-              </p>
             </div>
-          </div>
-        </foreignObject>
-      </g>
-    </svg>
+          </foreignObject>
+        </g>
+        <g>
+          <foreignObject
+            class="trade"
+            :x="tradeCircleXCoordinate - innerCircleRadius"
+            :y="tradeCircleYCoordinate - innerCircleRadius"
+            :width="innerCircleRadius * 2"
+            :height="innerCircleRadius * 2"
+          >
+            <div
+              :class="{
+                'content-circle': true,
+                'selected': tradeIsSelected
+              }"
+              @click="toggleTrade"
+            >
+              <i class="icon-plus"></i>
+              <div class="content">
+                <p>
+                  <i class="fas fa-exchange-alt fa-lg"></i>
+                  TRADE
+                </p>
+                <p class="selected-text">
+                  Cozilo trading tokens help you gain "future value" for items you
+                  don't need today.
+                </p>
+              </div>
+            </div>
+          </foreignObject>
+        </g>
+      </svg>
+    </div>
   </div>
 </template>
 
@@ -200,8 +205,13 @@ export default {
     transform: rotate(-30deg) scale(1);
   }
 }
+.super-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .svg-container {
-  margin: 40px auto 0;
+  margin: 40px;
   transform: rotate(30deg);
   overflow: visible;
 }
