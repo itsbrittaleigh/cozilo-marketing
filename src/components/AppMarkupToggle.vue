@@ -11,9 +11,8 @@
         <i class="icon-plus"></i>
         <p class="large">Easy-to-Navigate Interface</p>
         <p>
-          With one simple push of a button, you can take high-quality photos of your
-          goods and post them directly on the Cozilo B2B marketplace for thousands of
-          other business owners to see.
+          Take high-quality photos of your goods & post them directly on Cozilo for
+          thousands of other businesses to see.
         </p>
       </div>
       <div
@@ -26,9 +25,8 @@
         <i class="icon-plus"></i>
         <p class="large">Customizable Price Setting</p>
         <p>
-          Cozilo is a business-focused marketplace that allows you to transparently
-          set your pricing levels: wholesale, volume, individual goods - whatever your
-          business needs.
+          With Cozilo, transparently set your pricing levels: wholesale, volume, or
+          individual goods.
         </p>
       </div>
       <div
@@ -41,8 +39,8 @@
         <i class="icon-plus"></i>
         <p class="large">Safe & Reliable Transactions</p>
         <p>
-          With our multi-step verification process for all Cozilo business users,
-          you can be sure that every transaction is secure before ever even meeting.
+          With a multi-step verification process for all Cozilo users, every transaction is
+          secure.
         </p>
       </div>
     </div>
@@ -63,9 +61,8 @@
         <i class="icon-plus"></i>
         <p class="large">Advertise Your Company</p>
         <p>
-          Create your customizable profile to connect directly with other buyers, sellers,
-          and traders on the Cozilo app and create your own personal B2B network to
-          advertise your company.
+          Customize your profile, connect directly with other users & advertise your business
+          with Cozilo.
         </p>
       </div>
       <div
@@ -78,8 +75,8 @@
         <i class="icon-plus"></i>
         <p class="large">Simple & Quick Shipping</p>
         <p>
-          Cozilo takes all the hassle out of shipping goods by offering fast and
-          efficient freight shipping assistance.
+          Cozilo offers affordable & efficient freight shipping assistance to ensure quality
+          delivery.
         </p>
       </div>
       <div
@@ -92,9 +89,7 @@
         <i class="icon-plus"></i>
         <p class="large">Pay Your Own Way</p>
         <p>
-          The Cozilo app accepts ACH, Cozilo tokens, smart wallets like Apple and Google
-          Pay, as well as  all major credit cards, including VISA, MasterCard, and
-          American Express.
+          The Cozilo app accepts ACH, Apple and Google Pay, as well as all major credit cards.
         </p>
       </div>
     </div>

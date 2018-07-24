@@ -278,12 +278,12 @@
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <h2 class="hidden" v-in-viewport.once>A truly mobile, business-focused app</h2>
-            <p class="hidden" v-in-viewport.once>
+            <!-- <p class="hidden" v-in-viewport.once>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Inventore tempore non maiores animi? Assumenda impedit id aspernatur repellat
               ipsam aperiam iste ducimus voluptas itaque. Explicabo ullam illo vitae magnam
               repellat.
-            </p>
+            </p> -->
             <ul class="feature-list darkblue hidden" v-in-viewport.once>
               <li>Mobile app for on-the-move business owners</li>
               <li>Seamless navigation from sales feed to purchasing process</li>
@@ -305,11 +305,11 @@
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
             <h2 class="hidden" v-in-viewport.once>Chat with other local businesses</h2>
-            <p class="hidden" v-in-viewport.once>
+            <!-- <p class="hidden" v-in-viewport.once>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique
               voluptas veritatis voluptate, possimus voluptatem vitae aperiam placeat itaque.
-            </p>
+            </p> -->
             <ul class="feature-list darkblue hidden" v-in-viewport.once>
               <li>Get quotes from multiple buyers or sellers</li>
               <li>Save and group messages</li>

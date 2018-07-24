@@ -173,8 +173,11 @@ body {
       width: 50%;
       transition: 0.4s;
       > .container {
-        width: 400px;
+        width: auto;
         box-sizing: content-box;
+        @media only screen and (min-width: $xlarge) {
+          width: 400px;
+        }
       }
       &.padded-section {
         transition: 0.4s;
@@ -188,7 +191,10 @@ body {
       padding: 200px 0;
       width: calc(50% + 35px);
       > .container {
-        margin: 0 150px 0 5vw;
+        margin: 0 140px 0 5vw;
+        @media only screen and (min-width: $xlarge) {
+          margin: 0 150px 0 5vw;
+        }
         @media only screen and (min-width: 1440px) {
           margin: 0 auto 0 calc((100vw - 1300px) / 2);
         }
@@ -200,7 +206,10 @@ body {
       width: calc(50% + 35px);
       margin-left: -55px;
       > .container {
-        margin: 0 5vw 0 auto;
+        margin: 0 5vw 0 140px;
+        @media only screen and (min-width: $xlarge) {
+          margin: 0 5vw 0 auto;
+        }
         @media only screen and (min-width: 1440px) {
           margin: 0 calc((100vw - 1300px) / 2) 0 auto;
         }

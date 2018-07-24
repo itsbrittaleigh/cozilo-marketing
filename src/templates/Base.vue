@@ -49,7 +49,6 @@ export default {
     left: 0;
     width: 100%;
     z-index: 100;
-    overflow: hidden;
     background: white;
     box-shadow: 0 0 2px 0 rgba(lightgray, 0.6);
   }
