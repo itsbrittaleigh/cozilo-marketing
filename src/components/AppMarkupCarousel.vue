@@ -14,8 +14,8 @@
       <div class="prop">
         <p class="large color-lightblue">Easy-to-Navigate Interface</p>
         <p>
-          Take high-quality photos of your goods & post them directly on Cozilo for
-          thousands of other businesses to see.
+          Take high-quality photos of your goods & post them directly on
+          Cozilo for thousands of other businesses to see.
         </p>
       </div>
     </slide>
@@ -29,8 +29,8 @@
       <div class="prop">
         <p class="large color-orange">Customizable Price Setting</p>
         <p>
-          With Cozilo, transparently set your pricing levels: wholesale, volume, or
-          individual goods.
+          With Cozilo, transparently set your pricing levels: wholesale,
+          volume, or individual goods.
         </p>
       </div>
     </slide>
@@ -44,8 +44,8 @@
       <div class="prop">
         <p class="large color-green">Safe & Reliable Transactions</p>
         <p>
-          With a multi-step verification process for all Cozilo users, every transaction is
-          secure.
+          With a multi-step verification process for all Cozilo users, every transaction
+          is secure.
         </p>
       </div>
     </slide>
@@ -59,8 +59,8 @@
       <div class="prop">
         <p class="large color-lightblue">Advertise Your Company</p>
         <p>
-          Customize your profile, connect directly with other users & advertise your business
-          with Cozilo.
+          Customize your profile, connect directly with other users & advertise your
+          business with Cozilo.
         </p>
       </div>
     </slide>

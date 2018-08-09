@@ -21,8 +21,8 @@
               <span class="blue">mobile marketplace</span>
             </h1>
             <p class="hidden" v-in-viewport.once>
-              Reach out to serious buyers and sellers to streamline your business’s supply chain
-              quickly and easily, right from our free mobile app available on iOS and Android.
+              Reach out to serious buyers and sellers from a wide selection of industries
+              easily and quickly, right from our free mobile app available on iOS and Android.
             </p>
             <router-link
               v-in-viewport.once
@@ -44,7 +44,7 @@
             <div class="section-header-icon bg-lightblue hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="hidden" v-in-viewport.once>Buy new &amp; used goods</h2>
+            <h2 class="hidden" v-in-viewport.once>Buy with confidence</h2>
             <p class="hidden" v-in-viewport.once>
               With thousands of new & used goods across 50+ categories on the Cozilo
               feed, quickly and easily find the products you need.
@@ -69,16 +69,16 @@
             <div class="section-header-icon bg-green hidden" v-in-viewport.once>
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden" v-in-viewport.once>Sell overstock goods</h2>
+            <h2 class="hidden" v-in-viewport.once>Sell with ease</h2>
             <p class="hidden" v-in-viewport.once>
-              Take high-definition images of the overstock goods you’re looking to sell
-              quickly and easily to the Cozilo feed and communicate directly with buyers
-              near you.
+              Selling on Cozilo is as easy as uploading an image of your goods, posting
+              to the sales feed, and communicating directly with a buyer - all from your
+              mobile device.
             </p>
             <ul class="feature-list green hidden" v-in-viewport.once>
-              <li>Selling off overstock goods</li>
+              <li>Sell a wide range of products and goods</li>
               <li>Liquidating excess products</li>
-              <li>Removing clutter from your office space</li>
+              <li>Liquidating overstock or excessive inventory</li>
             </ul>
           </div>
         </div>
@@ -106,26 +106,6 @@
                 </em></p>
               </header>
               <div class="categories">
-                <div class="col-lt">
-                  <div class="category">
-                    <h3>Machinery, Industrial, &amp; Tools</h3>
-                    <ul>
-                      <li>Machinery</li>
-                      <li>Industrial Parts</li>
-                      <li>Tools</li>
-                      <li>Hardware</li>
-                    </ul>
-                  </div>
-                  <div class="category">
-                    <h3>Metals, Chemicals, Rubber, and Plastics</h3>
-                    <ul>
-                      <li>Minerals, Metallurgy</li>
-                      <li>Chemicals</li>
-                      <li>Rubber, Plastics</li>
-                      <li>Energy, Environmental</li>
-                    </ul>
-                  </div>
-                </div>
                 <div class="col-rt">
                   <div class="category">
                     <h3>Auto &amp; Transportation</h3>
@@ -139,6 +119,26 @@
                     <ul>
                       <li>Construction Equipment</li>
                       <li>Lights and Lighting</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-rt">
+                  <div class="category">
+                    <h3>Machinery, Industrial, &amp; Tools</h3>
+                    <ul>
+                      <li>Hardware</li>
+                      <li>Industrial Parts</li>
+                      <li>Machinery</li>
+                      <li>Tools</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <h3>Metals, Chemicals, Rubber, and Plastics</h3>
+                    <ul>
+                      <li>Chemicals</li>
+                      <li>Energy, Environmental</li>
+                      <li>Minerals, Metallurgy</li>
+                      <li>Rubber, Plastics</li>
                     </ul>
                   </div>
                 </div>
@@ -175,33 +175,33 @@
                       <li>Computer Hardware</li>
                       <li>Computer Software</li>
                       <li>Consumer Electronics</li>
+                      <li>Hard Drives</li>
                       <li>Printers and Scanners</li>
                       <li>Security Systems</li>
-                      <li>Hard Drives</li>
                     </ul>
                   </div>
                   <div class="category">
-                    <h3>Office Furniture</h3>
-                    <ul>
-                      <li>Desks and Chairs</li>
-                      <li>Conference Tables</li>
-                      <li>Filing Cabinets</li>
-                    </ul>
-                  </div>
+                  <h3>Electrical Equipment</h3>
+                  <ul>
+                    <li>Electrical Equipment and Supplies</li>
+                    <li>Telecommunications</li>
+                  </ul>
+                </div>
                 </div>
                 <div class="col-rt">
                   <div class="category">
-                    <h3>Electrical Equipment</h3>
+                    <h3>Office Furniture</h3>
                     <ul>
-                      <li>Electrical Equipment and Supplies</li>
-                      <li>Telecommunications</li>
+                      <li>Conference Tables</li>
+                      <li>Desks and Chairs</li>
+                      <li>Filing Cabinets</li>
                     </ul>
                   </div>
                   <div class="category">
                     <h3>Packaging and Office Supplies</h3>
                     <ul>
-                      <li>Packaging and Printing</li>
                       <li>Office and School Supplies</li>
+                      <li>Packaging and Printing</li>
                       <li>Service Equipment</li>
                     </ul>
                   </div>
@@ -234,28 +234,11 @@
               <div class="categories">
                 <div class="col-lt">
                   <div class="category">
-                    <h3>Bags, Shoes, and Accessories</h3>
-                    <ul>
-                      <li>Luggage, Bags, and Cases</li>
-                      <li>Shoes and Accessories</li>
-                    </ul>
-                  </div>
-                  <div class="category">
                     <h3>Apparel, Textiles, and Accessories</h3>
                     <ul>
                       <li>Apparel</li>
-                      <li>Textile and Leather</li>
                       <li>Fashion, Jewelry, and Accessories</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-rt">
-                  <div class="category">
-                    <h3>Gifts, Toys, and Sporting Goods</h3>
-                    <ul>
-                      <li>Sports and Entertainment</li>
-                      <li>Gifts and Crafts</li>
-                      <li>Toys and Hobbies</li>
+                      <li>Textile and Leather</li>
                     </ul>
                   </div>
                   <div class="category">
@@ -263,6 +246,23 @@
                     <ul>
                       <li>Agricultural Goods</li>
                       <li>Food and Beverage Goods</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-rt">
+                  <div class="category">
+                    <h3>Bags, Shoes, and Accessories</h3>
+                    <ul>
+                      <li>Luggage, Bags, and Cases</li>
+                      <li>Shoes and Accessories</li>
+                    </ul>
+                  </div>
+                  <div class="category">
+                    <h3>Gifts, Toys, and Sporting Goods</h3>
+                    <ul>
+                      <li>Gifts and Crafts</li>
+                      <li>Sports and Entertainment</li>
+                      <li>Toys and Hobbies</li>
                     </ul>
                   </div>
                 </div>
@@ -287,7 +287,7 @@
             <ul class="feature-list darkblue hidden" v-in-viewport.once>
               <li>Mobile app for on-the-move business owners</li>
               <li>Seamless navigation from sales feed to purchasing process</li>
-              <li>Verified interactions with other local companies</li>
+              <li>Verified interactions with other companies</li>
             </ul>
           </div>
         </div>
@@ -304,7 +304,7 @@
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
               <i class="fas fa-credit-card" style="color: white;"></i>
             </div>
-            <h2 class="hidden" v-in-viewport.once>Chat with other local businesses</h2>
+            <h2 class="hidden" v-in-viewport.once>Chat with other businesses in real time</h2>
             <!-- <p class="hidden" v-in-viewport.once>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam perferendis
               consectetur, odio hic quasi beatae praesentium minus explicabo sequi similique

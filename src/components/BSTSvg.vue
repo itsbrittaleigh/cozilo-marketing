@@ -69,8 +69,8 @@
                 SELL
               </p>
               <p class="selected-text">
-                Quickly &amp; easily sell new or used goods to other local businesses
-                through Cozilo.
+                Quickly &amp; easily sell new or used goods to other businesses, locally
+                or nationally, on Cozilo.
               </p>
             </div>
             </div>
@@ -98,8 +98,7 @@
                   TRADE
                 </p>
                 <p class="selected-text">
-                  Cozilo trading tokens help you gain "future value" for items you
-                  don't need today.
+                  Cozilo allows you to trade goods and gain future value for items.
                 </p>
               </div>
             </div>

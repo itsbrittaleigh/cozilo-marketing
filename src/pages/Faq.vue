@@ -40,6 +40,23 @@
               <template slot="accordion-header">
                 <div class="header hidden" v-in-viewport.once>
                   <img src="../assets/images/icons/arrow-blue-down.png" alt="">
+                  <h2 class="color-lightblue">Who can buy and sell on Cozilo?</h2>
+                </div>
+              </template>
+              <template slot="accordion-content">
+                <p>
+                  All Cozilo users are able to buy goods. To sell goods, Cozilo users will need
+                  to provide additional business information to become verified sellers within
+                  the platform. Once verified, you will be able to sell goods and products with
+                  your Cozilo Free account. Find out more about
+                  <router-link :to="{ name: 'Pricing' }">pricing here</router-link>.
+                </p>
+              </template>
+            </accordion-section>
+            <accordion-section>
+              <template slot="accordion-header">
+                <div class="header hidden" v-in-viewport.once>
+                  <img src="../assets/images/icons/arrow-blue-down.png" alt="">
                   <h2 class="color-lightblue">Who do I contact with account questions?</h2>
                 </div>
               </template>
@@ -84,22 +101,6 @@
                   is agreed upon in part or in full with Cozilo Tokens, tokens are immediately
                   available and the funds will stay in the Cozilo app. Other means of payment
                   have industry standard processing times for availability.
-                </p>
-              </template>
-            </accordion-section>
-            <accordion-section>
-              <template slot="accordion-header">
-                <div class="header hidden" v-in-viewport.once>
-                  <img src="../assets/images/icons/arrow-green-down.png" alt="">
-                  <h2 class="color-green">How does the trade system work?</h2>
-                </div>
-              </template>
-              <template slot="accordion-content">
-                <p>
-                  Instead of having to barter over cash value for products, Cozilo Tokens supply a
-                  means of gaining ‘future value’ for items you don’t want or need today. Accept
-                  Cozilo Tokens for your items today, typically at a discount to get it off your
-                  hands sooner, and you can bank tokens for future use of something you may want.
                 </p>
               </template>
             </accordion-section>

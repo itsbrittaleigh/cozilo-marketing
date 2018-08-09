@@ -10,16 +10,18 @@
       >
         <template slot="description">
           <p class="hidden" v-in-viewport.once>
-            Sign up for your free Cozilo account today, and during the 3-month promotional
-            period, receive Cozilo Premium member benefits for free!
+            Sign up and browse Cozilo for free, or join as an Enterprise member and get
+            member benefits for the first month, totally free.
           </p>
         </template>
       </hero-section>
       <p class="lead hidden" v-in-viewport.once>
         <span class="container">
-          With three unique pricing tiers, there’s a Cozilo tier for every kind of member:
-          individual sellers, small business owners, enterprise business owners, and everything
-          in between.
+          There’s a Cozilo tier for every kind of member: individual buyers, small business owners,
+          enterprise business owners, and everything in between. Cozilo Free is a great way to
+          occasionally buy and sell items, while Cozilo Plus adds great value to a growing business.
+          If you’re truly looking to take your business and sales process to the next level, upgrade
+          to Cozilo Enterprise.
         </span>
       </p>
       <div class="content">
@@ -33,10 +35,11 @@
             </div>
             <div class="list">
               <ul class="feature-list lightblue">
-                <li>Free account</li>
+                <li>Ability to buy and sell</li>
                 <li>Unlimited product listings with limited display time</li>
-                <li>Ability to connect with interested buyers and fellow business owners</li>
-                <li>1-5 GB of storage for video and image assets</li>
+                <li>2 GB of storage for image assets</li>
+                <li>Standard profile template</li>
+                <li>Real-time chat functionality</li>
                 <li>Email support</li>
               </ul>
             </div>
@@ -50,14 +53,21 @@
             </div>
             <div class="list">
               <ul class="feature-list orange">
-                <li>Free account</li>
+                <li>Ability to buy and sell</li>
                 <li>Unlimited product listings with limited display time</li>
-                <li>Ability to connect with interested buyers and fellow business owners</li>
-                <li>1-5 GB of storage for video and image assets</li>
+                <li>2 GB of storage for image assets</li>
+                <li>Standard profile template</li>
+                <li>Real-time chat functionality</li>
                 <li class="break">Email support</li>
                 <li>Priority customer support</li>
-                <li>5-10 GB of storage for video and image assets</li>
-                <li>Increased marketing exposure</li>
+                <li>10 GB of storage for video and image assets</li>
+                <li>Priority customer support</li>
+                <li>Marketing & advertising functionality</li>
+                <li>Better transactional rates</li>
+                <li>Customizable profile</li>
+                <li>Profile badges and credentials</li>
+                <li>Ability to upload video on postings</li>
+                <li>Monthly sales analytics reports</li>
               </ul>
             </div>
           </div>
@@ -70,15 +80,26 @@
             </div>
             <div class="list">
               <ul class="feature-list green">
-                <li>Free account</li>
+                <li>Ability to buy and sell</li>
                 <li>Unlimited product listings with limited display time</li>
-                <li>Ability to connect with interested buyers and fellow business owners</li>
-                <li>1-5 GB of storage for video and image assets</li>
+                <li>2 GB of storage for image assets</li>
+                <li>Standard profile template</li>
+                <li>Real-time chat functionality</li>
                 <li class="break">Email support</li>
                 <li>Priority customer support</li>
-                <li>5-10 GB of storage for video and image assets</li>
-                <li class="break">Increased marketing exposure</li>
-                <li>Additional features coming soon!</li>
+                <li>10 GB of storage for video and image assets</li>
+                <li>Priority customer support</li>
+                <li>Marketing & advertising functionality</li>
+                <li>Better transactional rates</li>
+                <li>Customizable profile</li>
+                <li>Profile badges and credentials</li>
+                <li>Ability to upload video on postings</li>
+                <li class="break">Monthly sales analytics reports</li>
+                <li>Unlimited storage space for video and image assets</li>
+                <li>High-level customer support</li>
+                <li>Sponsored and featured ads & content</li>
+                <li>Unlimited administrative capabilities</li>
+                <li>Advanced sales analytics to optimize your sales processes</li>
               </ul>
             </div>
           </div>

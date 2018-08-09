@@ -36,11 +36,9 @@
             </div>
             <h2 class="color-green hidden" v-in-viewport.once>Sell</h2>
             <p class="hidden" v-in-viewport.once>
-              Cozilo provides a secure marketplace to sell your business’ items, whether
-              moving offices, looking to sell excess goods, or need to liquidate assets.
-              Simply provide clear, high-quality photos with detailed descriptions of your
-              goods and you’re ready to sell. We also provide traceable shipping options to
-              ensure delivery of your merchandise.
+              Cozilo provides a secure marketplace to sell your business’ items, whether moving
+              offices, looking to sell excess goods, or need to liquidate assets. Provide photos
+              with a description of your goods and you’re ready to sell.
             </p>
           </div>
           <div class="point">
@@ -49,10 +47,9 @@
             </div>
             <h2 class="color-orange hidden" v-in-viewport.once>Trade</h2>
             <p class="hidden" v-in-viewport.once>
-              Buy simpler and sell quicker with the option of using Cozilo tokens. These
-              tokens never disappear from your business’ account, stay consistent in value,
-              and are usable for any category of goods in the marketplace. Receive 500 free
-              tokens when you initially sign up.
+              Trade goods within a community of verified and trusted companies. Cozilo adds an
+              extra layer of security, allowing only approved businesses to become part of the
+              Cozilo ecosystem.
             </p>
           </div>
         </div>
@@ -64,7 +61,7 @@
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
             <h2 class="color-darkblue hidden" v-in-viewport.once>
-              The business-focused, mobile marketplace
+              The Business-Focused, Mobile Marketplace
             </h2>
             <p class="hidden" v-in-viewport.once>
               Cozilo was built to be a true B2B marketplace where approved businesses could
@@ -95,16 +92,11 @@
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
               <i class="fas fa-shopping-cart" style="color: white;"></i>
             </div>
-            <h2 class="color-white hidden" v-in-viewport.once>Trade using Cozilo tokens</h2>
+            <h2 class="color-white hidden" v-in-viewport.once>Find new and used goods</h2>
             <p class="hidden" v-in-viewport.once>
-              Instead of having to barter over cash value for products, Cozilo Tokens supply
-              a means of gaining ‘future value’ for items you don’t want or need today. Accept
-              Cozilo Tokens for your items today, typically at a discount to get it off your
-              hands sooner, and you can bank tokens for future use of something you may want.
-            </p>
-            <p class="hidden" v-in-viewport.once>
-              For signing up, users receive 500 Cozilo tokens to start using immediately.
-              You can also earn more by selling your items for split or wholly for tokens.
+              Unlike other marketplaces that only feature brand new, expensive goods, you can
+              search through new or gently-used items in the Cozilo marketplace. This is a much
+              more cost-efficient way for your business to find the products you need.
             </p>
           </div>
           <div class="mockup-container">
@@ -149,12 +141,11 @@
       <section class="feature-overview">
         <div class="container">
           <div class="col-lt">
-            <h3 class="color-lightblue hidden" v-in-viewport.once>Find new and used goods</h3>
+            <h3 class="color-lightblue hidden" v-in-viewport.once>Trade using Cozilo</h3>
             <p class="hidden" v-in-viewport.once>
-              Unlike other marketplaces that only feature brand new, expensive goods,
-              you can search through new or gently-used items in the Cozilo marketplace.
-              This is a much more cost-efficient way for your business to find the products
-              you need.
+              Trade new or used goods with confidence knowing that every business within
+              Cozilo is verified through our multiple-step application process, unlike other
+              buying and selling platforms that allow anyone to create an account.
             </p>
             <h3 class="color-orange hidden" v-in-viewport.once>
               Simple interface and payment structure
@@ -172,7 +163,7 @@
               Connect directly with other local business owners, build your network, and
               showcase what makes your company unique.
             </p>
-            <h3 class="color-darkblue hidden" v-in-viewport.once>Chat with sellers</h3>
+            <h3 class="color-darkblue hidden" v-in-viewport.once>Chat with buyers and sellers</h3>
             <p class="hidden" v-in-viewport.once>
               Communicate easily with other local business owners directly within the Cozilo
               app. Arrange in-person meetings, discuss your terms of sale or trade, or simply
@@ -185,9 +176,10 @@
               Take the hassle out of shipping
             </h3>
             <p class="hidden" v-in-viewport.once>
-              The Cozilo platform provides quick, reliable, and cost-effective shipping
-              logistics for all of your transactions. Simply submit your order, and we’ll
-              print all necessary packing and shipping labels for you.
+              The Cozilo platform provides quick, reliable, and cost-effective shipping logistics
+              for all of your transactions. Simply submit your order, and we’ll print all
+              necessary packing and shipping labels for you. Traceable shipping options are also
+              provided to ensure delivery of your merchandise.
             </p>
             <h3 class="color-lightblue hidden" v-in-viewport.once>
               Safe transactions with user ratings and escrow accounts
@@ -207,7 +199,7 @@
               can combine the various forms of payment to complete your transaction.
             </p>
             <h3 class="color-green hidden" v-in-viewport.once>
-              Sell goods at the price you want
+              Multi-level pricing options
             </h3>
             <p class="hidden" v-in-viewport.once>
               With Cozilo, you can set up leveled, volume, or wholesale pricing: set your
