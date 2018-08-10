@@ -65,6 +65,13 @@
                 Cozilo is a cost-effective way to business owners to advertise their business
                 at the same time as buying or selling goods.
               </p>
+              <h3 class="color-green hidden" v-in-viewport.once>
+                Real-Time Chat Functionality
+              </h3>
+              <p class="hidden" v-in-viewport.once>
+                Quickly and instantly communicate between buyers and sellers in the Cozilo
+                community.
+              </p>
             </div>
           </div>
           <div class="point">

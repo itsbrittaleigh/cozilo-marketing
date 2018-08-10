@@ -53,12 +53,7 @@
             </div>
             <div class="list">
               <ul class="feature-list orange">
-                <li>Ability to buy and sell</li>
-                <li>Unlimited product listings with limited display time</li>
-                <li>2 GB of storage for image assets</li>
-                <li>Standard profile template</li>
-                <li>Real-time chat functionality</li>
-                <li class="break">Email support</li>
+                <li>Everything in Cozilo Free, plus...</li>
                 <li>Priority customer support</li>
                 <li>10 GB of storage for video and image assets</li>
                 <li>Priority customer support</li>
@@ -80,21 +75,7 @@
             </div>
             <div class="list">
               <ul class="feature-list green">
-                <li>Ability to buy and sell</li>
-                <li>Unlimited product listings with limited display time</li>
-                <li>2 GB of storage for image assets</li>
-                <li>Standard profile template</li>
-                <li>Real-time chat functionality</li>
-                <li class="break">Email support</li>
-                <li>Priority customer support</li>
-                <li>10 GB of storage for video and image assets</li>
-                <li>Priority customer support</li>
-                <li>Marketing & advertising functionality</li>
-                <li>Better transactional rates</li>
-                <li>Customizable profile</li>
-                <li>Profile badges and credentials</li>
-                <li>Ability to upload video on postings</li>
-                <li class="break">Monthly sales analytics reports</li>
+                <li>Everything in Cozilo Plus, plus...</li>
                 <li>Unlimited storage space for video and image assets</li>
                 <li>High-level customer support</li>
                 <li>Sponsored and featured ads & content</li>

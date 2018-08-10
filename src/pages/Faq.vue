@@ -12,7 +12,7 @@
           <p class="hidden" v-in-viewport.once>
             Below are a list of frequently asked questions that Cozilo users have about
             signing up, payment options, and more. If you don’t see an answer to your
-            question below, reach out to us via phone, email, or our
+            question below, reach out to us through our
             <router-link :to="{ name: 'Contact' }">contact form</router-link>.
           </p>
         </template>

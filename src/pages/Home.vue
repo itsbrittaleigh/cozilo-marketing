@@ -77,8 +77,8 @@
             </p>
             <ul class="feature-list green hidden" v-in-viewport.once>
               <li>Sell a wide range of products and goods</li>
-              <li>Liquidating excess products</li>
               <li>Liquidating overstock or excessive inventory</li>
+              <li>Removing clutter from your office space</li>
             </ul>
           </div>
         </div>

@@ -9,10 +9,9 @@
       >
         <template slot="description">
           <p class="hidden" v-in-viewport.once>
-            Cozilo is a business-focused, mobile marketplace for business owners who want
-            to buy, sell, or trade new or used goods without having to sort through the
-            clutter of consumer goods like in other selling apps. As an added layer of
-            security, only approved businesses become part of the Cozilo ecosystem.
+            Cozilo is a business-focused, mobile marketplace for business owners who
+            want to buy, sell, or trade new or used goods without having to sort through
+            the clutter of consumer goods like in other selling apps.
           </p>
         </template>
       </hero-section>
