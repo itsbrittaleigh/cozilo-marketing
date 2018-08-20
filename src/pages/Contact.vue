@@ -4,7 +4,7 @@
       <hero-section
         name="contact"
         title="Contact"
-        icon-class="shopping-cart"
+        icon-class="comments"
         header-color="darkblue"
         bg-color="lightblue"
       >

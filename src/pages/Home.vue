@@ -284,7 +284,7 @@
         <div class="col-lt padded-section">
           <div class="container">
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-building" style="color: white;"></i>
             </div>
             <h2 class="hidden" v-in-viewport.once>A truly mobile, business-focused app</h2>
             <!-- <p class="hidden" v-in-viewport.once>
@@ -311,7 +311,7 @@
         <div class="col-rt padded-section">
           <div class="container">
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
-              <i class="fas fa-credit-card" style="color: white;"></i>
+              <i class="fas fa-comments" style="color: white;"></i>
             </div>
             <h2 class="hidden" v-in-viewport.once>Chat with other businesses in real time</h2>
             <!-- <p class="hidden" v-in-viewport.once>

@@ -4,7 +4,7 @@
       <hero-section
         name="faq"
         title="FAQ's"
-        icon-class="exchange-alt"
+        icon-class="question"
         header-color="white"
         bg-color="orange"
       >
@@ -198,6 +198,9 @@ export default {
       width: 18px;
       height: 10px;
       transition: 0.4s;
+      @media only screen and (min-width: $large) {
+        margin: 17px 20px 0 0;
+      }
     }
     h2 {
       font-weight: normal;

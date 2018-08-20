@@ -4,7 +4,7 @@
       <hero-section
         name="pricing"
         title="Pricing"
-        icon-class="shopping-cart"
+        icon-class="tags"
         header-color="darkblue"
         bg-color="green"
       >
@@ -52,8 +52,8 @@
               <a href="" class="button bg-white color-orange">Sign Up &rarr;</a>
             </div>
             <div class="list">
+              <p>Everything in Cozilo Free, plus...</p>
               <ul class="feature-list orange">
-                <li>Everything in Cozilo Free, plus...</li>
                 <li>Priority customer support</li>
                 <li>10 GB of storage for video and image assets</li>
                 <li>Priority customer support</li>
@@ -74,8 +74,8 @@
               <a href="" class="button bg-white color-green">Sign Up &rarr;</a>
             </div>
             <div class="list">
+              <p>Everything in Cozilo Plus, plus...</p>
               <ul class="feature-list green">
-                <li>Everything in Cozilo Plus, plus...</li>
                 <li>Unlimited storage space for video and image assets</li>
                 <li>High-level customer support</li>
                 <li>Sponsored and featured ads & content</li>
@@ -175,6 +175,9 @@ export default {
   }
   .list {
     padding: 40px;
+    p {
+      margin: 0 0 10px;
+    }
     ul {
       padding: 0;
       margin: 0;

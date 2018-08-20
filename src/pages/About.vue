@@ -4,7 +4,7 @@
       <hero-section
         name="about"
         title="The Future of B2B Transactions"
-        icon-class="shopping-cart"
+        icon-class="building"
       >
         <template slot="description">
           <p class="hidden" v-in-viewport.once>
@@ -20,7 +20,7 @@
         <div class="container content">
           <div class="point">
             <div class="section-header-icon bg-lightblue hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-users" style="color: white;"></i>
             </div>
             <div class="text">
               <h2 class="color-lightblue hidden" v-in-viewport.once>How we got started</h2>
@@ -36,7 +36,7 @@
           </div>
           <div class="point">
             <div class="section-header-icon bg-green hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-exclamation" style="color: white;"></i>
             </div>
             <div class="text">
               <h2 class="color-green hidden" v-in-viewport.once>What we're doing differently</h2>
@@ -76,7 +76,7 @@
           </div>
           <div class="point">
             <div class="section-header-icon bg-orange hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-forward" style="color: white;"></i>
             </div>
             <div class="text">
               <h2 class="color-orange hidden" v-in-viewport.once>What's next?</h2>

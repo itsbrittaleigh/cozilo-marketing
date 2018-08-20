@@ -4,7 +4,7 @@
       <hero-section
         name="features"
         title="Features"
-        icon-class="exchange-alt"
+        icon-class="list-ol"
         header-color="green"
       >
         <template slot="description">
@@ -57,7 +57,7 @@
         <div class="container">
           <div class="content">
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-building" style="color: white;"></i>
             </div>
             <h2 class="color-darkblue hidden" v-in-viewport.once>
               The Business-Focused, Mobile Marketplace
@@ -89,7 +89,7 @@
         <div class="container">
           <div class="content">
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-shopping-bag" style="color: white;"></i>
             </div>
             <h2 class="color-white hidden" v-in-viewport.once>Find new and used goods</h2>
             <p class="hidden" v-in-viewport.once>
@@ -112,7 +112,7 @@
         <div class="container">
           <div class="content">
             <div class="section-header-icon bg-darkblue hidden" v-in-viewport.once>
-              <i class="fas fa-shopping-cart" style="color: white;"></i>
+              <i class="fas fa-lock" style="color: white;"></i>
             </div>
             <h2 class="color-white hidden" v-in-viewport.once>Secure and reliable</h2>
             <p class="hidden" v-in-viewport.once>
