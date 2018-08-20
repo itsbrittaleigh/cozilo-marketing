@@ -113,8 +113,9 @@ export default {
   },
   methods: {
     toggleFeature(index) {
+      const current = this.features[index];
       this.features = [false, false, false, false, false, false];
-      this.features[index] = true;
+      this.features[index] = !current;
     },
   },
 };
@@ -134,6 +135,38 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+    .col-lt {
+      .prop.selected:after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid;
+      }
+    }
+    .col-rt {
+      .prop {
+        .icon-plus {
+          right: -16px;
+          left: auto;
+        }
+      }
+      .prop.selected:after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: 100%;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid;
+      }
     }
     .prop {
       width: 300px;
@@ -160,19 +193,15 @@ export default {
             transform: rotate(45deg);
           }
         }
-        p:not(.large) {
-          opacity: 1;
-          visibility: visible;
-        }
       }
       .icon-plus {
         cursor: pointer;
         position: absolute;
-        left: -10px;
+        left: -16px;
         top: 20px;
-        border-radius: 20px;
+        border-radius: 30px;
         transition: 0.4s;
-        @include icon-plus(20px, 11px, 1px);
+        @include icon-plus(32px, 17px, 1px);
       }
       &.green {
         p.large {
@@ -183,6 +212,10 @@ export default {
         }
         &.selected {
           background: $green;
+          &:after {
+            border-left-color: $green;
+            border-right-color: $green;
+          }
         }
       }
       &.orange {
@@ -194,6 +227,10 @@ export default {
         }
         &.selected {
           background: $orange;
+          &:after {
+            border-left-color: $orange;
+            border-right-color: $orange;
+          }
         }
       }
       &.lightblue {
@@ -205,6 +242,10 @@ export default {
         }
         &.selected {
           background: $lightblue;
+          &:after {
+            border-left-color: $lightblue;
+            border-right-color: $lightblue;
+          }
         }
       }
       p {

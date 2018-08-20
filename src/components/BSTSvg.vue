@@ -311,6 +311,7 @@ export default {
       font-family: $font;
       margin: 0;
       color: white;
+      user-select: none;
       svg {
         display: block;
         margin: 0 auto 10px;

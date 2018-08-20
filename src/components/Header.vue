@@ -69,7 +69,7 @@ header {
     }
   }
   .header {
-    padding: 30px 0;
+    padding: 15px 0;
     .container {
       display: flex;
       align-items: center;
@@ -77,11 +77,14 @@ header {
       position: relative;
     }
     .logo {
-      width: 200px;
+      width: 170px;
       height: auto;
     }
     @media only screen and (min-width: 1000px) {
       padding: 30px 0;
+      .logo {
+        width: 200px;
+      }
     }
     a {
       line-height: normal;

@@ -85,20 +85,23 @@
       </section>
       <section class="from-to pagination-section">
         <div :class="{ toggle: true, open: factoryIsOpen }">
-          <i class="icon-plus" @click="toggleFactory"></i>
           <div class="front padded-section" @click="toggleFactory">
+            <div class="overlay"></div>
             <div class="container">
-              <div class="section-header-icon bg-lightblue hidden" v-in-viewport.once>
-                <i class="fas fa-industry" style="color: white;"></i>
+              <div class="section-header-icon bg-white hidden" v-in-viewport.once>
+                <i class="fas fa-industry" style="color: #2d3f50;"></i>
               </div>
               <h2 class="hidden" v-in-viewport.once>From the factory floor</h2>
+              <div class="divider"></div>
+              <span class="more">Learn More <span class="plus">+</span></span>
             </div>
           </div>
           <div class="back">
+            <i class="icon-plus" @click="toggleFactory"></i>
             <div class="container">
               <header>
                 <div class="section-header-icon section-header-icon-large bg-white">
-                  <i class="fas fa-industry fa-lg" style="color: #62a9c5"></i>
+                  <i class="fas fa-industry fa-lg" style="color: #2d3f50"></i>
                 </div>
                 <p><em>
                   From heavy machinery to textiles and automotive parts, you
@@ -147,16 +150,19 @@
           </div>
         </div>
         <div :class="{ toggle: true, open: cubicleIsOpen }">
-          <i class="icon-plus" @click="toggleCubicle"></i>
           <div class="front padded-section" @click="toggleCubicle">
+            <div class="overlay"></div>
             <div class="container">
-              <div class="section-header-icon bg-orange hidden" v-in-viewport.once>
-                <i class="fas fa-briefcase" style="color: white;"></i>
+              <div class="section-header-icon bg-white hidden" v-in-viewport.once>
+                <i class="fas fa-briefcase" style="color: #ec632e;"></i>
               </div>
               <h2 class="hidden" v-in-viewport.once>To the office cubicle</h2>
+              <div class="divider"></div>
+              <span class="more">Learn More <span class="plus">+</span></span>
             </div>
           </div>
           <div class="back">
+            <i class="icon-plus" @click="toggleCubicle"></i>
             <div class="container">
               <header>
                 <div class="section-header-icon section-header-icon-large bg-white">
@@ -211,16 +217,19 @@
           </div>
         </div>
         <div :class="{ toggle: true, open: betweenIsOpen }">
-          <i class="icon-plus" @click="toggleBetween"></i>
           <div class="front padded-section" @click="toggleBetween">
+            <div class="overlay"></div>
             <div class="container">
-              <div class="section-header-icon bg-green hidden" v-in-viewport.once>
-                <i class="fas fa-leaf" style="color: white;"></i>
+              <div class="section-header-icon bg-white hidden" v-in-viewport.once>
+                <i class="fas fa-leaf" style="color: #77c373;"></i>
               </div>
               <h2 class="hidden" v-in-viewport.once>And everything in between</h2>
+              <div class="divider"></div>
+              <span class="more">Learn More <span class="plus">+</span></span>
             </div>
           </div>
           <div class="back">
+            <i class="icon-plus" @click="toggleBetween"></i>
             <div class="container">
               <header>
                 <div class="section-header-icon section-header-icon-large bg-white">
@@ -565,20 +574,23 @@ export default {
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
-    height: 665px;
+    height: 500px;
     &:nth-child(1) {
       .front {
-        background-image: url('~/static/covers/cement.jpg');
+        background-image: url('~/static/covers/architecture-building-empty.jpg');
+        .overlay {
+          background: rgba($darkblue, 0.9);
+        }
       }
       .back {
-        background: $lightblue;
+        background: $darkblue;
       }
     }
     &:nth-child(2) {
       .front {
-        background-image: url('~/static/covers/wood.jpg');
-        h2 {
-          color: $gray;
+        background-image: url('~/static/covers/chairs-computers-contemporary.jpg');
+        .overlay {
+          background: rgba($orange, 0.9);
         }
       }
       .back {
@@ -587,7 +599,10 @@ export default {
     }
     &:nth-child(3) {
       .front {
-        background-image: url('~/static/covers/dirt.jpg');
+        background-image: url('~/static/covers/bags-business-commerce.jpg');
+        .overlay {
+          background: rgba($green, 0.9);
+        }
       }
       .back {
         background: $green;
@@ -598,14 +613,25 @@ export default {
       background-repeat: no-repeat;
       background-position: center center;
       height: 100%;
-      padding: 0 30px;
+      padding: 0 50px;
+      position: relative;
       transition: 0.4s;
       cursor: pointer;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
       > .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 2;
+        position: relative;
         transition: 0.4s;
       }
       &:hover {
@@ -619,6 +645,24 @@ export default {
       color: white;
       text-align: center;
     }
+    .divider {
+      height: 1px;
+      width: 50%;
+      background: white;
+      margin: 50px 0;
+    }
+    .more {
+      @include title-font;
+      color: white;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      .plus {
+        font-weight: 300;
+        font-size: 38px;
+        margin-left: 10px;
+      }
+    }
     .back {
       position: absolute;
       top: 100%;
@@ -626,7 +670,7 @@ export default {
       width: 100%;
       z-index: 5;
       transition: 0.7s;
-      padding: 50px 20px 20px 40px;
+      padding: 50px 10px 20px;
       header {
         display: flex;
         padding-bottom: 10px;
@@ -692,10 +736,14 @@ export default {
     flex-direction: row;
     margin-bottom: 10px;
     .toggle {
+      height: 665px;
       flex: 1;
       margin: 0 10px 0 0;
       &:last-child {
         margin-right: 0;
+      }
+      .back {
+        padding: 50px 20px 20px 40px;
       }
     }
   }
@@ -704,7 +752,7 @@ export default {
   h2 {
     color: $lightgray;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 50px 0 20px;
     .lower {
       text-transform: none;
     }

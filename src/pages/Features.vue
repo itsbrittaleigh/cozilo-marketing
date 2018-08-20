@@ -239,6 +239,9 @@ export default {
       &:last-of-type {
         border-bottom: none;
       }
+      p {
+        margin: 0 0 40px;
+      }
     }
     @media only screen and (min-width: $large) {
       display: flex;
@@ -268,7 +271,7 @@ export default {
     color: white;
     margin: 0 0 20px;
   }
-  padding: 50px 0 0;
+  padding: 130px 0 80px;
   .mockup-container {
     position: relative;
     height: 500px;

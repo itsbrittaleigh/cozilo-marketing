@@ -2,6 +2,8 @@
   <carousel
     :per-page="1"
     :navigation-enabled="true"
+    navigation-next-label=">"
+    navigation-prev-label="<"
     pagination-active-color="#8a8a8a"
   >
     <slide>
@@ -110,7 +112,7 @@ export default {
 .VueCarousel {
   .VueCarousel-dot-container {
     position: absolute;
-    top: 490px;
+    top: 410px;
     left: 0;
     width: 100%;
   }
@@ -119,9 +121,17 @@ export default {
   }
   .VueCarousel-navigation-button {
     padding: 0 !important;
-    margin: 0 !important;
     color: #414142 !important;
-    top: 245px !important;
+    top: 215px !important;
+    font-size: 30px;
+    &.VueCarousel-navigation-next {
+      margin: 0 10px 0 0 !important;
+      transform: translateY(-50%) translateX(100%) scaleX(0.6);
+    }
+    &.VueCarousel-navigation-prev {
+      margin: 0 0 0 10px !important;
+      transform: translateY(-50%) translateX(-100%) scaleX(0.6);
+    }
   }
   .VueCarousel-navigation--disabled {
     opacity: 0 !important;
@@ -135,11 +145,28 @@ export default {
   .mockup {
     top: 0;
     margin-top: -50px;
+    $screen_width: 385px;
+    $screen_height: 530px;
+    position: absolute;
+    left: 50%;
+    width: $screen_width;
+    height: $screen_height;
+    margin-left: -($screen_width / 2);
+    pointer-events: none;
+    .screen-container {
+      top: 121px;
+      left: 105px;
+      width: 171px;
+      height: 289px;
+    }
   }
   .prop {
-    padding-top: 530px;
+    padding-top: 450px;
     p {
       text-align: center;
+      &.large {
+        font-weight: bold;
+      }
     }
   }
 }
