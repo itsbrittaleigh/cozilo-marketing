@@ -9,8 +9,8 @@
     <slide>
       <div class="mockup">
         <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-        <div class="screen-container">
-          <img src="../assets/images/mockups/cozilo_landingscreen.jpg" class="screen">
+        <div class="screen-container bg-lightblue">
+          <i class="fas fa-camera fa-6x" style="color: white;"></i>
         </div>
       </div>
       <div class="prop">
@@ -24,8 +24,8 @@
     <slide>
       <div class="mockup">
         <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-        <div class="screen-container">
-          <img src="../assets/images/mockups/cozilo_landingscreen.jpg" class="screen">
+        <div class="screen-container bg-orange">
+          <i class="fas fa-hand-holding-usd fa-6x" style="color: white;"></i>
         </div>
       </div>
       <div class="prop">
@@ -39,8 +39,8 @@
     <slide>
       <div class="mockup">
         <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-        <div class="screen-container">
-          <img src="../assets/images/mockups/cozilo_landingscreen.jpg" class="screen">
+        <div class="screen-container bg-green">
+          <i class="fas fa-lock fa-6x" style="color: white;"></i>
         </div>
       </div>
       <div class="prop">
@@ -54,8 +54,8 @@
     <slide>
       <div class="mockup">
         <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-        <div class="screen-container">
-          <img src="../assets/images/mockups/cozilo_landingscreen.jpg" class="screen">
+        <div class="screen-container bg-lightblue">
+          <i class="fas fa-broadcast-tower fa-6x" style="color: white;"></i>
         </div>
       </div>
       <div class="prop">
@@ -69,8 +69,8 @@
     <slide>
       <div class="mockup">
         <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-        <div class="screen-container">
-          <img src="../assets/images/mockups/cozilo_landingscreen.jpg" class="screen">
+        <div class="screen-container bg-orange">
+          <i class="fas fa-shipping-fast fa-6x" style="color: white;"></i>
         </div>
       </div>
       <div class="prop">
@@ -84,8 +84,8 @@
     <slide>
       <div class="mockup">
         <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-        <div class="screen-container">
-          <img src="../assets/images/mockups/cozilo_landingscreen.jpg" class="screen">
+        <div class="screen-container bg-green">
+          <i class="fas fa-credit-card fa-6x" style="color: white;"></i>
         </div>
       </div>
       <div class="prop">
@@ -158,6 +158,12 @@ export default {
       left: 105px;
       width: 171px;
       height: 289px;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   .prop {

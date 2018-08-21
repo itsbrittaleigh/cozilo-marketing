@@ -46,8 +46,23 @@
     </div>
     <div class="mockup large">
       <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
-      <div class="screen-container">
-        <img src="../assets/images/mockups/cozilo_landingscreen.jpg" alt="" class="screen">
+      <div class="screen-container bg-lightblue" v-show="features[0]">
+        <i class="fas fa-camera fa-7x" style="color: white;"></i>
+      </div>
+      <div class="screen-container bg-orange" v-show="features[1]">
+        <i class="fas fa-hand-holding-usd fa-7x" style="color: white;"></i>
+      </div>
+      <div class="screen-container bg-green" v-show="features[2]">
+        <i class="fas fa-lock fa-7x" style="color: white;"></i>
+      </div>
+      <div class="screen-container bg-lightblue" v-show="features[3]">
+        <i class="fas fa-broadcast-tower fa-7x" style="color: white;"></i>
+      </div>
+      <div class="screen-container bg-orange" v-show="features[4]">
+        <i class="fas fa-shipping-fast fa-7x" style="color: white;"></i>
+      </div>
+      <div class="screen-container bg-green" v-show="features[5]">
+        <i class="fas fa-credit-card fa-7x" style="color: white;"></i>
       </div>
     </div>
     <div class="col-rt">
@@ -260,6 +275,12 @@ export default {
       .mockup {
         display: block;
         visibility: visible;
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
     @media only screen and (min-width: $xlarge) {
