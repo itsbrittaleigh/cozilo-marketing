@@ -60,7 +60,7 @@
           <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
           <div class="screen-container">
             <parallax :speed-factor="0.1">
-              <img src="../assets/images/mockups/cozilo_marketscroll.jpg" alt="" class="screen">
+              <img src="../assets/images/mockups/cozilo_mainpage.jpg" alt="" class="screen">
             </parallax>
           </div>
         </div>

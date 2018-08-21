@@ -79,7 +79,7 @@
             <div class="mockup">
               <img src="../assets/images/iphone-shadow.png" alt="" class="phone-shell">
               <div class="screen-container">
-                <img src="../assets/images/mockups/cozilo_signin.jpg" alt="" class="screen">
+                <img src="../assets/images/mockups/cozilo_mainpage.jpg" alt="" class="screen">
               </div>
             </div>
           </div>
