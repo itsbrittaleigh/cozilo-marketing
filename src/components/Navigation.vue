@@ -154,7 +154,7 @@ ul {
     }
   }
   &.open {
-    margin-top: 30px;
+    margin-top: 15px;
     border-top: 1px solid #e2e2e2;
     padding: 15px 0;
     height: 253px;
