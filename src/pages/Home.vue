@@ -86,6 +86,7 @@
       <section class="from-to pagination-section">
         <div :class="{ toggle: true, open: factoryIsOpen }">
           <div class="front padded-section" @click="toggleFactory">
+            <img src="static/covers/architecture-building-empty.jpg" alt="">
             <div class="overlay"></div>
             <div class="container">
               <div class="section-header-icon bg-white hidden" v-in-viewport.once>
@@ -151,6 +152,7 @@
         </div>
         <div :class="{ toggle: true, open: cubicleIsOpen }">
           <div class="front padded-section" @click="toggleCubicle">
+            <img src="static/covers/chairs-computers-contemporary.jpg" alt="">
             <div class="overlay"></div>
             <div class="container">
               <div class="section-header-icon bg-white hidden" v-in-viewport.once>
@@ -218,6 +220,7 @@
         </div>
         <div :class="{ toggle: true, open: betweenIsOpen }">
           <div class="front padded-section" @click="toggleBetween">
+            <img src="static/covers/bags-business-commerce.jpg" alt="">
             <div class="overlay"></div>
             <div class="container">
               <div class="section-header-icon bg-white hidden" v-in-viewport.once>
@@ -575,9 +578,18 @@ export default {
     overflow: hidden;
     margin-bottom: 10px;
     height: 500px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: 0.4s;
+    }
     &:nth-child(1) {
       .front {
-        background-image: url('~/static/covers/architecture-building-empty.jpg');
         .overlay {
           background: rgba($darkblue, 0.9);
         }
@@ -588,7 +600,6 @@ export default {
     }
     &:nth-child(2) {
       .front {
-        background-image: url('~/static/covers/chairs-computers-contemporary.jpg');
         .overlay {
           background: rgba($orange, 0.9);
         }
@@ -599,7 +610,6 @@ export default {
     }
     &:nth-child(3) {
       .front {
-        background-image: url('~/static/covers/bags-business-commerce.jpg');
         .overlay {
           background: rgba($green, 0.9);
         }
@@ -623,19 +633,21 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
+        z-index: 2;
       }
       > .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 2;
+        z-index: 3;
         position: relative;
         transition: 0.4s;
       }
       &:hover {
-        background-size: 120% 120%;
+        img {
+          transform: scale(1.2);
+        }
         > .container {
           padding-bottom: 40px;
         }
